@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Télécommunications RF & ADC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Page d'accueil -->
+        <div id="home-page" class="page">
+            <div class="hero">
+                <h1>🚀 Quiz Télécommunications RF & ADC</h1>
+                <p>Testez vos connaissances en télécommunications radio et convertisseurs analogique-numérique</p>
+            </div>
+            
+            <div class="quiz-selection">
+                <div class="quiz-set">
+                    <h2>📚 5 Quiz Fondamentaux</h2>
+                    <p>Les concepts de base des télécommunications</p>
+                    <button class="btn btn-primary" onclick="startQuizSet(1)">
+                        Commencer les 5 Quiz
+                    </button>
+                </div>
+                
+                <div class="quiz-set">
+                    <h2>🔬 7 Quiz Complets</h2>
+                    <p>Tous les quiz avec calculs approfondis</p>
+                    <button class="btn btn-primary" onclick="startQuizSet(2)">
+                        Commencer les 7 Quiz
+                    </button>
+                </div>
+            </div>
+            
+            <div class="scores-section" id="scores-history" style="display: none;">
+                <h3>📊 Historique des scores</h3>
+                <div id="scores-list"></div>
+            </div>
+        </div>
+
+        <!-- Page de quiz -->
+        <div id="quiz-page" class="page" style="display: none;">
+            <div class="quiz-header">
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <span id="progress-text">Question 1 / 10</span>
+                </div>
+                <div class="quiz-info">
+                    <span id="current-quiz">Quiz 1: dB, dBm et Concepts de Base</span>
+                    <span id="quiz-set-info">Set 1 (5 Quiz)</span>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2 id="question-text">Question</h2>
+                <div class="answers" id="answers-container">
+                    <!-- Options de réponse générées dynamiquement -->
+                </div>
+            </div>
+
+            <div class="quiz-controls">
+                <button class="btn btn-secondary" id="prev-btn" onclick="previousQuestion()" disabled>
+                    ← Précédent
+                </button>
+                <button class="btn btn-primary" id="next-btn" onclick="nextQuestion()" disabled>
+                    Suivant →
+                </button>
+            </div>
+        </div>
+
+        <!-- Page de résultats -->
+        <div id="results-page" class="page" style="display: none;">
+            <div class="results-container">
+                <h1>🎉 Résultats</h1>
+                
+                <div class="overall-score">
+                    <div class="score-circle">
+                        <span id="overall-percentage">85%</span>
+                    </div>
+                    <h2 id="overall-score-text">Excellent travail !</h2>
+                </div>
+
+                <div class="quiz-breakdown" id="quiz-breakdown">
+                    <!-- Résultats détaillés par quiz -->
+                </div>
+
+                <div class="results-actions">
+                    <button class="btn btn-primary" onclick="restartQuiz()">
+                        🔄 Recommencer
+                    </button>
+                    <button class="btn btn-secondary" onclick="goHome()">
+                        🏠 Accueil
+                    </button>
+                    <button class="btn btn-info" onclick="showDetailedResults()">
+                        📋 Voir détails
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page de résultats détaillés -->
+        <div id="detailed-results-page" class="page" style="display: none;">
+            <div class="detailed-results-container">
+                <h1>📋 Résultats Détaillés</h1>
+                <button class="btn btn-secondary" onclick="hideDetailedResults()">← Retour</button>
+                
+                <div id="detailed-breakdown">
+                    <!-- Questions avec bonnes/mauvaises réponses -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
