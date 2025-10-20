@@ -4,7 +4,7 @@ Une application web interactive pour tester vos connaissances en télécommunica
 
 ## 🚀 Fonctionnalités
 
-- **2 modes de quiz** : 5 quiz fondamentaux ou 7 quiz complets
+- **2 modes de quiz** : 5 quiz fondamentaux ou 12 quiz complets
 - **Interface moderne** avec design responsive 
 - **Questions en anglais** sur les concepts RF/ADC
 - **Système de scoring** avec historique des performances
@@ -21,15 +21,20 @@ Une application web interactive pour tester vos connaissances en télécommunica
 4. **Architecture Radio et Modulation** - Front-end, superhétérodyne
 5. **Débit, Bande Passante et Convertisseurs ADC** - Nyquist, Shannon, échantillonnage
 
-### Set 2 - 7 Quiz Complets
-Les 5 quiz précédents plus 2 quiz bonus :
+### Set 2 - 12 Quiz Complets
+Les 5 quiz précédents plus 7 quiz avancés :
 6. **Calculs Pratiques - dB et Puissances** - Exercices intensifs
 7. **Sensibilité, Bruit et SNR - Calculs Approfondis** - Comparaisons avancées
+8. **Superheterodyne and Frequencies** - Maîtrise totale des architectures
+9. **Nyquist, Shannon and Data Rates** - Entraînement intensif
+10. **Link Budget and Link Analysis** - Maîtrise complète
+11. **Battery Life and IoT Optimization** - Optimisation énergétique
+12. **Synthesis and Complex Practical Cases** - Cas pratiques complexes
 
 ## 🎮 Utilisation
 
 1. Ouvrir `index.html` dans votre navigateur
-2. Choisir votre mode de quiz (5 ou 7 quiz)
+2. Choisir votre mode de quiz (5 ou 12 quiz)
 3. Répondre aux questions via clic ou clavier
 4. Consulter vos résultats détaillés
 5. Recommencer pour améliorer votre score !

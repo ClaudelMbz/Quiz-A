@@ -528,11 +528,391 @@ const quizData = {
                     correct: 1
                 }
             ]
+        },
+        {
+            id: 8,
+            title: "Superheterodyne and Frequencies (Total Mastery)",
+            questions: [
+                {
+                    question: "A GSM receiver must receive 935 MHz. LO = 955 MHz, IF = 20 MHz. Do we use High Side or Low Side Injection?",
+                    options: [
+                        "High Side (LO > RF)",
+                        "Low Side (LO < RF)", 
+                        "Both work",
+                        "Neither works"
+                    ],
+                    correct: 0
+                },
+                {
+                    question: "With the data from Q1, what is the image frequency?",
+                    options: ["915 MHz", "935 MHz", "955 MHz", "975 MHz"],
+                    correct: 3
+                },
+                {
+                    question: "To receive channels between 1800-1850 MHz with IF = 100 MHz in High Side, what is the LO range?",
+                    options: [
+                        "1700-1750 MHz",
+                        "1800-1850 MHz", 
+                        "1900-1950 MHz",
+                        "2000-2050 MHz"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "A useful signal at 2.4 GHz, IF = 70 MHz, LO = 2.33 GHz. What is the image frequency?",
+                    options: ["2.19 GHz", "2.26 GHz", "2.4 GHz", "2.54 GHz"],
+                    correct: 1
+                },
+                {
+                    question: "For an FM receiver (88-108 MHz) with IF = 10.7 MHz in High Side, what is the LO range?",
+                    options: [
+                        "77.3-97.3 MHz",
+                        "88-108 MHz",
+                        "98.7-118.7 MHz", 
+                        "120-140 MHz"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Why choose an IF neither too low nor too high?",
+                    options: [
+                        "IF too low → image problem / IF too high → difficult filtering",
+                        "IF too high → image problem / IF too low → difficult filtering",
+                        "No impact on performance",
+                        "Only for simplicity"
+                    ],
+                    correct: 0
+                },
+                {
+                    question: "In a 2.4 GHz WiFi receiver, RF filter has 100 MHz band and IF filter 20 MHz. Why?",
+                    options: [
+                        "RF filter selects entire WiFi band, IF selects 1 channel",
+                        "IF filter selects entire band, RF selects 1 channel",
+                        "They have the same function",
+                        "It's a design error"
+                    ],
+                    correct: 0
+                },
+                {
+                    question: "An LO is set to 1.2 GHz, IF = 50 MHz, useful signal at 1.15 GHz. Which image signal must be rejected?",
+                    options: ["1.1 GHz", "1.25 GHz", "1.3 GHz", "1.35 GHz"],
+                    correct: 2
+                },
+                {
+                    question: "To avoid image problems in a 450-470 MHz receiver, is it better to use IF of 5 MHz or 50 MHz?",
+                    options: [
+                        "5 MHz (close image, easy to filter)",
+                        "50 MHz (distant image, easy to filter)",
+                        "Both equivalent",
+                        "Neither"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "A system receives at 5.8 GHz with IF = 200 MHz. In Low Side Injection, what is the LO?",
+                    options: ["5.6 GHz", "5.8 GHz", "6.0 GHz", "6.2 GHz"],
+                    correct: 0
+                }
+            ]
+        },
+        {
+            id: 9,
+            title: "Nyquist, Shannon and Data Rates (Intensive Training)",
+            questions: [
+                {
+                    question: "Noiseless channel: B = 10 MHz, 4 levels. Nyquist data rate?",
+                    options: ["20 Mbps", "40 Mbps", "80 Mbps", "160 Mbps"],
+                    correct: 1
+                },
+                {
+                    question: "Noisy channel: B = 10 MHz, SNR = 31 (~15 dB). Shannon capacity?",
+                    options: ["50 Mbps", "100 Mbps", "150 Mbps", "200 Mbps"],
+                    correct: 0
+                },
+                {
+                    question: "To transmit 100 Mbps with 16 levels (noiseless), what minimum bandwidth according to Nyquist?",
+                    options: ["12.5 MHz", "25 MHz", "50 MHz", "100 MHz"],
+                    correct: 1
+                },
+                {
+                    question: "A 5 MHz channel with SNR = 63 (~18 dB). Shannon capacity?",
+                    options: ["20 Mbps", "25 Mbps", "30 Mbps", "35 Mbps"],
+                    correct: 2
+                },
+                {
+                    question: "If we go from 2 levels to 8 levels (same bandwidth), the Nyquist data rate is multiplied by:",
+                    options: ["1.5", "2", "3", "4"],
+                    correct: 0
+                },
+                {
+                    question: "20 MHz channel, 256 levels (QAM-256). Maximum Nyquist data rate?",
+                    options: ["40 Mbps", "80 Mbps", "160 Mbps", "320 Mbps"],
+                    correct: 3
+                },
+                {
+                    question: "For SNR of 1023 (~30 dB) and B = 1 MHz, what is the Shannon capacity?",
+                    options: ["5 Mbps", "10 Mbps", "15 Mbps", "20 Mbps"],
+                    correct: 1
+                },
+                {
+                    question: "Which modulation allows the highest data rate in a given bandwidth (noiseless)?",
+                    options: [
+                        "2 levels (BPSK)",
+                        "4 levels (QPSK)", 
+                        "16 levels (16-QAM)",
+                        "256 levels (256-QAM)"
+                    ],
+                    correct: 3
+                },
+                {
+                    question: "A real system with B = 8 MHz, SNR = 15 (~12 dB). Shannon capacity?",
+                    options: ["~24 Mbps", "~29 Mbps", "~32 Mbps", "~36 Mbps"],
+                    correct: 1
+                },
+                {
+                    question: "Doubling bandwidth with same SNR and modulation:",
+                    options: [
+                        "Doubles data rate",
+                        "Triples data rate",
+                        "Quadruples data rate",
+                        "Does not affect data rate"
+                    ],
+                    correct: 0
+                }
+            ]
+        },
+        {
+            id: 10,
+            title: "Link Budget and Link Analysis (Complete Mastery)",
+            questions: [
+                {
+                    question: "Ptx = 20 dBm, Total losses = 140 dB, Sensitivity = -115 dBm. What is the link margin?",
+                    options: ["5 dB", "10 dB", "15 dB", "20 dB"],
+                    correct: 0
+                },
+                {
+                    question: "To double the range in free space, Ptx must be increased by how much (in dB)?",
+                    options: ["+3 dB", "+6 dB", "+10 dB", "+20 dB"],
+                    correct: 1
+                },
+                {
+                    question: "Ptx = 30 dBm, Gtx = 10 dBi, Grx = 5 dBi, Losses = 130 dB. Received power?",
+                    options: ["-75 dBm", "-85 dBm", "-95 dBm", "-105 dBm"],
+                    correct: 1
+                },
+                {
+                    question: "A system has 10 dB margin. If we reduce Ptx by 10 dB, what happens?",
+                    options: [
+                        "System still works but without margin",
+                        "System no longer works",
+                        "Margin increases",
+                        "No change"
+                    ],
+                    correct: 0
+                },
+                {
+                    question: "Free space losses at 2.4 GHz over 100m ≈ 80 dB. At 1 km, losses are about:",
+                    options: ["90 dB", "100 dB", "110 dB", "800 dB"],
+                    correct: 1
+                },
+                {
+                    question: "Ptx = 10 dBm, sensitivity = -100 dBm, losses = 120 dB. Does the link work?",
+                    options: [
+                        "Yes, with 10 dB margin",
+                        "No, missing 10 dB",
+                        "Just at limit (0 dB margin)", 
+                        "Impossible to determine"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "To improve a link by 6 dB, which solution is LEAST effective?",
+                    options: [
+                        "Increase Ptx by 6 dB",
+                        "Improve sensitivity by 6 dB",
+                        "Add 3 dB Tx gain and 3 dB Rx gain",
+                        "Reduce cable losses by 6 dB"
+                    ],
+                    correct: 3
+                },
+                {
+                    question: "A link has: Ptx = 27 dBm, Gtx = 8 dBi, Grx = 3 dBi, FSPL = 120 dB, other losses = 5 dB. Prx?",
+                    options: ["-87 dBm", "-92 dBm", "-97 dBm", "-102 dBm"],
+                    correct: 0
+                },
+                {
+                    question: "Sensitivity = -120 dBm, Prx = -110 dBm. Link margin?",
+                    options: ["5 dB", "10 dB", "15 dB", "30 dB"],
+                    correct: 1
+                },
+                {
+                    question: "To compensate for 20 dB increase in losses, we can:",
+                    options: [
+                        "Increase Ptx by 10 dB AND antenna gains by 10 dB",
+                        "Increase Ptx by 20 dB",
+                        "Improve sensitivity by 20 dB",
+                        "All of these answers"
+                    ],
+                    correct: 3
+                }
+            ]
+        },
+        {
+            id: 11,
+            title: "Battery Life and IoT Optimization",
+            questions: [
+                {
+                    question: "A SIGFOX device sends 1 message/hour (24 msg/day). Battery 2800 mAh, TX consumption = 60 mA, frame duration = 2s. Lifetime?",
+                    options: ["~1.6 years", "~3.2 years", "~6.5 years", "~13 years"],
+                    correct: 2
+                },
+                {
+                    question: "Same system but 1 message every 10 minutes (144 msg/day). Lifetime?",
+                    options: ["~0.5 years", "~1.1 years", "~2.2 years", "~4.4 years"],
+                    correct: 1
+                },
+                {
+                    question: "To maximize IoT sensor battery life, which strategy is BEST?",
+                    options: [
+                        "Increase Ptx to ensure link",
+                        "Reduce bandwidth and improve sensitivity",
+                        "Send more redundant messages",
+                        "Use complex modulation"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "A system has Ptx = 20 dBm (100 mW), Itx = 80 mA, duration = 3s, 10 msg/day, battery 3000 mAh. Lifetime?",
+                    options: ["~15 years", "~25 years", "~37 years", "~50 years"],
+                    correct: 2
+                },
+                {
+                    question: "If we reduce Ptx from 14 dBm to 10 dBm, we reduce consumption from 60 mA to about:",
+                    options: [
+                        "56 mA (linear change)",
+                        "48 mA",
+                        "24 mA (÷2.5)",
+                        "15 mA (÷4)"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "LoRa enables long ranges with low power thanks to:",
+                    options: [
+                        "Very wide bandwidth",
+                        "Very narrow bandwidth and good sensitivity",
+                        "High transmission power",
+                        "Very high frequency"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Battery 2000 mAh, total daily consumption = 5 mAh. Lifetime?",
+                    options: [
+                        "40 days",
+                        "100 days",
+                        "400 days (~1.1 years)",
+                        "4000 days (~11 years)"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "For a solar-powered system (50 mAh/day available), what max daily consumption for indefinite operation?",
+                    options: ["10 mAh/day", "30 mAh/day", "50 mAh/day", "70 mAh/day"],
+                    correct: 2
+                },
+                {
+                    question: "A sensor sends 1 frame of 5s every hour. TX consumption = 50 mA. Daily consumption?",
+                    options: ["0.17 mAh", "1.7 mAh", "17 mAh", "170 mAh"],
+                    correct: 1
+                },
+                {
+                    question: "Compare 2 systems: A) B=200kHz, Ptx=20dBm / B) B=100Hz, Ptx=14dBm. Which has better autonomy?",
+                    options: [
+                        "System A (less sensitive but same power)",
+                        "System B (better sensitivity, less power)",
+                        "Identical",
+                        "Impossible to compare"
+                    ],
+                    correct: 1
+                }
+            ]
+        },
+        {
+            id: 12,
+            title: "Synthesis and Complex Practical Cases",
+            questions: [
+                {
+                    question: "A 4G smartphone: B=20MHz, NF=6dB, SNR=15dB. A LoRa sensor: B=125Hz, NF=5dB, SNR=8dB. Sensitivity difference?",
+                    options: [
+                        "LoRa better by ~38 dB",
+                        "4G better by 38 dB",
+                        "LoRa better by ~52 dB",
+                        "Identical"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "This LoRa sensor can therefore transmit with how many times less power?",
+                    options: ["~38 times", "~630 times", "~6300 times", "~158000 times"],
+                    correct: 3
+                },
+                {
+                    question: "A WiFi system (Ptx=20dBm) must be replaced by LoRa (Ptx=14dBm) over same distance. LoRa sensitivity must be better by:",
+                    options: ["6 dB", "12 dB", "At least 6 dB", "No improvement needed"],
+                    correct: 2
+                },
+                {
+                    question: "GSM receiver: 124 channels from 935-960 MHz spaced 200 kHz apart. IF = 20 MHz. RF filter bandwidth?",
+                    options: ["200 kHz", "20 MHz", "25 MHz", "50 MHz"],
+                    correct: 2
+                },
+                {
+                    question: "Same system, IF filter (channel) bandwidth?",
+                    options: ["200 kHz", "20 MHz", "25 MHz", "Variable by channel"],
+                    correct: 0
+                },
+                {
+                    question: "A 10-bit ADC samples at 1 MHz a signal whose max component is 400 kHz. Problem?",
+                    options: [
+                        "Yes, under-sampling (need ≥800 kHz)",
+                        "Yes, over-sampling unnecessary",
+                        "No, respects Nyquist (≥2×400=800 kHz)",
+                        "Impossible without knowing amplitude"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "To transmit 50 Mbps on a 10 MHz channel without noise, how many levels minimum according to Nyquist?",
+                    options: ["4 levels", "8 levels", "16 levels", "32 levels"],
+                    correct: 3
+                },
+                {
+                    question: "A PA has 40% efficiency and delivers 2W RF. What DC power does it consume?",
+                    options: ["0.8 W", "2 W", "5 W", "8 W"],
+                    correct: 2
+                },
+                {
+                    question: "Complete chain: Signal -100 dBm → LNA(G=20dB, NF=2dB) → Mixer(L=7dB, NF=7dB) → IF Amp(G=30dB, NF=5dB). Final signal?",
+                    options: ["-27 dBm", "-37 dBm", "-47 dBm", "-57 dBm"],
+                    correct: 3
+                },
+                {
+                    question: "With the chain from Q9, what is approximately the total system noise figure?",
+                    options: [
+                        "~2 dB (dominated by LNA)",
+                        "~7 dB (dominated by mixer)",
+                        "~14 dB (sum of NFs)",
+                        "~5 dB (average of NFs)"
+                    ],
+                    correct: 0
+                }
+            ]
         }
     ]
 };
 
-// Copier les quiz 1-5 dans le set 2 aussi
+// Copier les quiz 1-7 dans le set 2, puis ajouter les nouveaux quiz 8-12
 quizData.set2 = [...quizData.set1, ...quizData.set2];
 
 // Réponses correctes pour vérification
@@ -550,7 +930,12 @@ const correctAnswers = {
         3: [1,1,1,2,2,1,1,2,1,1], // Quiz 3 (répété)
         4: [1,1,1,2,0,1,1,1,0,2], // Quiz 4 (répété)
         5: [1,1,1,3,0,1,3,2,1,1], // Quiz 5 (répété)
-        6: [1,0,0,0,1,1,0,0,1,0], // Quiz 6 (nouveau)
-        7: [1,1,2,3,1,0,0,1,0,1]  // Quiz 7 (nouveau)
+        6: [1,0,0,0,1,1,0,0,1,0], // Quiz 6
+        7: [1,1,2,3,1,0,0,1,0,1], // Quiz 7
+        8: [0,3,2,1,2,0,0,2,1,0], // Quiz 8 (nouveau)
+        9: [1,0,1,2,0,3,1,3,1,0], // Quiz 9 (nouveau)
+        10: [0,1,1,0,1,1,3,0,1,3], // Quiz 10 (nouveau)
+        11: [2,1,1,2,2,1,2,2,1,1], // Quiz 11 (nouveau)
+        12: [2,3,2,2,0,2,3,2,3,0]  // Quiz 12 (nouveau)
     }
 };

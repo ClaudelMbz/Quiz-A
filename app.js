@@ -50,7 +50,7 @@ function loadQuiz() {
     // Mettre à jour les informations du header
     document.getElementById('current-quiz').textContent = `Quiz ${quiz.id}: ${quiz.title}`;
     document.getElementById('quiz-set-info').textContent = 
-        `Set ${currentQuizSet} (${currentQuizSet === 1 ? '5' : '7'} Quiz)`;
+        `Set ${currentQuizSet} (${currentQuizSet === 1 ? '5' : '12'} Quiz)`;
     
     // Initialiser les réponses pour ce quiz
     if (!userAnswers[currentQuizIndex]) {
