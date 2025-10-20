@@ -1,10 +1,11 @@
 // Variables globales de l'application
-let currentQuizSet = 1; // 1 pour 5 quiz, 2 pour 7 quiz
+let currentQuizSet = 1; // 1 pour 5 quiz, 2-4 pour 4 quiz chacun
 let currentQuizIndex = 0;
 let currentQuestionIndex = 0;
 let userAnswers = [];
 let quizResults = [];
 let startTime;
+let feedbackTimeout;
 
 // État de l'application
 const AppState = {
@@ -49,8 +50,14 @@ function loadQuiz() {
     
     // Mettre à jour les informations du header
     document.getElementById('current-quiz').textContent = `Quiz ${quiz.id}: ${quiz.title}`;
-    document.getElementById('quiz-set-info').textContent = 
-        `Set ${currentQuizSet} (${currentQuizSet === 1 ? '5' : '12'} Quiz)`;
+    const quizCounts = {1: 5, 2: 4, 3: 4, 4: 4};
+    const setNames = {
+        1: '5 Fondamentaux',
+        2: 'Niveau 1 (4 Quiz)',
+        3: 'Niveau 2 (4 Quiz)', 
+        4: 'Expert (4 Quiz)'
+    };
+    document.getElementById('quiz-set-info').textContent = setNames[currentQuizSet];
     
     // Initialiser les réponses pour ce quiz
     if (!userAnswers[currentQuizIndex]) {
@@ -84,6 +91,7 @@ function loadQuestion() {
         const answerDiv = document.createElement('div');
         answerDiv.className = 'answer-option';
         answerDiv.onclick = () => selectAnswer(index);
+        answerDiv.style.pointerEvents = 'auto'; // S'assurer que les clics sont activés
         
         // Marquer comme sélectionné si déjà choisi
         const currentAnswer = userAnswers[currentQuizIndex][currentQuestionIndex];
@@ -103,16 +111,51 @@ function loadQuestion() {
     updateNavigationButtons();
 }
 
-// Sélectionner une réponse
+// Sélectionner une réponse avec feedback instantané
 function selectAnswer(answerIndex) {
+    // Éviter les clics multiples
+    const options = document.querySelectorAll('.answer-option');
+    if (options[0].classList.contains('correct-instant') || options[0].classList.contains('incorrect-instant')) {
+        return;
+    }
+    
     userAnswers[currentQuizIndex][currentQuestionIndex] = answerIndex;
     
-    // Mettre à jour l'affichage
-    const options = document.querySelectorAll('.answer-option');
+    // Obtenir la bonne réponse
+    const quizData = getCurrentQuizData();
+    const quiz = quizData[currentQuizIndex];
+    const correctAnswer = quiz.questions[currentQuestionIndex].correct;
+    
+    // Appliquer le feedback visuel
     options.forEach((option, index) => {
-        option.classList.toggle('selected', index === answerIndex);
+        option.style.pointerEvents = 'none'; // Désactiver les clics
+        
+        if (index === answerIndex) {
+            // Réponse sélectionnée
+            if (index === correctAnswer) {
+                option.classList.add('correct-instant');
+            } else {
+                option.classList.add('incorrect-instant');
+            }
+        } else if (index === correctAnswer && answerIndex !== correctAnswer) {
+            // Montrer la bonne réponse si l'utilisateur s'est trompé
+            setTimeout(() => {
+                option.classList.add('show-correct');
+            }, 300);
+        }
     });
     
+    // Réactiver les contrôles après un délai
+    feedbackTimeout = setTimeout(() => {
+        options.forEach(option => {
+            option.style.pointerEvents = 'auto';
+            option.classList.remove('correct-instant', 'incorrect-instant', 'show-correct');
+            option.classList.toggle('selected', option === options[answerIndex]);
+        });
+        updateNavigationButtons();
+    }, 2000);
+    
+    // Activer immédiatement le bouton suivant
     updateNavigationButtons();
 }
 
@@ -143,6 +186,9 @@ function updateNavigationButtons() {
 
 // Question précédente
 function previousQuestion() {
+    if (feedbackTimeout) {
+        clearTimeout(feedbackTimeout);
+    }
     if (currentQuestionIndex > 0) {
         currentQuestionIndex--;
         loadQuestion();
@@ -151,6 +197,10 @@ function previousQuestion() {
 
 // Question suivante
 function nextQuestion() {
+    if (feedbackTimeout) {
+        clearTimeout(feedbackTimeout);
+    }
+    
     const quizData = getCurrentQuizData();
     const quiz = quizData[currentQuizIndex];
     
@@ -388,7 +438,13 @@ function loadScoreHistory() {
 
 // Fonctions utilitaires
 function getCurrentQuizData() {
-    return currentQuizSet === 1 ? quizData.set1 : quizData.set2;
+    switch(currentQuizSet) {
+        case 1: return quizData.set1;
+        case 2: return quizData.set2;
+        case 3: return quizData.set3;
+        case 4: return quizData.set4;
+        default: return quizData.set1;
+    }
 }
 
 function getScoreClass(percentage) {

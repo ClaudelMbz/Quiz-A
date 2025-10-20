@@ -912,30 +912,84 @@ const quizData = {
     ]
 };
 
-// Copier les quiz 1-7 dans le set 2, puis ajouter les nouveaux quiz 8-12
-quizData.set2 = [...quizData.set1, ...quizData.set2];
+// Créer les différents sets de quiz
+// Set 2: Quiz 1-4 (Fondamentaux étendus)
+quizData.set2 = [
+    quizData.set1[0], // Quiz 1
+    quizData.set1[1], // Quiz 2
+    quizData.set1[2], // Quiz 3
+    quizData.set1[3]  // Quiz 4
+];
+
+// Set 3: Quiz 5-8 (Avancés)
+quizData.set3 = [
+    quizData.set1[4], // Quiz 5
+    quizData.set2[0], // Quiz 6
+    quizData.set2[1], // Quiz 7
+    quizData.set2[2]  // Quiz 8
+];
+
+// Set 4: Quiz 9-12 (Experts)
+quizData.set4 = [
+    quizData.set2[3], // Quiz 9
+    quizData.set2[4], // Quiz 10
+    quizData.set2[5], // Quiz 11
+    quizData.set2[6]  // Quiz 12
+];
+
+// Correction: Les quiz 6-12 sont dans set2[0] à set2[6], pas set1
+// Refaire la structure correctement
+const tempSet2 = [...quizData.set2]; // Sauvegarder les quiz 6-12
+
+// Set 2: Quiz 1-4 
+quizData.set2 = [
+    quizData.set1[0], // Quiz 1: dB, dBm
+    quizData.set1[1], // Quiz 2: Bruit Thermique
+    quizData.set1[2], // Quiz 3: Sensibilité
+    quizData.set1[3]  // Quiz 4: Architecture Radio
+];
+
+// Set 3: Quiz 5-8
+quizData.set3 = [
+    quizData.set1[4], // Quiz 5: Débit, ADC
+    tempSet2[0],      // Quiz 6: Calculs Pratiques
+    tempSet2[1],      // Quiz 7: Sensibilité Avancée
+    tempSet2[2]       // Quiz 8: Superheterodyne
+];
+
+// Set 4: Quiz 9-12
+quizData.set4 = [
+    tempSet2[3],      // Quiz 9: Nyquist/Shannon
+    tempSet2[4],      // Quiz 10: Link Budget
+    tempSet2[5],      // Quiz 11: Battery Life
+    tempSet2[6]       // Quiz 12: Synthesis
+];
 
 // Réponses correctes pour vérification
 const correctAnswers = {
     set1: {
-        1: [1,1,3,1,1,2,1,1,0,1], // Quiz 1
-        2: [1,0,1,0,1,1,1,1,1,1], // Quiz 2
-        3: [1,1,1,2,2,1,1,2,1,1], // Quiz 3
-        4: [1,1,1,2,0,1,1,1,0,2], // Quiz 4
-        5: [1,1,1,3,0,1,3,2,1,1]  // Quiz 5
+        1: [1,1,3,1,1,2,1,1,0,1], // Quiz 1: dB, dBm
+        2: [1,0,1,0,1,1,1,1,1,1], // Quiz 2: Bruit Thermique
+        3: [1,1,1,2,2,1,1,2,1,1], // Quiz 3: Sensibilité
+        4: [1,1,1,2,0,1,1,1,0,2], // Quiz 4: Architecture Radio
+        5: [1,1,1,3,0,1,3,2,1,1]  // Quiz 5: Débit, ADC
     },
     set2: {
-        1: [1,1,3,1,1,2,1,1,0,1], // Quiz 1 (répété)
-        2: [1,0,1,0,1,1,1,1,1,1], // Quiz 2 (répété)
-        3: [1,1,1,2,2,1,1,2,1,1], // Quiz 3 (répété)
-        4: [1,1,1,2,0,1,1,1,0,2], // Quiz 4 (répété)
-        5: [1,1,1,3,0,1,3,2,1,1], // Quiz 5 (répété)
-        6: [1,0,0,0,1,1,0,0,1,0], // Quiz 6
-        7: [1,1,2,3,1,0,0,1,0,1], // Quiz 7
-        8: [0,3,2,1,2,0,0,2,1,0], // Quiz 8 (nouveau)
-        9: [1,0,1,2,0,3,1,3,1,0], // Quiz 9 (nouveau)
-        10: [0,1,1,0,1,1,3,0,1,3], // Quiz 10 (nouveau)
-        11: [2,1,1,2,2,1,2,2,1,1], // Quiz 11 (nouveau)
-        12: [2,3,2,2,0,2,3,2,3,0]  // Quiz 12 (nouveau)
+        1: [1,1,3,1,1,2,1,1,0,1], // Quiz 1: dB, dBm
+        2: [1,0,1,0,1,1,1,1,1,1], // Quiz 2: Bruit Thermique
+        3: [1,1,1,2,2,1,1,2,1,1], // Quiz 3: Sensibilité
+        4: [1,1,1,2,0,1,1,1,0,2]  // Quiz 4: Architecture Radio
+    },
+    set3: {
+        5: [1,1,1,3,0,1,3,2,1,1], // Quiz 5: Débit, ADC
+        6: [1,0,0,0,1,1,0,0,1,0], // Quiz 6: Calculs Pratiques
+        7: [1,1,2,3,1,0,0,1,0,1], // Quiz 7: Sensibilité Avancée
+        8: [0,3,2,1,2,0,0,2,1,0]  // Quiz 8: Superheterodyne
+    },
+    set4: {
+        9: [1,0,1,2,0,3,1,3,1,0],  // Quiz 9: Nyquist/Shannon
+        10: [0,1,1,0,1,1,3,0,1,3], // Quiz 10: Link Budget
+        11: [2,1,1,2,2,1,2,2,1,1], // Quiz 11: Battery Life
+        12: [2,3,2,2,0,2,3,2,3,0]  // Quiz 12: Synthesis
     }
 };
