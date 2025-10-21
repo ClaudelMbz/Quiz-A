@@ -1,12 +1,12 @@
-# 📡 Quiz Télécommunications RF & ADC
+# 🎯 Quiz Agile for Project Management
 
-Une application web interactive pour tester vos connaissances en télécommunications radio fréquence et convertisseurs analogique-numérique.
+Une application web interactive pour tester vos connaissances en gestion de projet Agile et Scrum.
 
 ## 🚀 Fonctionnalités
 
-- **4 modes de quiz** : 5 fondamentaux + 3 niveaux de 4 quiz chacun
+- **4 tests complets** : 140 questions au total couvrant tous les aspects d'Agile/Scrum
 - **Interface moderne** avec design responsive 
-- **Questions en anglais** avec **feedback instantané** (vert/rouge)
+- **Questions en français** avec **feedback instantané** (vert/rouge)
 - **Système de scoring** avec historique des performances
 - **Navigation clavier** (A,B,C,D pour répondre, flèches pour naviguer)
 - **Résultats détaillés** question par question
@@ -14,35 +14,36 @@ Une application web interactive pour tester vos connaissances en télécommunica
 
 ## 📚 Contenu des Quiz
 
-### Set 1 - 5 Quiz Fondamentaux
-1. **dB, dBm et Concepts de Base** - Décibels, conversions de puissance
-2. **Bruit Thermique, SNR et Facteur de Bruit** - Analyse du bruit, LNA
-3. **Sensibilité du Récepteur et Bilan de Liaison** - Calculs de sensibilité
-4. **Architecture Radio et Modulation** - Front-end, superhétérodyne
-5. **Débit, Bande Passante et Convertisseurs ADC** - Nyquist, Shannon, échantillonnage
+### Test 1 - 30 Questions Essentielles (5 sections)
+1. **Fondamentaux de Scrum** - Piliers, valeurs, rôles de base (8 questions)
+2. **Product Backlog & User Stories** - Gestion du backlog, critères INVEST (5 questions)
+3. **Événements Scrum** - Sprint Planning, Daily, Review, Retrospective (8 questions)
+4. **Rôles et Responsabilités** - Product Owner, Scrum Master, Development Team (5 questions)
+5. **Métriques et Amélioration** - Vélocité, burndown charts, impediments (4 questions)
 
-### Set 2 - Niveau 1 (4 Quiz)
-1. **dB, dBm et Concepts de Base** - Décibels, conversions
-2. **Bruit Thermique, SNR et Facteur de Bruit** - Analyse du bruit
-3. **Sensibilité du Récepteur et Bilan de Liaison** - Calculs de sensibilité
-4. **Architecture Radio et Modulation** - Front-end, superhétérodyne
+### Test 2 - 30 Questions Avancées (5 sections)
+1. **Artefacts Scrum Approfondis** - Product Backlog, Sprint Backlog, Increment (6 questions)
+2. **Sprint et Planification** - Sprint Goal, Planning, capacité d'équipe (6 questions)
+3. **Collaboration et Communication** - Daily Scrum, interactions entre rôles (6 questions)
+4. **Estimation et Vélocité** - Story points, Planning Poker, capacité (6 questions)
+5. **Mise à l'Échelle et Situations Complexes** - Plusieurs équipes, résolution de conflits (6 questions)
 
-### Set 3 - Niveau 2 (4 Quiz)
-5. **Débit, Bande Passante et ADC** - Nyquist, Shannon
-6. **Calculs Pratiques - dB et Puissances** - Exercices intensifs
-7. **Sensibilité Avancée, Bruit et SNR** - Calculs approfondis
-8. **Superheterodyne and Frequencies** - Maîtrise totale
+### Test 3 - 40 Questions Situations Pratiques (4 sections)
+1. **Gestion des Conflits et Situations Difficiles** - Résolution de problèmes réels (10 questions)
+2. **Adaptation et Amélioration Continue** - Retrospectives, changements (10 questions)
+3. **Scaling Agile et Équipes Multiples** - Coordination, intégration (10 questions)
+4. **Métriques Avancées et Performance** - Mesures de succès, KPIs (10 questions)
 
-### Set 4 - Expert (4 Quiz)
-9. **Nyquist, Shannon and Data Rates** - Entraînement intensif
-10. **Link Budget and Link Analysis** - Maîtrise complète
-11. **Battery Life and IoT Optimization** - Optimisation énergétique
-12. **Synthesis and Complex Practical Cases** - Cas complexes
+### Test 4 - 40 Questions Modules Complets (4 modules)
+1. **Module Product Owner** - Gestion de produit, priorisation (10 questions)
+2. **Module Scrum Master** - Leadership serviteur, facilitation (10 questions)
+3. **Module Development Team** - Auto-organisation, collaboration (10 questions)
+4. **Module Transformation Agile** - Changement organisationnel (10 questions)
 
 ## 🎮 Utilisation
 
 1. Ouvrir `index.html` dans votre navigateur
-2. Choisir votre niveau (5 fondamentaux, ou niveaux 1-2-3 de 4 quiz)
+2. Choisir votre test (Test 1-2 : Fondamentaux, Test 3-4 : Expertise)
 3. Répondre aux questions via clic ou clavier
 4. Consulter vos résultats détaillés
 5. Recommencer pour améliorer votre score !
@@ -63,16 +64,16 @@ L'application s'adapte automatiquement à tous les écrans :
 
 ## 🎯 Système de Notation
 
-- **🏆 Excellent** : ≥ 90%
-- **🎯 Bon** : 70-89%
-- **📈 Moyen** : 50-69%
-- **🔄 À améliorer** : < 50%
+- **🏆 Expert** : 27-30 (≥ 90%)
+- **🎯 Avancé** : 23-26 (77-87%)
+- **📈 Intermédiaire** : 18-22 (60-73%)
+- **🔄 Débutant** : < 18 (< 60%)
 
 ## 🚀 Démarrage Rapide
 
 ```bash
 # Cloner le repository
-git clone https://github.com/votre-username/rf-telecommunications-quiz.git
+git clone https://github.com/votre-username/agile-scrum-quiz.git
 
 # Ouvrir dans le navigateur
 open index.html
@@ -84,4 +85,4 @@ MIT License - Libre d'utilisation à des fins éducatives
 
 ---
 
-**Testez vos connaissances en RF et devenez un expert en télécommunications !** 📡✨
+**Testez vos connaissances en Agile/Scrum et devenez un expert en gestion de projet !** 🎯✨

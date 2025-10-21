@@ -1,5 +1,5 @@
 // Variables globales de l'application
-let currentQuizSet = 1; // 1 pour 5 quiz, 2-4 pour 4 quiz chacun
+let currentQuizSet = 1; // 1 pour Test 1, 2 pour Test 2
 let currentQuizIndex = 0;
 let currentQuestionIndex = 0;
 let userAnswers = [];
@@ -46,16 +46,18 @@ function startQuizSet(setNumber) {
 // Charger le quiz actuel
 function loadQuiz() {
     const quizData = getCurrentQuizData();
+    console.log('Quiz data loaded:', quizData);
+    console.log('Current quiz index:', currentQuizIndex);
     const quiz = quizData[currentQuizIndex];
+    console.log('Current quiz:', quiz);
     
     // Mettre à jour les informations du header
-    document.getElementById('current-quiz').textContent = `Quiz ${quiz.id}: ${quiz.title}`;
-    const quizCounts = {1: 5, 2: 4, 3: 4, 4: 4};
+    document.getElementById('current-quiz').textContent = `Section ${quiz.id}: ${quiz.title}`;
     const setNames = {
-        1: '5 Fondamentaux',
-        2: 'Niveau 1 (4 Quiz)',
-        3: 'Niveau 2 (4 Quiz)', 
-        4: 'Expert (4 Quiz)'
+        1: 'Test 1 - Questions Essentielles',
+        2: 'Test 2 - Questions Avancées',
+        3: 'Test 3 - Situations Pratiques',
+        4: 'Test 4 - Modules Complets'
     };
     document.getElementById('quiz-set-info').textContent = setNames[currentQuizSet];
     
@@ -303,7 +305,7 @@ function showResults() {
         
         resultDiv.innerHTML = `
             <div>
-                <h4>Quiz ${result.quizId}: ${result.title}</h4>
+                <h4>Section ${result.quizId}: ${result.title}</h4>
                 <p>${result.correct}/${result.total} bonnes réponses</p>
             </div>
             <div style="text-align: right;">
@@ -326,7 +328,7 @@ function showDetailedResults() {
     
     quizResults.slice(0, -1).forEach(result => { // Exclure overallScore
         const quizDiv = document.createElement('div');
-        quizDiv.innerHTML = `<h3>Quiz ${result.quizId}: ${result.title} (${result.percentage}%)</h3>`;
+        quizDiv.innerHTML = `<h3>Section ${result.quizId}: ${result.title} (${result.percentage}%)</h3>`;
         
         result.questions.forEach((q, index) => {
             const questionDiv = document.createElement('div');
@@ -424,7 +426,7 @@ function loadScoreHistory() {
         
         scoreDiv.innerHTML = `
             <div>
-                <h4>Set ${score.set} - ${score.score.percentage}%</h4>
+                <h4>Test ${score.set} - ${score.score.percentage}%</h4>
                 <p>${date} • ${time}s • ${score.score.correct}/${score.score.total}</p>
             </div>
             <div style="text-align: right;">
@@ -449,22 +451,22 @@ function getCurrentQuizData() {
 
 function getScoreClass(percentage) {
     if (percentage >= 90) return 'excellent';
-    if (percentage >= 70) return 'good';
-    if (percentage >= 50) return 'average';
+    if (percentage >= 77) return 'good';
+    if (percentage >= 60) return 'average';
     return 'poor';
 }
 
 function getScoreMessage(percentage) {
-    if (percentage >= 90) return '🎉 Excellent travail !';
-    if (percentage >= 70) return '👍 Bon travail !';
-    if (percentage >= 50) return '😊 Pas mal !';
-    return '💪 Continuez vos efforts !';
+    if (percentage >= 90) return '🏆 Expert - Vous maîtrisez parfaitement !';
+    if (percentage >= 77) return '🎯 Avancé - Très bon niveau !';
+    if (percentage >= 60) return '📈 Intermédiaire - Continuez à progresser !';
+    return '🔄 Débutant - Révisez les fondamentaux !';
 }
 
 function getScoreEmoji(percentage) {
     if (percentage >= 90) return '🏆';
-    if (percentage >= 70) return '🎯';
-    if (percentage >= 50) return '📈';
+    if (percentage >= 77) return '🎯';
+    if (percentage >= 60) return '📈';
     return '🔄';
 }
 
