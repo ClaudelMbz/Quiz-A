@@ -666,5 +666,861 @@ const quizData = {
                 }
             ]
         }
+    ],
+    
+    // Test 3: 40 Questions Situations Pratiques - Applied Scrum for Agile Project Management
+    set3: [
+        {
+            id: 1,
+            title: "Gestion des Conflits et Situations Difficiles (Questions 1-10)",
+            questions: [
+                {
+                    question: "Dans un contexte Agile, quel est le principal risque des sprints de 3 mois ?",
+                    options: [
+                        "Augmentation de la visibilité pour les stakeholders",
+                        "Réduction de la capacité d'adaptation aux changements",
+                        "Amélioration de la qualité du code",
+                        "Diminution du temps de planification"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quelle affirmation sur le Product Backlog est VRAIE ?",
+                    options: [
+                        "Il ne contient que les besoins techniques",
+                        "Il est ordonné uniquement par date d'arrivée",
+                        "Il contient TOUS les besoins connus du produit",
+                        "Il est figé après le Sprint Planning"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Pendant un Sprint, que peut-on modifier sans affecter le Sprint Goal ?",
+                    options: [
+                        "La composition de l'équipe de développement",
+                        "Les objectifs de qualité",
+                        "Le scope des User Stories sélectionnées",
+                        "La méthode de travail pour atteindre l'objectif"
+                    ],
+                    correct: 3
+                },
+                {
+                    question: "Quelle est la différence fondamentale entre Product Backlog et Sprint Backlog ?",
+                    options: [
+                        "Le Product Backlog est technique, le Sprint Backlog est fonctionnel",
+                        "Le Product Backlog contient tous les besoins, le Sprint Backlog seulement ceux du sprint",
+                        "Le Product Backlog est géré par les Developers, le Sprint Backlog par le PO",
+                        "Le Product Backlog change quotidiennement, le Sprint Backlog est fixe"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Qui est responsable de la résolution des impediments bloquants ?",
+                    options: [
+                        "Uniquement le Product Owner",
+                        "Uniquement le Scrum Master",
+                        "L'équipe Scrum collectivement",
+                        "Les stakeholders externes"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Dans la Sprint Review, quel élément n'est PAS typiquement présenté ?",
+                    options: [
+                        "Le travail terminé et conforme à la Definition of Done",
+                        "Les problèmes techniques non résolus",
+                        "Les métriques de qualité du code",
+                        "Le plan détaillé du prochain sprint"
+                    ],
+                    correct: 3
+                },
+                {
+                    question: "Quelle pratique permet de réduire l'effet tunnel en Agile ?",
+                    options: [
+                        "Livraison fréquente d'incréments fonctionnels",
+                        "Documentation exhaustive des spécifications",
+                        "Planification détaillée sur 6 mois",
+                        "Réduction des réunions avec le client"
+                    ],
+                    correct: 0
+                },
+                {
+                    question: "Quel indicateur mesure le mieux la performance d'une équipe Scrum ?",
+                    options: [
+                        "Le nombre d'heures travaillées",
+                        "La valeur business délivrée chaque sprint",
+                        "Le pourcentage de tâches terminées",
+                        "La vitesse de défilement des burndown charts"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quand peut-on annuler un Sprint ?",
+                    options: [
+                        "Quand le Product Owner change d'avis",
+                        "Quand le Sprint Goal devient obsolète",
+                        "Quand les Developers rencontrent des difficultés techniques",
+                        "Quand le Scrum Master le décide unilatéralement"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quelle est la principale responsabilité des Developers lors du Sprint Planning ?",
+                    options: [
+                        "Définir la vision produit",
+                        "Estimer et s'engager sur le travail réalisable",
+                        "Assigner les tâches aux membres",
+                        "Présenter le travail aux stakeholders"
+                    ],
+                    correct: 1
+                }
+            ]
+        },
+        {
+            id: 2,
+            title: "Adaptation et Amélioration Continue (Questions 11-20)",
+            questions: [
+                {
+                    question: "Quel élément n'est PAS inclus dans le Sprint Backlog ?",
+                    options: [
+                        "Le Sprint Goal",
+                        "Les User Stories sélectionnées",
+                        "Le plan pour atteindre l'objectif",
+                        "La roadmap produit sur 6 mois"
+                    ],
+                    correct: 3
+                },
+                {
+                    question: "Dans le Daily Scrum, que doivent partager les Developers ?",
+                    options: [
+                        "Le détail technique de chaque ligne de code",
+                        "Leur progression vers le Sprint Goal",
+                        "Leurs préférences personnelles de travail",
+                        "Les problèmes organisationnels de l'entreprise"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quelle méthode de rétrospective utilise des métaphores nautiques ?",
+                    options: [
+                        "Speed Boat",
+                        "Start/Stop/Continue",
+                        "Mad/Sad/Glad",
+                        "4L (Liked, Learned, Lacked, Longed For)"
+                    ],
+                    correct: 0
+                },
+                {
+                    question: "Quel artefact est mis à jour pendant le Backlog Refinement ?",
+                    options: [
+                        "Le Sprint Backlog",
+                        "L'incrément",
+                        "Le Product Backlog",
+                        "La Definition of Done"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Quelle métrique aide à prédire la capacité de livraison future ?",
+                    options: [
+                        "La vélocité moyenne sur 3 sprints",
+                        "Le nombre de réunions tenues",
+                        "Le taux d'occupation des ressources",
+                        "Le budget dépensé"
+                    ],
+                    correct: 0
+                },
+                {
+                    question: "Quand une User Story est-elle considérée \"Ready\" ?",
+                    options: [
+                        "Quand le Product Owner l'a écrite",
+                        "Quand elle est suffisamment détaillée pour être estimée",
+                        "Quand les Developers l'ont approuvée",
+                        "Quand elle a été présentée aux stakeholders"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel rôle est responsable de maximiser la valeur du produit ?",
+                    options: [
+                        "Scrum Master",
+                        "Product Owner",
+                        "Developers",
+                        "Project Manager"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quelle pratique permet de gérer la complexité en Agile ?",
+                    options: [
+                        "Décomposer les éléments complexes en plus petits",
+                        "Éviter les éléments complexes",
+                        "Externaliser les parties complexes",
+                        "Documenter abondamment la complexité"
+                    ],
+                    correct: 0
+                },
+                {
+                    question: "Dans la Sprint Retrospective, quel thème est INAPPROPRIÉ ?",
+                    options: [
+                        "Les outils utilisés",
+                        "Les processus de communication",
+                        "Les salaires des membres",
+                        "L'efficacité des cérémonies"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Quel pourcentage de projets Agile échouent selon le Standish Group ?",
+                    options: [
+                        "9%",
+                        "11%",
+                        "29%",
+                        "39%"
+                    ],
+                    correct: 0
+                }
+            ]
+        },
+        {
+            id: 3,
+            title: "Scaling Agile et Équipes Multiples (Questions 21-30)",
+            questions: [
+                {
+                    question: "Quelle affirmation sur le Timeboxing est FAUSSE ?",
+                    options: [
+                        "Il crée de la pression temporelle",
+                        "Il garantit que les événements respectent leur durée",
+                        "Il peut être ajusté selon les besoins du moment",
+                        "Il favorise la focalisation sur l'essentiel"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Quel élément n'est PAS une cérémonie Scrum ?",
+                    options: [
+                        "Backlog Refinement",
+                        "Sprint Planning",
+                        "Daily Standup",
+                        "Project Review"
+                    ],
+                    correct: 3
+                },
+                {
+                    question: "Quand le Product Backlog est-il mis à jour ?",
+                    options: [
+                        "Uniquement en début de projet",
+                        "À la fin de chaque sprint",
+                        "En continu tout au long du projet",
+                        "Uniquement pendant le Sprint Planning"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Quelle compétence est la PLUS importante pour un Scrum Master ?",
+                    options: [
+                        "Expertise technique approfondie",
+                        "Capacité de facilitation et coaching",
+                        "Connaissance métier pointue",
+                        "Compétences en gestion de budget"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel risque est réduit par les sprints courts ?",
+                    options: [
+                        "Le risque de changement des besoins",
+                        "Le risque de sous-utilisation des ressources",
+                        "Le risque de sur-documentation",
+                        "Le risque de communication excessive"
+                    ],
+                    correct: 0
+                },
+                {
+                    question: "Quelle méthode utilise des colonnes \"To Do\", \"In Progress\", \"Done\" ?",
+                    options: [
+                        "Scrum",
+                        "Kanban",
+                        "Waterfall",
+                        "Lean"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel est l'objectif principal du Backlog Refinement ?",
+                    options: [
+                        "Présenter le travail aux stakeholders",
+                        "Préparer les User Stories pour les futurs sprints",
+                        "Assigner les tâches aux Developers",
+                        "Réviser les salaires de l'équipe"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quelle affirmation sur la Definition of Done est VRAIE ?",
+                    options: [
+                        "Elle est unique pour toute l'organisation",
+                        "Elle est définie par le Product Owner seul",
+                        "Elle peut évoluer au cours du projet",
+                        "Elle n'inclut pas les tests automatisés"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Quel indicateur montre l'avancement vers le Sprint Goal ?",
+                    options: [
+                        "Le Burndown Chart du sprint",
+                        "La vélocité historique",
+                        "Le nombre de commits GitHub",
+                        "Le temps passé en réunion"
+                    ],
+                    correct: 0
+                },
+                {
+                    question: "Quelle pratique est caractéristique des équipes Agile matures ?",
+                    options: [
+                        "Amélioration continue des processus",
+                        "Respect strict du plan initial",
+                        "Documentation exhaustive",
+                        "Hiérarchie décisionnelle claire"
+                    ],
+                    correct: 0
+                }
+            ]
+        },
+        {
+            id: 4,
+            title: "Métriques Avancées et Performance (Questions 31-40)",
+            questions: [
+                {
+                    question: "Quel rôle représente les stakeholders auprès de l'équipe ?",
+                    options: [
+                        "Product Owner",
+                        "Scrum Master",
+                        "Developers",
+                        "Project Manager"
+                    ],
+                    correct: 0
+                },
+                {
+                    question: "Quand la vélocité est-elle mesurée ?",
+                    options: [
+                        "À la fin de chaque sprint",
+                        "Au milieu de chaque sprint",
+                        "Au début de chaque projet",
+                        "Une fois par mois"
+                    ],
+                    correct: 0
+                },
+                {
+                    question: "Quel facteur influence le PLUS la capacité d'une équipe ?",
+                    options: [
+                        "Le nombre de membres",
+                        "L'expérience collective et la collaboration",
+                        "Le budget alloué",
+                        "Les outils utilisés"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quelle technique d'estimation utilise des tailles de T-shirt ?",
+                    options: [
+                        "Planning Poker",
+                        "Bucket System",
+                        "Affinity Estimation",
+                        "T-Shirt Sizing"
+                    ],
+                    correct: 3
+                },
+                {
+                    question: "Quel élément n'est PAS un principe Agile ?",
+                    options: [
+                        "Livraison fréquente de logiciel fonctionnel",
+                        "Collaboration étroite avec le client",
+                        "Documentation exhaustive avant développement",
+                        "Adaptation au changement"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Quelle métaphore décrit le mieux l'approche Agile ?",
+                    options: [
+                        "Un tunnel linéaire",
+                        "Une spirale évolutive",
+                        "Une cascade descendante",
+                        "Une pyramide rigide"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel avantage les projets Agile ont-ils sur les projets Waterfall ?",
+                    options: [
+                        "Moins de communication nécessaire",
+                        "Meilleure adaptabilité aux changements",
+                        "Documentation plus complète",
+                        "Planification plus précise"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel outil visualise le flux de valeur ?",
+                    options: [
+                        "Burndown Chart",
+                        "Cumulative Flow Diagram",
+                        "Velocity Chart",
+                        "Burnup Chart"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quelle pratique réduit le \"batch size\" en développement ?",
+                    options: [
+                        "Livraison en petits incréments",
+                        "Développement en grandes fonctionnalités",
+                        "Tests en fin de projet",
+                        "Documentation préalable"
+                    ],
+                    correct: 0
+                },
+                {
+                    question: "Quel pourcentage d'entreprises utilisent Scrum exclusivement ?",
+                    options: [
+                        "16%",
+                        "58%",
+                        "78%",
+                        "94%"
+                    ],
+                    correct: 1
+                }
+            ]
+        }
+    ],
+    
+    // Test 4: 40 Questions Modules Complets - Applied Scrum for Agile Project Management
+    set4: [
+        {
+            id: 1,
+            title: "Module Product Owner (Questions 1-10)",
+            questions: [
+                {
+                    question: "Quelle est la principale limitation du modèle Waterfall ?",
+                    options: [
+                        "Il permet une grande flexibilité face aux changements",
+                        "Il manque de réactivité aux évolutions des besoins clients",
+                        "Il produit trop de documentation",
+                        "Il est trop adapté aux petits projets"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Selon le Manifeste Agile, quelle valeur prime sur \"suivre un plan\" ?",
+                    options: [
+                        "Les processus et outils",
+                        "La documentation complète",
+                        "Répondre au changement",
+                        "La négociation contractuelle"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Quel pourcentage de projets Agile réussissent mieux selon le Standish Group ?",
+                    options: [
+                        "11%",
+                        "29%",
+                        "39%",
+                        "60%"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Quel est l'objectif principal du développement itératif ?",
+                    options: [
+                        "Livrer moins fréquemment",
+                        "Réduire l'effet tunnel et livrer de la valeur régulièrement",
+                        "Éviter les tests automatisés",
+                        "Augmenter la documentation"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel événement Scrum dure maximum 15 minutes ?",
+                    options: [
+                        "Sprint Planning",
+                        "Sprint Review",
+                        "Daily Scrum",
+                        "Sprint Retrospective"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Qui est responsable de la vision du produit ?",
+                    options: [
+                        "Scrum Master",
+                        "Product Owner",
+                        "Developers",
+                        "Stakeholders"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Qu'est-ce qu'un Sprint ?",
+                    options: [
+                        "Une réunion de planification",
+                        "Une période de 1-4 semaines où un incrément est produit",
+                        "Un document de spécification",
+                        "Un outil de reporting"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel artefact contient tous les besoins connus du produit ?",
+                    options: [
+                        "Sprint Backlog",
+                        "Product Backlog",
+                        "Definition of Done",
+                        "Increment"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel critère prime pour ordonner le Product Backlog ?",
+                    options: [
+                        "La difficulté technique",
+                        "La valeur utilisateur",
+                        "L'ordre d'arrivée",
+                        "Les préférences des developers"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Que signifie l'acronyme \"INVEST\" pour les User Stories ?",
+                    options: [
+                        "Independent, Negotiable, Valuable, Estimable, Small, Testable",
+                        "Integrated, Negotiated, Verified, Estimated, Structured, Timed",
+                        "Iterative, Negotiable, Validated, Efficient, Simple, Technical",
+                        "International, Negotiated, Valuable, Estimated, Strategic, Tested"
+                    ],
+                    correct: 0
+                }
+            ]
+        },
+        {
+            id: 2,
+            title: "Module Scrum Master (Questions 11-20)",
+            questions: [
+                {
+                    question: "Quelle est la principale limitation du modèle Waterfall ?",
+                    options: [
+                        "Il permet une grande flexibilité face aux changements",
+                        "Il manque de réactivité aux évolutions des besoins clients",
+                        "Il produit trop de documentation",
+                        "Il est trop adapté aux petits projets"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Selon le Manifeste Agile, quelle valeur prime sur \"suivre un plan\" ?",
+                    options: [
+                        "Les processus et outils",
+                        "La documentation complète",
+                        "Répondre au changement",
+                        "La négociation contractuelle"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Quel événement Scrum dure maximum 15 minutes ?",
+                    options: [
+                        "Sprint Planning",
+                        "Sprint Review",
+                        "Daily Scrum",
+                        "Sprint Retrospective"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Qui est responsable de la vision du produit ?",
+                    options: [
+                        "Scrum Master",
+                        "Product Owner",
+                        "Developers",
+                        "Stakeholders"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel artefact contient tous les besoins connus du produit ?",
+                    options: [
+                        "Sprint Backlog",
+                        "Product Backlog",
+                        "Definition of Done",
+                        "Increment"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel critère prime pour ordonner le Product Backlog ?",
+                    options: [
+                        "La difficulté technique",
+                        "La valeur utilisateur",
+                        "L'ordre d'arrivée",
+                        "Les préférences des developers"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel est le rôle principal du Scrum Master ?",
+                    options: [
+                        "Définir les besoins clients",
+                        "Établir les valeurs Scrum et faciliter la collaboration",
+                        "Développer les fonctionnalités",
+                        "Tester le produit"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Qui est responsable de l'estimation des User Stories ?",
+                    options: [
+                        "Product Owner seul",
+                        "Scrum Master seul",
+                        "Les Developers",
+                        "Les Stakeholders"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Quelle affirmation sur l'équipe de développement est VRAIE ?",
+                    options: [
+                        "Ils sont dirigés par le Scrum Master",
+                        "Ils sont auto-organisés et pluridisciplinaires",
+                        "Ils suivent les instructions du Product Owner",
+                        "Ils se concentrent uniquement sur le développement"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Qui peut annuler un Sprint ?",
+                    options: [
+                        "Seulement le Scrum Master",
+                        "Seulement le Product Owner",
+                        "L'équipe Scrum collective",
+                        "Les Stakeholders"
+                    ],
+                    correct: 1
+                }
+            ]
+        },
+        {
+            id: 3,
+            title: "Module Development Team (Questions 21-30)",
+            questions: [
+                {
+                    question: "Quelle est la principale limitation du modèle Waterfall ?",
+                    options: [
+                        "Il permet une grande flexibilité face aux changements",
+                        "Il manque de réactivité aux évolutions des besoins clients",
+                        "Il produit trop de documentation",
+                        "Il est trop adapté aux petits projets"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Selon le Manifeste Agile, quelle valeur prime sur \"suivre un plan\" ?",
+                    options: [
+                        "Les processus et outils",
+                        "La documentation complète",
+                        "Répondre au changement",
+                        "La négociation contractuelle"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Quel événement Scrum dure maximum 15 minutes ?",
+                    options: [
+                        "Sprint Planning",
+                        "Sprint Review",
+                        "Daily Scrum",
+                        "Sprint Retrospective"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Qui est responsable de la vision du produit ?",
+                    options: [
+                        "Scrum Master",
+                        "Product Owner",
+                        "Developers",
+                        "Stakeholders"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel artefact contient tous les besoins connus du produit ?",
+                    options: [
+                        "Sprint Backlog",
+                        "Product Backlog",
+                        "Definition of Done",
+                        "Increment"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel critère prime pour ordonner le Product Backlog ?",
+                    options: [
+                        "La difficulté technique",
+                        "La valeur utilisateur",
+                        "L'ordre d'arrivée",
+                        "Les préférences des developers"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel est l'objectif principal du Sprint Planning ?",
+                    options: [
+                        "Présenter le travail aux stakeholders",
+                        "Définir le Sprint Goal et sélectionner les User Stories",
+                        "Inspecter le fonctionnement de l'équipe",
+                        "Résoudre les problèmes techniques"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Combien de temps dure la Sprint Review pour un sprint de 2 semaines ?",
+                    options: [
+                        "15 minutes",
+                        "1 heure",
+                        "2 heures",
+                        "4 heures"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Quelle question n'est PAS typique du Daily Scrum ?",
+                    options: [
+                        "Qu'as-tu fait hier ?",
+                        "Que vas-tu faire aujourd'hui ?",
+                        "Quels obstacles rencontres-tu ?",
+                        "Quelle est ta tâche préférée ?"
+                    ],
+                    correct: 3
+                },
+                {
+                    question: "Quel événement permet d'identifier des améliorations de processus ?",
+                    options: [
+                        "Sprint Planning",
+                        "Daily Scrum",
+                        "Sprint Review",
+                        "Sprint Retrospective"
+                    ],
+                    correct: 3
+                }
+            ]
+        },
+        {
+            id: 4,
+            title: "Module Transformation Agile (Questions 31-40)",
+            questions: [
+                {
+                    question: "Quelle est la principale limitation du modèle Waterfall ?",
+                    options: [
+                        "Il permet une grande flexibilité face aux changements",
+                        "Il manque de réactivité aux évolutions des besoins clients",
+                        "Il produit trop de documentation",
+                        "Il est trop adapté aux petits projets"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Selon le Manifeste Agile, quelle valeur prime sur \"suivre un plan\" ?",
+                    options: [
+                        "Les processus et outils",
+                        "La documentation complète",
+                        "Répondre au changement",
+                        "La négociation contractuelle"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Quel événement Scrum dure maximum 15 minutes ?",
+                    options: [
+                        "Sprint Planning",
+                        "Sprint Review",
+                        "Daily Scrum",
+                        "Sprint Retrospective"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Qui est responsable de la vision du produit ?",
+                    options: [
+                        "Scrum Master",
+                        "Product Owner",
+                        "Developers",
+                        "Stakeholders"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel artefact contient tous les besoins connus du produit ?",
+                    options: [
+                        "Sprint Backlog",
+                        "Product Backlog",
+                        "Definition of Done",
+                        "Increment"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel critère prime pour ordonner le Product Backlog ?",
+                    options: [
+                        "La difficulté technique",
+                        "La valeur utilisateur",
+                        "L'ordre d'arrivée",
+                        "Les préférences des developers"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Qu'est-ce qu'un \"incrément\" ?",
+                    options: [
+                        "Un document de spécification",
+                        "Une partie du produit potentiellement livrable",
+                        "Une réunion de planification",
+                        "Un outil de gestion de projet"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel outil visualise le workflow en colonnes ?",
+                    options: [
+                        "Burn-down chart",
+                        "Tableau Kanban",
+                        "User Story Map",
+                        "Cumulative Flow Diagram"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quelle technique de rétrospective utilise \"Keep/Drop/Start\" ?",
+                    options: [
+                        "Speed Boat",
+                        "Glad/Sad/Mad",
+                        "Starfish",
+                        "4L (Liked/Learned/Lacked/Longed)"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Quel pourcentage d'entreprises utilisent Scrum selon Scrum Alliance ?",
+                    options: [
+                        "16%",
+                        "58%",
+                        "78%",
+                        "94%"
+                    ],
+                    correct: 1
+                }
+            ]
+        }
     ]
 };
