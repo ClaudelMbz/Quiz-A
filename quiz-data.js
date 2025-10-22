@@ -1531,102 +1531,102 @@ const quizData = {
             title: "Agile Principles and Philosophy (Questions 1-10)",
             questions: [
                 {
-                    question: "Quel est le principe opposé au \"micromanagement\" dans Scrum ?",
+                    question: "What is the opposite principle of \"micromanagement\" in Scrum?",
                     options: [
-                        "Délégation totale",
-                        "Auto-organisation des équipes",
-                        "Supervision étroite",
-                        "Contrôle hiérarchique"
+                        "Total delegation",
+                        "Team self-organization",
+                        "Close supervision",
+                        "Hierarchical control"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Le \"servant leadership\" implique que le leader :",
+                    question: "\"Servant leadership\" implies that the leader:",
                     options: [
-                        "Commande et contrôle",
-                        "Sert et facilite l'équipe",
-                        "Délègue toutes les responsabilités",
-                        "Prend toutes les décisions"
+                        "Commands and controls",
+                        "Serves and facilitates the team",
+                        "Delegates all responsibilities",
+                        "Makes all decisions"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Pourquoi Scrum est-il efficace avec les petites équipes ?",
+                    question: "Why is Scrum effective with small teams?",
                     options: [
-                        "Coûts réduits uniquement",
-                        "Meilleure communication et collaboration",
-                        "Moins de documentation",
-                        "Cycles plus longs"
+                        "Reduced costs only",
+                        "Better communication and collaboration",
+                        "Less documentation",
+                        "Longer cycles"
                     ],
                     correct: 1
                 },
                 {
-                    question: "L'approche Agile privilégie :",
+                    question: "The Agile approach favors:",
                     options: [
-                        "Les processus rigides",
-                        "La documentation exhaustive",
-                        "L'adaptation au changement",
-                        "La planification détaillée initiale"
+                        "Rigid processes",
+                        "Exhaustive documentation",
+                        "Adaptation to change",
+                        "Initial detailed planning"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Quelle est la différence principale entre Agile et les méthodes traditionnelles ?",
+                    question: "What is the main difference between Agile and traditional methods?",
                     options: [
-                        "Le coût",
-                        "La flexibilité vs la prédictibilité",
-                        "La taille de l'équipe uniquement",
-                        "Le langage de programmation"
+                        "Cost",
+                        "Flexibility vs predictability",
+                        "Team size only",
+                        "Programming language"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Dans Scrum, qui décide comment le travail sera effectué ?",
+                    question: "In Scrum, who decides how the work will be done?",
                     options: [
-                        "Le Scrum Master",
-                        "Le Product Owner",
-                        "L'équipe de développement",
-                        "Les stakeholders"
+                        "The Scrum Master",
+                        "The Product Owner",
+                        "The development team",
+                        "The stakeholders"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Le concept de \"facilitation\" dans Scrum signifie :",
+                    question: "The concept of \"facilitation\" in Scrum means:",
                     options: [
-                        "Rendre le travail plus facile en éliminant les défis",
-                        "Aider l'équipe à surmonter les obstacles et à progresser",
-                        "Faire le travail à la place de l'équipe",
-                        "Simplifier toutes les tâches"
+                        "Making work easier by eliminating challenges",
+                        "Helping the team overcome obstacles and progress",
+                        "Doing the work instead of the team",
+                        "Simplifying all tasks"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Quel est l'objectif principal de l'agilité organisationnelle ?",
+                    question: "What is the main goal of organizational agility?",
                     options: [
-                        "Réduire les coûts à court terme",
-                        "Maintenir la compétitivité dans un marché changeant",
-                        "Éliminer tous les processus",
-                        "Augmenter la bureaucratie"
+                        "Reducing short-term costs",
+                        "Maintaining competitiveness in a changing market",
+                        "Eliminating all processes",
+                        "Increasing bureaucracy"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Le Scrum Master doit maîtriser :",
+                    question: "The Scrum Master must master:",
                     options: [
-                        "Tous les aspects techniques du produit",
-                        "Des moyens nouveaux et différents de diriger des équipes",
-                        "La comptabilité de projet",
-                        "Le marketing produit"
+                        "All technical aspects of the product",
+                        "New and different ways of leading teams",
+                        "Project accounting",
+                        "Product marketing"
                     ],
                     correct: 1
                 },
                 {
-                    question: "La responsabilité principale du Product Owner est de :",
+                    question: "The primary responsibility of the Product Owner is to:",
                     options: [
-                        "Faciliter les cérémonies Scrum",
-                        "Coder les fonctionnalités",
-                        "Maximiser la valeur du produit",
-                        "Gérer les ressources humaines"
+                        "Facilitate Scrum ceremonies",
+                        "Code features",
+                        "Maximize product value",
+                        "Manage human resources"
                     ],
                     correct: 2
                 }
@@ -1637,7 +1637,7 @@ const quizData = {
             title: "Statistics and Trends (Questions 11-20)",
             questions: [
                 {
-                    question: "Quelle combinaison de méthodologies représente 75% des projets Agile ?",
+                    question: "Which combination of methodologies represents 75% of Agile projects?",
                     options: [
                         "Scrum, Waterfall, PRINCE2, PMI",
                         "Scrum, Scrumban, Scrum/XP, Kanban",
@@ -1647,17 +1647,17 @@ const quizData = {
                     correct: 1
                 },
                 {
-                    question: "Le rapport PMI \"Pulse of the Profession\" provient d'une organisation historiquement :",
+                    question: "The PMI \"Pulse of the Profession\" report comes from an organization historically:",
                     options: [
-                        "Focalisée sur Agile",
-                        "Enracinée dans les méthodes traditionnelles",
-                        "Exclusivement technologique",
+                        "Focused on Agile",
+                        "Rooted in traditional methods",
+                        "Exclusively technological",
                         "Anti-Agile"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Quel pourcentage de projets était purement Agile selon le PMI (2018) ?",
+                    question: "What percentage of projects were purely Agile according to PMI (2018)?",
                     options: [
                         "13%",
                         "23%",
@@ -1667,72 +1667,72 @@ const quizData = {
                     correct: 1
                 },
                 {
-                    question: "La somme des projets Hybrides et Agiles représente :",
+                    question: "The sum of Hybrid and Agile projects represents:",
                     options: [
-                        "36% des projets",
-                        "46% des projets",
-                        "53% des projets",
-                        "63% des projets"
+                        "36% of projects",
+                        "46% of projects",
+                        "53% of projects",
+                        "63% of projects"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Le rapport \"State of Agile\" de Verizon One est quelle édition mentionnée ?",
+                    question: "Which edition of the \"State of Agile\" report from Verizon One is mentioned?",
                     options: [
-                        "8ème édition",
-                        "10ème édition",
-                        "12ème édition",
-                        "15ème édition"
+                        "8th edition",
+                        "10th edition",
+                        "12th edition",
+                        "15th edition"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Le rapport Verizon One est légèrement biaisé vers quels secteurs ?",
+                    question: "The Verizon One report is slightly biased toward which sectors?",
                     options: [
-                        "Agriculture et manufacture",
-                        "Technologie et finance",
-                        "Santé et éducation",
-                        "Tourisme et hôtellerie"
+                        "Agriculture and manufacturing",
+                        "Technology and finance",
+                        "Healthcare and education",
+                        "Tourism and hospitality"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Scrum n'est pas juste une option parmi d'autres, c'est :",
+                    question: "Scrum is not just one option among others, it is:",
                     options: [
-                        "Le choix le moins populaire",
-                        "Le choix le plus populaire de loin",
-                        "Égal aux autres frameworks",
-                        "En déclin"
+                        "The least popular choice",
+                        "By far the most popular choice",
+                        "Equal to other frameworks",
+                        "In decline"
                     ],
                     correct: 1
                 },
                 {
-                    question: "L'adoption d'Agile concerne quel type d'entreprises ?",
+                    question: "Agile adoption concerns what type of companies?",
                     options: [
-                        "Uniquement les startups tech",
-                        "Uniquement les PME",
-                        "Entreprises de toutes tailles, y compris les grandes corporations",
-                        "Uniquement les entreprises en difficulté"
+                        "Only tech startups",
+                        "Only SMEs",
+                        "Companies of all sizes, including large corporations",
+                        "Only struggling companies"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Le changement vers Agile est décrit comme :",
+                    question: "The shift toward Agile is described as:",
                     options: [
-                        "Tactique et temporaire",
-                        "Stratégique et durable",
-                        "Expérimental et incertain",
-                        "Obligatoire et réglementé"
+                        "Tactical and temporary",
+                        "Strategic and sustainable",
+                        "Experimental and uncertain",
+                        "Mandatory and regulated"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Les enquêtes sur Agile sont représentatives de :",
+                    question: "Agile surveys are representative of:",
                     options: [
-                        "Uniquement les développeurs",
-                        "Uniquement les managers",
-                        "Entreprises de toutes tailles",
-                        "Uniquement les consultants"
+                        "Only developers",
+                        "Only managers",
+                        "Companies of all sizes",
+                        "Only consultants"
                     ],
                     correct: 2
                 }
@@ -1743,27 +1743,27 @@ const quizData = {
             title: "Scaling Frameworks (Questions 21-30)",
             questions: [
                 {
-                    question: "Quand les entreprises coordonnent plusieurs équipes Agile, elles :",
+                    question: "When companies coordinate multiple Agile teams, they:",
                     options: [
-                        "Remplacent Scrum par un autre framework",
-                        "Construisent des couches de coordination au-dessus de Scrum",
-                        "Abandonnent Agile",
-                        "Fusionnent toutes les équipes en une seule"
+                        "Replace Scrum with another framework",
+                        "Build coordination layers on top of Scrum",
+                        "Abandon Agile",
+                        "Merge all teams into one"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Le fonctionnement d'une équipe Scrum unique reste :",
+                    question: "The operation of a single Scrum team remains:",
                     options: [
-                        "Secondaire dans la mise à l'échelle",
-                        "Le moteur principal de la livraison de valeur",
-                        "Complètement transformé",
-                        "Obsolète"
+                        "Secondary in scaling",
+                        "The main engine of value delivery",
+                        "Completely transformed",
+                        "Obsolete"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Combien de frameworks majeurs de mise à l'échelle sont mentionnés ?",
+                    question: "How many major scaling frameworks are mentioned?",
                     options: [
                         "2",
                         "3",
@@ -1773,7 +1773,7 @@ const quizData = {
                     correct: 2
                 },
                 {
-                    question: "SAFe est l'acronyme de :",
+                    question: "SAFe is the acronym for:",
                     options: [
                         "Safe Agile Framework for Enterprises",
                         "Scaled Agile Framework",
@@ -1783,7 +1783,7 @@ const quizData = {
                     correct: 1
                 },
                 {
-                    question: "LeSS signifie :",
+                    question: "LeSS stands for:",
                     options: [
                         "Less Effort Scrum System",
                         "Large Enterprise Scrum Strategy",
@@ -1793,52 +1793,52 @@ const quizData = {
                     correct: 2
                 },
                 {
-                    question: "Le rôle de Scrum dans les frameworks de mise à l'échelle est décrit comme :",
+                    question: "The role of Scrum in scaling frameworks is described as:",
                     options: [
-                        "Optionnel",
-                        "Fondamental/essentiel",
-                        "Complémentaire",
-                        "Obsolète"
+                        "Optional",
+                        "Fundamental/essential",
+                        "Complementary",
+                        "Obsolete"
                     ],
                     correct: 1
                 },
                 {
-                    question: "\"Scrum of Scrums\" permet de :",
+                    question: "\"Scrum of Scrums\" allows to:",
                     options: [
-                        "Former plusieurs Scrum Masters simultanément",
-                        "Coordonner le travail de plusieurs équipes Scrum",
-                        "Certifier des organisations entières",
-                        "Automatiser les processus Scrum"
+                        "Train multiple Scrum Masters simultaneously",
+                        "Coordinate the work of multiple Scrum teams",
+                        "Certify entire organizations",
+                        "Automate Scrum processes"
                     ],
                     correct: 1
                 },
                 {
-                    question: "DAD (Disciplined Agile Delivery) est construit sur :",
+                    question: "DAD (Disciplined Agile Delivery) is built on:",
                     options: [
-                        "Waterfall uniquement",
-                        "Scrum comme base",
+                        "Waterfall only",
+                        "Scrum as a base",
                         "PRINCE2",
                         "Six Sigma"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Tous les frameworks de mise à l'échelle utilisent Scrum au niveau :",
+                    question: "All scaling frameworks use Scrum at the:",
                     options: [
-                        "Organisationnel uniquement",
-                        "Stratégique uniquement",
-                        "De l'équipe",
-                        "Du portefeuille uniquement"
+                        "Organizational level only",
+                        "Strategic level only",
+                        "Team level",
+                        "Portfolio level only"
                     ],
                     correct: 2
                 },
                 {
-                    question: "La simplicité et l'efficacité de Scrum en font :",
+                    question: "The simplicity and effectiveness of Scrum make it:",
                     options: [
-                        "Un framework limité aux petits projets",
-                        "Le point de départ idéal pour la mise à l'échelle",
-                        "Un framework incompatible avec la mise à l'échelle",
-                        "Une option parmi d'autres"
+                        "A framework limited to small projects",
+                        "The ideal starting point for scaling",
+                        "A framework incompatible with scaling",
+                        "One option among others"
                     ],
                     correct: 1
                 }
@@ -1849,102 +1849,102 @@ const quizData = {
             title: "Application and Understanding (Questions 31-40)",
             questions: [
                 {
-                    question: "Comprendre Scrum est décrit comme :",
+                    question: "Understanding Scrum is described as:",
                     options: [
-                        "Utile mais pas nécessaire",
-                        "Fondamental pour comprendre la gestion de projet moderne",
-                        "Pertinent uniquement pour les développeurs",
-                        "Une compétence optionnelle"
+                        "Useful but not necessary",
+                        "Fundamental to understanding modern project management",
+                        "Relevant only for developers",
+                        "An optional skill"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Le passage à Agile dans les grandes organisations établies indique que :",
+                    question: "The shift to Agile in large established organizations indicates that:",
                     options: [
-                        "Agile est uniquement pour les startups",
-                        "Agile est mature et éprouvé",
-                        "Les méthodes traditionnelles sont mortes",
-                        "Toutes les entreprises doivent être Agile"
+                        "Agile is only for startups",
+                        "Agile is mature and proven",
+                        "Traditional methods are dead",
+                        "All companies must be Agile"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Un Project Manager dans un contexte Agile doit :",
+                    question: "A Project Manager in an Agile context must:",
                     options: [
-                        "Maintenir son rôle traditionnel de contrôle",
-                        "Apprendre à travailler comme facilitateur",
-                        "Abandonner complètement la gestion",
-                        "Devenir développeur"
+                        "Maintain their traditional control role",
+                        "Learn to work as a facilitator",
+                        "Completely abandon management",
+                        "Become a developer"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Le terme \"master facilitator\" se réfère à :",
+                    question: "The term \"master facilitator\" refers to:",
                     options: [
-                        "Le Product Owner",
-                        "Le Scrum Master",
-                        "L'équipe de développement",
-                        "Les stakeholders"
+                        "The Product Owner",
+                        "The Scrum Master",
+                        "The development team",
+                        "The stakeholders"
                     ],
                     correct: 1
                 },
                 {
-                    question: "L'influence de Scrum est dominante même dans :",
+                    question: "Scrum's influence is dominant even in:",
                     options: [
-                        "Les projets non-Agile",
-                        "Les hybrides Scrum/Kanban et Scrum/XP",
-                        "Les projets traditionnels uniquement",
-                        "Les projets Waterfall"
+                        "Non-Agile projects",
+                        "Scrum/Kanban and Scrum/XP hybrids",
+                        "Traditional projects only",
+                        "Waterfall projects"
                     ],
                     correct: 1
                 },
                 {
-                    question: "La transition vers Agile est motivée par :",
+                    question: "The transition to Agile is motivated by:",
                     options: [
-                        "La mode et les tendances",
-                        "Les exigences réglementaires",
-                        "La nécessité compétitive",
-                        "La réduction de personnel"
+                        "Fashion and trends",
+                        "Regulatory requirements",
+                        "Competitive necessity",
+                        "Staff reduction"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Le concept d'équipe auto-organisée signifie que l'équipe :",
+                    question: "The concept of a self-organizing team means that the team:",
                     options: [
-                        "N'a pas de structure",
-                        "Décide de la façon d'accomplir son travail",
-                        "Travaille sans objectifs",
-                        "N'a pas besoin de Scrum Master"
+                        "Has no structure",
+                        "Decides how to accomplish their work",
+                        "Works without objectives",
+                        "Doesn't need a Scrum Master"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Le Scrum Master est responsable de :",
+                    question: "The Scrum Master is responsible for:",
                     options: [
-                        "Définir les fonctionnalités du produit",
-                        "Garder l'équipe sur la bonne voie et faciliter",
-                        "Approuver le budget",
-                        "Embaucher les membres de l'équipe"
+                        "Defining product features",
+                        "Keeping the team on track and facilitating",
+                        "Approving the budget",
+                        "Hiring team members"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Un Business Analyst peut agir comme facilitateur, ce qui montre que :",
+                    question: "A Business Analyst can act as a facilitator, which shows that:",
                     options: [
-                        "Les rôles Scrum sont rigides",
-                        "Il existe des variations dans l'implémentation de Scrum",
-                        "Les Business Analysts remplacent les Scrum Masters",
-                        "Scrum n'a pas de structure"
+                        "Scrum roles are rigid",
+                        "There are variations in Scrum implementation",
+                        "Business Analysts replace Scrum Masters",
+                        "Scrum has no structure"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Le document conclut que \"l'ère d'Agile est officiellement arrivée\", ce qui signifie :",
+                    question: "The document concludes that \"the era of Agile has officially arrived\", which means:",
                     options: [
-                        "Agile est une tendance passagère",
-                        "Agile est maintenant mainstream et établi",
-                        "Agile remplacera tout",
-                        "Agile est en déclin"
+                        "Agile is a passing trend",
+                        "Agile is now mainstream and established",
+                        "Agile will replace everything",
+                        "Agile is in decline"
                     ],
                     correct: 1
                 }
@@ -1959,82 +1959,82 @@ const quizData = {
             title: "Agile Evolution and Context (Questions 1-8)",
             questions: [
                 {
-                    question: "Quelle affirmation décrit le mieux le statut actuel d'Agile ?",
+                    question: "Which statement best describes the current status of Agile?",
                     options: [
-                        "Agile reste une approche de niche pour startups",
-                        "Agile est une alternative intéressante aux méthodes traditionnelles",
-                        "Agile est devenu une force mainstream avec environ 50% des projets",
-                        "Agile est en phase de déclin"
+                        "Agile remains a niche approach for startups",
+                        "Agile is an interesting alternative to traditional methods",
+                        "Agile has become a mainstream force with approximately 50% of projects",
+                        "Agile is in decline"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Quelle est la signification de \"53% des projets ont quitté le modèle purement traditionnel\" ?",
+                    question: "What is the significance of \"53% of projects have left the purely traditional model\"?",
                     options: [
-                        "53% sont devenus 100% Agile",
-                        "53% utilisent soit Agile pur, soit un modèle Hybride",
-                        "53% ont échoué",
-                        "53% utilisent Waterfall modifié"
+                        "53% have become 100% Agile",
+                        "53% use either pure Agile or a Hybrid model",
+                        "53% have failed",
+                        "53% use modified Waterfall"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Pourquoi le fait que le PMI rapporte des données Agile est-il significatif ?",
+                    question: "Why is the fact that PMI reports Agile data significant?",
                     options: [
-                        "Le PMI est pro-Agile depuis toujours",
-                        "Le PMI était historiquement enraciné dans les méthodes traditionnelles",
-                        "Le PMI s'oppose à Agile",
-                        "Le PMI n'a pas d'opinion sur Agile"
+                        "PMI has always been pro-Agile",
+                        "PMI was historically rooted in traditional methods",
+                        "PMI opposes Agile",
+                        "PMI has no opinion on Agile"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Quelle proportion des répondants PMI provient d'organisations avec plus de $500M de revenus annuels ?",
+                    question: "What proportion of PMI respondents comes from organizations with more than $500M in annual revenue?",
                     options: [
-                        "Moins d'un tiers",
-                        "Environ un tiers",
-                        "Plus de la moitié",
-                        "Presque tous"
+                        "Less than one third",
+                        "About one third",
+                        "More than half",
+                        "Almost all"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Cette statistique sur les grandes organisations prouve que :",
+                    question: "This statistic about large organizations proves that:",
                     options: [
-                        "Agile est réservé aux grandes entreprises",
-                        "Les grandes entreprises établies adoptent également Agile",
-                        "Seules les petites entreprises utilisent Agile",
-                        "La taille de l'entreprise n'a pas d'importance"
+                        "Agile is reserved for large companies",
+                        "Large established companies also adopt Agile",
+                        "Only small companies use Agile",
+                        "Company size doesn't matter"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Le rapport \"State of Agile\" de Verizon One en est à quelle édition ?",
+                    question: "Which edition of the \"State of Agile\" report from Verizon One is mentioned?",
                     options: [
-                        "5ème édition",
-                        "8ème édition",
-                        "12ème édition",
-                        "20ème édition"
+                        "5th edition",
+                        "8th edition",
+                        "12th edition",
+                        "20th edition"
                     ],
                     correct: 2
                 },
                 {
-                    question: "La répétition des éditions du rapport Verizon One démontre :",
+                    question: "The repetition of editions of the Verizon One report demonstrates:",
                     options: [
-                        "Que c'est une tendance nouvelle",
-                        "La maturité et la durabilité d'Agile dans l'industrie",
-                        "Que les données sont obsolètes",
-                        "Un manque d'innovation"
+                        "That it's a new trend",
+                        "The maturity and sustainability of Agile in the industry",
+                        "That the data is obsolete",
+                        "A lack of innovation"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Le cours affirme que \"l'ère d'Agile a officiellement ____\" :",
+                    question: "The course states that \"the era of Agile has officially ____\":",
                     options: [
-                        "Commencé",
-                        "Été annoncée",
-                        "Arrivé",
-                        "Échoué"
+                        "Begun",
+                        "Been announced",
+                        "Arrived",
+                        "Failed"
                     ],
                     correct: 2
                 }
@@ -2045,7 +2045,7 @@ const quizData = {
             title: "Scrum Domination (Questions 9-16)",
             questions: [
                 {
-                    question: "Scrum représente quel pourcentage exact des projets Agile selon Verizon One ?",
+                    question: "What exact percentage of Agile projects does Scrum represent according to Verizon One?",
                     options: [
                         "46%",
                         "51%",
@@ -2055,57 +2055,57 @@ const quizData = {
                     correct: 2
                 },
                 {
-                    question: "Les méthodologies Scrum, Scrumban, Scrum/XP et Kanban représentent ensemble :",
+                    question: "Scrum, Scrumban, Scrum/XP and Kanban methodologies together represent:",
                     options: [
-                        "65% des projets",
-                        "70% des projets",
-                        "75% des projets",
-                        "80% des projets"
+                        "65% of projects",
+                        "70% of projects",
+                        "75% of projects",
+                        "80% of projects"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Cette statistique de 75% démontre que :",
+                    question: "This 75% statistic demonstrates that:",
                     options: [
-                        "Kanban est plus populaire que Scrum",
-                        "L'influence de Scrum est dominante même dans les hybrides",
-                        "Les équipes évitent Scrum",
-                        "Scrum est en déclin"
+                        "Kanban is more popular than Scrum",
+                        "Scrum's influence is dominant even in hybrids",
+                        "Teams avoid Scrum",
+                        "Scrum is in decline"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Scrum n'est pas \"juste une option parmi plusieurs\", il est :",
+                    question: "Scrum is not \"just one option among many\", it is:",
                     options: [
-                        "Le choix minoritaire",
-                        "Égal aux autres",
-                        "Le choix le plus populaire de loin (by far)",
-                        "En compétition serrée"
+                        "The minority choice",
+                        "Equal to others",
+                        "By far the most popular choice",
+                        "In close competition"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Pourquoi Scrum est-il si populaire au niveau de l'équipe ?",
+                    question: "Why is Scrum so popular at the team level?",
                     options: [
-                        "C'est le moins cher",
-                        "Son efficacité avec les petites équipes",
-                        "C'est obligatoire",
-                        "C'est le plus ancien"
+                        "It's the cheapest",
+                        "Its effectiveness with small teams",
+                        "It's mandatory",
+                        "It's the oldest"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Scrumban est :",
+                    question: "Scrumban is:",
                     options: [
-                        "Un remplacement de Scrum",
-                        "Un framework complètement différent",
-                        "Un hybride de Scrum et Kanban",
-                        "Une certification"
+                        "A replacement for Scrum",
+                        "A completely different framework",
+                        "A hybrid of Scrum and Kanban",
+                        "A certification"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Scrum/XP combine Scrum avec :",
+                    question: "Scrum/XP combines Scrum with:",
                     options: [
                         "Extreme Programming",
                         "Extra Projects",
@@ -2115,12 +2115,12 @@ const quizData = {
                     correct: 0
                 },
                 {
-                    question: "Le fait que Scrum soit souvent combiné avec d'autres méthodes montre :",
+                    question: "The fact that Scrum is often combined with other methods shows:",
                     options: [
-                        "Que Scrum est incomplet",
-                        "La flexibilité et l'adaptabilité de Scrum",
-                        "Que Scrum doit être abandonné",
-                        "Que Scrum est dépassé"
+                        "That Scrum is incomplete",
+                        "The flexibility and adaptability of Scrum",
+                        "That Scrum should be abandoned",
+                        "That Scrum is outdated"
                     ],
                     correct: 1
                 }
@@ -2131,37 +2131,37 @@ const quizData = {
             title: "Scrum as Building Block (Questions 17-24)",
             questions: [
                 {
-                    question: "Scrum sert de \"building block\" (bloc de construction) pour :",
+                    question: "Scrum serves as a \"building block\" for:",
                     options: [
-                        "Les petits projets uniquement",
-                        "Tous les frameworks majeurs de mise à l'échelle",
-                        "Les projets traditionnels",
-                        "Rien en particulier"
+                        "Small projects only",
+                        "All major scaling frameworks",
+                        "Traditional projects",
+                        "Nothing in particular"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Quand les organisations mettent à l'échelle Agile, elles :",
+                    question: "When organizations scale Agile, they:",
                     options: [
-                        "Remplacent Scrum par autre chose",
-                        "Abandonnent Scrum",
-                        "Construisent des couches de coordination sur Scrum",
-                        "Éliminent les équipes Scrum"
+                        "Replace Scrum with something else",
+                        "Abandon Scrum",
+                        "Build coordination layers on top of Scrum",
+                        "Eliminate Scrum teams"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Dans les frameworks de mise à l'échelle, le fonctionnement d'une équipe Scrum reste :",
+                    question: "In scaling frameworks, the operation of a Scrum team remains:",
                     options: [
-                        "Complètement transformé",
-                        "Le moteur principal (core engine) de livraison de valeur",
-                        "Secondaire",
-                        "Obsolète"
+                        "Completely transformed",
+                        "The core engine of value delivery",
+                        "Secondary",
+                        "Obsolete"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Combien de frameworks majeurs de mise à l'échelle sont explicitement nommés dans le cours ?",
+                    question: "How many major scaling frameworks are explicitly named in the course?",
                     options: [
                         "2",
                         "3",
@@ -2171,7 +2171,7 @@ const quizData = {
                     correct: 2
                 },
                 {
-                    question: "SAFe signifie :",
+                    question: "SAFe stands for:",
                     options: [
                         "Safe Agile Framework",
                         "Scaled Agile Framework",
@@ -2181,7 +2181,7 @@ const quizData = {
                     correct: 1
                 },
                 {
-                    question: "DAD signifie :",
+                    question: "DAD stands for:",
                     options: [
                         "Daily Agile Delivery",
                         "Distributed Agile Development",
@@ -2191,7 +2191,7 @@ const quizData = {
                     correct: 2
                 },
                 {
-                    question: "LeSS signifie :",
+                    question: "LeSS stands for:",
                     options: [
                         "Lean Enterprise Scrum System",
                         "Large Scale Scrum",
@@ -2201,12 +2201,12 @@ const quizData = {
                     correct: 1
                 },
                 {
-                    question: "\"Scrum of Scrums\" est utilisé pour :",
+                    question: "\"Scrum of Scrums\" is used to:",
                     options: [
-                        "Certifier plusieurs Scrum Masters",
-                        "Coordonner plusieurs équipes Scrum",
-                        "Former des équipes",
-                        "Évaluer la performance"
+                        "Certify multiple Scrum Masters",
+                        "Coordinate multiple Scrum teams",
+                        "Train teams",
+                        "Evaluate performance"
                     ],
                     correct: 1
                 }
@@ -2217,7 +2217,7 @@ const quizData = {
             title: "Roles and Leadership (Questions 25-32)",
             questions: [
                 {
-                    question: "Combien de rôles principaux y a-t-il dans Scrum ?",
+                    question: "How many primary roles are there in Scrum?",
                     options: [
                         "2",
                         "3",
@@ -2227,72 +2227,72 @@ const quizData = {
                     correct: 1
                 },
                 {
-                    question: "Le rôle d'un leader dans un projet Agile devrait être celui d'un :",
+                    question: "The role of a leader in an Agile project should be that of a:",
                     options: [
-                        "Superviseur",
+                        "Supervisor",
                         "Micromanager",
-                        "Facilitateur",
-                        "Dictateur"
+                        "Facilitator",
+                        "Dictator"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Le Scrum Master est décrit comme un :",
+                    question: "The Scrum Master is described as a:",
                     options: [
-                        "Chef de projet traditionnel",
+                        "Traditional project manager",
                         "\"Master facilitator\"",
-                        "Manager hiérarchique",
-                        "Contrôleur de qualité"
+                        "Hierarchical manager",
+                        "Quality controller"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Le Scrum Master doit être \"steeped in\" (imprégné de) :",
+                    question: "The Scrum Master should be \"steeped in\":",
                     options: [
-                        "La gestion traditionnelle",
-                        "Des moyens très nouveaux et différents de diriger des équipes",
-                        "Les technologies de développement",
-                        "La gestion financière"
+                        "Traditional management",
+                        "Very new and different means of leading teams",
+                        "Development technologies",
+                        "Financial management"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Le style de leadership central à Scrum est :",
+                    question: "The leadership style central to Scrum is:",
                     options: [
-                        "Autoritaire",
-                        "Transactionnel",
-                        "Servant leadership (leadership serviteur)",
+                        "Authoritarian",
+                        "Transactional",
+                        "Servant leadership",
                         "Laissez-faire"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Le Scrum Master est responsable de :",
+                    question: "The Scrum Master is responsible for:",
                     options: [
-                        "Définir toutes les exigences produit",
-                        "Faciliter et garder l'équipe sur la bonne voie",
-                        "Coder les fonctionnalités",
-                        "Approuver le budget"
+                        "Defining all product requirements",
+                        "Facilitating and keeping the team on track",
+                        "Coding features",
+                        "Approving the budget"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Le Product Owner est responsable de :",
+                    question: "The Product Owner is responsible for:",
                     options: [
-                        "Faciliter les réunions",
-                        "Maximiser la valeur du produit",
-                        "Gérer les ressources humaines",
-                        "Superviser l'équipe"
+                        "Facilitating meetings",
+                        "Maximizing product value",
+                        "Managing human resources",
+                        "Supervising the team"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Dans des variations de Scrum, qui peut \"agir comme facilitateur\" ?",
+                    question: "In variations of Scrum, who can \"act as a facilitator\"?",
                     options: [
-                        "Le CFO",
-                        "Un Business Analyst",
-                        "Le CEO",
-                        "Le département RH"
+                        "The CFO",
+                        "A Business Analyst",
+                        "The CEO",
+                        "The HR department"
                     ],
                     correct: 1
                 }
@@ -2303,27 +2303,27 @@ const quizData = {
             title: "Principles and Understanding (Questions 33-40)",
             questions: [
                 {
-                    question: "Les Project Managers dans un contexte Agile \"tentent de travailler comme\" :",
+                    question: "Project Managers in an Agile context \"try to work as\":",
                     options: [
-                        "Superviseurs traditionnels",
-                        "Facilitateurs",
-                        "Contrôleurs",
-                        "Auditeurs"
+                        "Traditional supervisors",
+                        "Facilitators",
+                        "Controllers",
+                        "Auditors"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Le concept d'équipes \"auto-organisées\" (self-organizing) est :",
+                    question: "The concept of \"self-organizing\" teams is:",
                     options: [
-                        "Contraire aux principes Scrum",
-                        "Central à Scrum et Agile",
-                        "Optionnel",
-                        "Dépassé"
+                        "Contrary to Scrum principles",
+                        "Central to Scrum and Agile",
+                        "Optional",
+                        "Outdated"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Selon le PMI, quel pourcentage d'organisations considère \"l'agilité\" comme essentielle pour rester compétitif ?",
+                    question: "According to PMI, what percentage of organizations considers \"agility\" essential to remain competitive?",
                     options: [
                         "51%",
                         "61%",
@@ -2333,56 +2333,56 @@ const quizData = {
                     correct: 2
                 },
                 {
-                    question: "Cette statistique (71%) indique que le passage à Agile est :",
+                    question: "This statistic (71%) indicates that the shift to Agile is:",
                     options: [
-                        "Une tendance passagère",
-                        "Un mouvement stratégique",
-                        "Optionnel",
-                        "Uniquement technologique"
+                        "A passing trend",
+                        "A strategic movement",
+                        "Optional",
+                        "Only technological"
                     ],
                     correct: 1
                 },
                 {
-                    question: "La compréhension de Scrum est décrite comme :",
+                    question: "Understanding Scrum is described as:",
                     options: [
-                        "Utile pour certains rôles",
-                        "Optionnelle",
-                        "Fondamentale pour comprendre la gestion de projet moderne",
-                        "Réservée aux développeurs"
+                        "Useful for certain roles",
+                        "Optional",
+                        "Fundamental to understanding modern project management",
+                        "Reserved for developers"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Le rapport Verizon One est légèrement biaisé vers quels secteurs ?",
+                    question: "The Verizon One report is slightly biased toward which sectors?",
                     options: [
-                        "Santé et éducation",
-                        "Technologie et finance",
-                        "Manufacture et agriculture",
-                        "Commerce de détail"
+                        "Healthcare and education",
+                        "Technology and finance",
+                        "Manufacturing and agriculture",
+                        "Retail"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Malgré ce biais, les données restent :",
+                    question: "Despite this bias, the data remains:",
                     options: [
-                        "Inutilisables",
-                        "Représentatives et significatives",
-                        "Complètement faussées",
-                        "Sans valeur"
+                        "Unusable",
+                        "Representative and significant",
+                        "Completely distorted",
+                        "Worthless"
                     ],
                     correct: 1
                 },
                 {
-                    question: "La combinaison des données PMI et Verizon One fournit :",
+                    question: "The combination of PMI and Verizon One data provides:",
                     options: [
-                        "Des informations contradictoires",
-                        "Une image claire de la domination de Scrum dans Agile",
-                        "Des preuves que Scrum est en déclin",
-                        "Aucune conclusion utile"
+                        "Contradictory information",
+                        "A clear picture of Scrum's dominance in Agile",
+                        "Evidence that Scrum is in decline",
+                        "No useful conclusion"
                     ],
                     correct: 1
                 }
             ]
         }
     ]
-};
+}
