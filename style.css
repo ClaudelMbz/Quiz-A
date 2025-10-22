@@ -99,6 +99,14 @@ body {
     background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
 }
 
+.quiz-set:nth-child(5) {
+    background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);
+}
+
+.quiz-set:nth-child(6) {
+    background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
+}
+
 .quiz-set h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;

@@ -54,10 +54,12 @@ function loadQuiz() {
     // Mettre à jour les informations du header
     document.getElementById('current-quiz').textContent = `Section ${quiz.id}: ${quiz.title}`;
     const setNames = {
-        1: 'Test 1 - Questions Essentielles',
-        2: 'Test 2 - Questions Avancées',
-        3: 'Test 3 - Situations Pratiques',
-        4: 'Test 4 - Modules Complets'
+        1: 'Test 1 - Essential Questions',
+        2: 'Test 2 - Advanced Questions',
+        3: 'Test 3 - Practical Situations',
+        4: 'Test 4 - Complete Modules',
+        5: 'Test 5 - Advanced Scrum Agile',
+        6: 'Test 6 - Scrum Expertise'
     };
     document.getElementById('quiz-set-info').textContent = setNames[currentQuizSet];
     
@@ -445,6 +447,8 @@ function getCurrentQuizData() {
         case 2: return quizData.set2;
         case 3: return quizData.set3;
         case 4: return quizData.set4;
+        case 5: return quizData.set5;
+        case 6: return quizData.set6;
         default: return quizData.set1;
     }
 }

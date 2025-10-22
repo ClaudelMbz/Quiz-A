@@ -1,35 +1,35 @@
 // Données des quiz Agile for Project Management
 const quizData = {
-    // Test 1: 30 Questions Essentielles - Applied Scrum for Agile Project Management
+    // Test 1: 30 Essential Questions - Applied Scrum for Agile Project Management
     set1: [
         {
             id: 1,
-            title: "Fondamentaux de Scrum (Questions 1-8)",
+            title: "Scrum Fundamentals (Questions 1-8)",
             questions: [
                 {
-                    question: "Quels sont les trois piliers de Scrum?",
+                    question: "What are the three pillars of Scrum?",
                     options: [
-                        "Planification, Exécution, Contrôle",
-                        "Transparence, Inspection, Adaptation",
-                        "Collaboration, Itération, Amélioration",
-                        "Vision, Engagement, Focus"
+                        "Planning, Execution, Control",
+                        "Transparency, Inspection, Adaptation",
+                        "Collaboration, Iteration, Improvement",
+                        "Vision, Commitment, Focus"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Quelle est la durée maximale recommandée pour un Sprint?",
+                    question: "What is the maximum recommended duration for a Sprint?",
                     options: [
-                        "2 semaines",
-                        "1 mois",
-                        "6 semaines",
-                        "3 mois"
+                        "2 weeks",
+                        "1 month",
+                        "6 weeks",
+                        "3 months"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Combien de rôles officiels existe-t-il dans Scrum?",
+                    question: "How many official roles exist in Scrum?",
                     options: [
-                        "2 (Product Owner et Scrum Master)",
+                        "2 (Product Owner and Scrum Master)",
                         "3 (Product Owner, Scrum Master, Development Team)",
                         "4 (Product Owner, Scrum Master, Development Team, Stakeholders)",
                         "5 (Product Owner, Scrum Master, Developers, Testers, Designers)"
@@ -37,7 +37,7 @@ const quizData = {
                     correct: 1
                 },
                 {
-                    question: "Qui est responsable de maximiser la valeur du produit?",
+                    question: "Who is responsible for maximizing product value?",
                     options: [
                         "Scrum Master",
                         "Development Team",
@@ -47,42 +47,42 @@ const quizData = {
                     correct: 2
                 },
                 {
-                    question: "Quelle est la taille idéale d'une Development Team?",
+                    question: "What is the ideal size of a Development Team?",
                     options: [
-                        "3-5 personnes",
-                        "5-9 personnes",
-                        "3-9 personnes",
-                        "10-15 personnes"
+                        "3-5 people",
+                        "5-9 people",
+                        "3-9 people",
+                        "10-15 people"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Les valeurs de Scrum sont:",
+                    question: "The Scrum values are:",
                     options: [
-                        "Courage, Focus, Engagement, Respect, Ouverture",
-                        "Collaboration, Communication, Simplicité, Feedback",
-                        "Qualité, Rapidité, Efficacité, Innovation",
-                        "Transparence, Discipline, Excellence, Livraison"
+                        "Courage, Focus, Commitment, Respect, Openness",
+                        "Collaboration, Communication, Simplicity, Feedback",
+                        "Quality, Speed, Efficiency, Innovation",
+                        "Transparency, Discipline, Excellence, Delivery"
                     ],
                     correct: 0
                 },
                 {
-                    question: "Qu'est-ce qu'un incrément de produit?",
+                    question: "What is a product increment?",
                     options: [
-                        "Une augmentation de la vélocité de l'équipe",
-                        "La somme de tous les éléments du Product Backlog complétés pendant un Sprint",
-                        "Un rapport d'avancement du projet",
-                        "Une estimation des story points"
+                        "An increase in team velocity",
+                        "The sum of all Product Backlog items completed during a Sprint",
+                        "A project progress report",
+                        "A story points estimation"
                     ],
                     correct: 1
                 },
                 {
-                    question: "La Definition of Done (DoD) est:",
+                    question: "The Definition of Done (DoD) is:",
                     options: [
-                        "Définie uniquement par le Product Owner",
-                        "Un accord partagé sur les critères de complétion d'un élément",
-                        "Changeable pendant le Sprint",
-                        "Optionnelle pour l'équipe"
+                        "Defined only by the Product Owner",
+                        "A shared agreement on the criteria for completion of an item",
+                        "Changeable during the Sprint",
+                        "Optional for the team"
                     ],
                     correct: 1
                 }
@@ -93,47 +93,47 @@ const quizData = {
             title: "Product Backlog & User Stories (Questions 9-13)",
             questions: [
                 {
-                    question: "Qui est responsable de la priorisation du Product Backlog?",
+                    question: "Who is responsible for Product Backlog prioritization?",
                     options: [
                         "Scrum Master",
                         "Development Team",
                         "Product Owner",
-                        "L'équipe entière vote"
+                        "The entire team votes"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Une User Story bien formée suit le format:",
+                    question: "A well-formed User Story follows the format:",
                     options: [
-                        "Quoi, Pourquoi, Comment",
-                        "En tant que [rôle], je veux [fonctionnalité], afin de [bénéfice]",
-                        "Objectif, Action, Résultat",
-                        "Problème, Solution, Validation"
+                        "What, Why, How",
+                        "As a [role], I want [functionality], so that [benefit]",
+                        "Objective, Action, Result",
+                        "Problem, Solution, Validation"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Qu'est-ce que le Product Backlog Refinement (Grooming)?",
+                    question: "What is Product Backlog Refinement (Grooming)?",
                     options: [
-                        "Un événement formel de Scrum d'une durée fixe",
-                        "Une activité continue pour clarifier et estimer les éléments du backlog",
-                        "Une réunion mensuelle avec les stakeholders",
-                        "La responsabilité exclusive du Product Owner"
+                        "A formal Scrum event with fixed duration",
+                        "An ongoing activity to clarify and estimate backlog items",
+                        "A monthly meeting with stakeholders",
+                        "The exclusive responsibility of the Product Owner"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Les critères d'acceptation servent à:",
+                    question: "Acceptance criteria serve to:",
                     options: [
-                        "Évaluer la performance de l'équipe",
-                        "Définir quand une User Story est considérée comme terminée",
-                        "Prioriser les fonctionnalités",
-                        "Calculer la vélocité"
+                        "Evaluate team performance",
+                        "Define when a User Story is considered done",
+                        "Prioritize features",
+                        "Calculate velocity"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Que signifie INVEST pour les User Stories?",
+                    question: "What does INVEST mean for User Stories?",
                     options: [
                         "Investigation, Negotiation, Validation, Estimation, Success, Testing",
                         "Independent, Negotiable, Valuable, Estimable, Small, Testable",
@@ -146,85 +146,85 @@ const quizData = {
         },
         {
             id: 3,
-            title: "Événements Scrum (Questions 14-21)",
+            title: "Scrum Events (Questions 14-21)",
             questions: [
                 {
-                    question: "Quelle est la durée maximale du Sprint Planning pour un Sprint de 2 semaines?",
+                    question: "What is the maximum duration of Sprint Planning for a 2-week Sprint?",
                     options: [
-                        "2 heures",
-                        "4 heures",
-                        "6 heures",
-                        "8 heures"
+                        "2 hours",
+                        "4 hours",
+                        "6 hours",
+                        "8 hours"
                     ],
                     correct: 1
                 },
                 {
-                    question: "L'objectif principal du Daily Scrum est:",
+                    question: "The main purpose of the Daily Scrum is:",
                     options: [
-                        "Faire un rapport au Scrum Master",
-                        "Synchroniser les activités et créer un plan pour les 24h suivantes",
-                        "Résoudre tous les problèmes techniques",
-                        "Mettre à jour le burndown chart"
+                        "To report to the Scrum Master",
+                        "To synchronize activities and create a plan for the next 24 hours",
+                        "To solve all technical problems",
+                        "To update the burndown chart"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Quelle est la durée du Daily Scrum?",
+                    question: "What is the duration of the Daily Scrum?",
                     options: [
                         "10 minutes",
                         "15 minutes",
                         "30 minutes",
-                        "Variable selon les besoins"
+                        "Variable according to needs"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Qui doit assister au Sprint Review?",
+                    question: "Who should attend the Sprint Review?",
                     options: [
-                        "Uniquement l'équipe Scrum",
-                        "L'équipe Scrum et les stakeholders clés",
-                        "Uniquement le Product Owner et les stakeholders",
-                        "Toute l'organisation"
+                        "Only the Scrum team",
+                        "The Scrum team and key stakeholders",
+                        "Only the Product Owner and stakeholders",
+                        "The entire organization"
                     ],
                     correct: 1
                 },
                 {
-                    question: "La durée maximale du Sprint Review pour un Sprint d'un mois est:",
+                    question: "The maximum duration of the Sprint Review for a one-month Sprint is:",
                     options: [
-                        "2 heures",
-                        "3 heures",
-                        "4 heures",
-                        "8 heures"
+                        "2 hours",
+                        "3 hours",
+                        "4 hours",
+                        "8 hours"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Le Sprint Retrospective se concentre sur:",
+                    question: "The Sprint Retrospective focuses on:",
                     options: [
-                        "Le produit et ses fonctionnalités",
-                        "Le processus, les personnes et les outils",
-                        "Les objectifs de l'organisation",
-                        "La vélocité et les estimations"
+                        "The product and its features",
+                        "The process, people, and tools",
+                        "Organizational objectives",
+                        "Velocity and estimates"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Peut-on annuler un Sprint?",
+                    question: "Can a Sprint be cancelled?",
                     options: [
-                        "Non, jamais",
-                        "Oui, si l'équipe le décide",
-                        "Oui, uniquement le Product Owner peut l'annuler",
-                        "Oui, si le Scrum Master l'approuve"
+                        "No, never",
+                        "Yes, if the team decides",
+                        "Yes, only the Product Owner can cancel it",
+                        "Yes, if the Scrum Master approves it"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Que se passe-t-il avec le travail non terminé à la fin d'un Sprint?",
+                    question: "What happens with unfinished work at the end of a Sprint?",
                     options: [
-                        "Il est automatiquement reporté au Sprint suivant",
-                        "Il est considéré comme terminé à 90%",
-                        "Il retourne au Product Backlog et doit être re-estimé",
-                        "Il est supprimé définitivement"
+                        "It is automatically carried over to the next Sprint",
+                        "It is considered 90% complete",
+                        "It returns to the Product Backlog and must be re-estimated",
+                        "It is permanently deleted"
                     ],
                     correct: 2
                 }
@@ -232,55 +232,55 @@ const quizData = {
         },
         {
             id: 4,
-            title: "Rôles et Responsabilités (Questions 22-26)",
+            title: "Roles and Responsibilities (Questions 22-26)",
             questions: [
                 {
-                    question: "Le rôle principal du Scrum Master est:",
+                    question: "The main role of the Scrum Master is:",
                     options: [
-                        "Manager l'équipe et assigner les tâches",
-                        "Faciliter Scrum et supprimer les impediments",
-                        "Prendre les décisions techniques",
-                        "Gérer le budget du projet"
+                        "Manage the team and assign tasks",
+                        "Facilitate Scrum and remove impediments",
+                        "Make technical decisions",
+                        "Manage the project budget"
                     ],
                     correct: 1
                 },
                 {
-                    question: "La Development Team est:",
+                    question: "The Development Team is:",
                     options: [
-                        "Hiérarchisée avec des rôles spécialisés",
-                        "Auto-organisée et cross-fonctionnelle",
-                        "Managée par le Scrum Master",
-                        "Composée uniquement de développeurs"
+                        "Hierarchical with specialized roles",
+                        "Self-organized and cross-functional",
+                        "Managed by the Scrum Master",
+                        "Composed only of developers"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Le Product Owner peut-il déléguer ses responsabilités?",
+                    question: "Can the Product Owner delegate their responsibilities?",
                     options: [
-                        "Non, jamais",
-                        "Oui, mais il reste responsable (accountable)",
-                        "Oui, au Scrum Master uniquement",
-                        "Oui, complètement à l'équipe"
+                        "No, never",
+                        "Yes, but remains accountable",
+                        "Yes, to the Scrum Master only",
+                        "Yes, completely to the team"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Qui est responsable de la qualité du produit?",
+                    question: "Who is responsible for product quality?",
                     options: [
-                        "Uniquement les testeurs",
-                        "Le Scrum Master",
-                        "La Development Team entière",
-                        "Le Product Owner"
+                        "Only testers",
+                        "The Scrum Master",
+                        "The entire Development Team",
+                        "The Product Owner"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Le Scrum Master peut-il faire partie de la Development Team?",
+                    question: "Can the Scrum Master be part of the Development Team?",
                     options: [
-                        "Non, absolument interdit",
-                        "Oui, mais cela peut créer des conflits d'intérêts",
-                        "Oui, c'est obligatoire",
-                        "Seulement dans les petites équipes"
+                        "No, absolutely forbidden",
+                        "Yes, but this can create conflicts of interest",
+                        "Yes, it's mandatory",
+                        "Only in small teams"
                     ],
                     correct: 1
                 }
@@ -288,45 +288,45 @@ const quizData = {
         },
         {
             id: 5,
-            title: "Métriques et Amélioration Continue (Questions 27-30)",
+            title: "Metrics and Continuous Improvement (Questions 27-30)",
             questions: [
                 {
-                    question: "Qu'est-ce que la vélocité en Scrum?",
+                    question: "What is velocity in Scrum?",
                     options: [
-                        "La vitesse à laquelle l'équipe code",
-                        "La quantité de travail complétée par Sprint (en story points ou heures)",
-                        "Le nombre de bugs corrigés",
-                        "Le temps moyen de livraison"
+                        "The speed at which the team codes",
+                        "The amount of work completed per Sprint (in story points or hours)",
+                        "The number of bugs fixed",
+                        "The average delivery time"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Un burndown chart montre:",
+                    question: "A burndown chart shows:",
                     options: [
-                        "Les coûts du projet au fil du temps",
-                        "Le travail restant vs le temps",
-                        "La satisfaction des clients",
-                        "Les compétences de l'équipe"
+                        "Project costs over time",
+                        "Remaining work vs time",
+                        "Customer satisfaction",
+                        "Team skills"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Qu'est-ce qu'un impediment?",
+                    question: "What is an impediment?",
                     options: [
-                        "Une fonctionnalité complexe",
-                        "Un obstacle qui ralentit ou bloque l'équipe",
-                        "Une dette technique",
-                        "Un bug dans le code"
+                        "A complex feature",
+                        "An obstacle that slows down or blocks the team",
+                        "Technical debt",
+                        "A bug in the code"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Le concept de \"Time-boxing\" dans Scrum signifie:",
+                    question: "The concept of \"Time-boxing\" in Scrum means:",
                     options: [
-                        "Travailler uniquement pendant les heures de bureau",
-                        "Fixer une durée maximale pour les événements et Sprints",
-                        "Mesurer le temps passé sur chaque tâche",
-                        "Planifier les vacances de l'équipe"
+                        "Working only during office hours",
+                        "Setting a maximum duration for events and Sprints",
+                        "Measuring time spent on each task",
+                        "Planning team vacations"
                     ],
                     correct: 1
                 }
@@ -334,14 +334,14 @@ const quizData = {
         }
     ],
     
-    // Test 2: 30 Questions Avancées Scrum for Agile Project Management
+    // Test 2: 30 Advanced Questions Scrum for Agile Project Management
     set2: [
         {
             id: 1,
-            title: "Artefacts Scrum Approfondis (Questions 1-6)",
+            title: "Advanced Scrum Artifacts (Questions 1-6)",
             questions: [
                 {
-                    question: "Quels sont les trois artefacts officiels de Scrum?",
+                    question: "What are the three official Scrum artifacts?",
                     options: [
                         "Product Backlog, Sprint Backlog, Burndown Chart",
                         "Product Backlog, Sprint Backlog, Increment",
@@ -351,52 +351,52 @@ const quizData = {
                     correct: 1
                 },
                 {
-                    question: "Le Sprint Backlog appartient à:",
+                    question: "The Sprint Backlog belongs to:",
                     options: [
                         "Product Owner",
                         "Scrum Master",
                         "Development Team",
-                        "Toute l'équipe Scrum"
+                        "The entire Scrum team"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Qu'est-ce qui peut être modifié pendant un Sprint?",
+                    question: "What can be modified during a Sprint?",
                     options: [
-                        "Le Sprint Goal",
-                        "Le Sprint Backlog (comment atteindre l'objectif)",
-                        "La composition de l'équipe",
-                        "La durée du Sprint"
+                        "The Sprint Goal",
+                        "The Sprint Backlog (how to achieve the goal)",
+                        "The team composition",
+                        "The Sprint duration"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Un Increment doit être:",
+                    question: "An Increment must be:",
                     options: [
-                        "Terminé selon la Definition of Done",
-                        "Approuvé par le Product Owner avant la fin du Sprint",
-                        "Déployé en production immédiatement",
-                        "Documenté complètement"
+                        "Done according to the Definition of Done",
+                        "Approved by the Product Owner before the end of the Sprint",
+                        "Deployed to production immediately",
+                        "Completely documented"
                     ],
                     correct: 0
                 },
                 {
-                    question: "Le Product Backlog est ordonné par:",
+                    question: "The Product Backlog is ordered by:",
                     options: [
-                        "Priorité technique",
-                        "Complexité des items",
-                        "Valeur, risque, dépendances et autres facteurs déterminés par le PO",
-                        "Ordre chronologique d'ajout"
+                        "Technical priority",
+                        "Item complexity",
+                        "Value, risk, dependencies and other factors determined by the PO",
+                        "Chronological order of addition"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Combien de Product Backlogs peut avoir un produit?",
+                    question: "How many Product Backlogs can a product have?",
                     options: [
-                        "Un seul",
-                        "Un par équipe Scrum",
-                        "Un par Sprint",
-                        "Autant que nécessaire"
+                        "Only one",
+                        "One per Scrum team",
+                        "One per Sprint",
+                        "As many as needed"
                     ],
                     correct: 0
                 }
@@ -404,65 +404,65 @@ const quizData = {
         },
         {
             id: 2,
-            title: "Sprint et Planification (Questions 7-12)",
+            title: "Sprint and Planning (Questions 7-12)",
             questions: [
                 {
-                    question: "Qui crée le Sprint Goal?",
+                    question: "Who creates the Sprint Goal?",
                     options: [
-                        "Le Product Owner seul",
-                        "L'équipe Scrum collaborative pendant le Sprint Planning",
-                        "Le Scrum Master",
-                        "Les stakeholders"
+                        "The Product Owner alone",
+                        "The Scrum team collaboratively during Sprint Planning",
+                        "The Scrum Master",
+                        "The stakeholders"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Le Sprint Planning répond à quelles questions?",
+                    question: "What questions does Sprint Planning answer?",
                     options: [
-                        "Pourquoi ce Sprint est-il précieux? (Quoi) Comment le travail sera-t-il fait?",
-                        "Uniquement: Que peut-on livrer?",
-                        "Uniquement: Comment allons-nous travailler?",
-                        "Combien coûtera le Sprint?"
+                        "Why is this Sprint valuable? (What) How will the work be done?",
+                        "Only: What can be delivered?",
+                        "Only: How will we work?",
+                        "How much will the Sprint cost?"
                     ],
                     correct: 0
                 },
                 {
-                    question: "Pendant le Sprint Planning, qui décide combien de travail peut être accompli?",
+                    question: "During Sprint Planning, who decides how much work can be accomplished?",
                     options: [
                         "Product Owner",
                         "Scrum Master",
-                        "Development Team (basé sur leur capacité)",
+                        "Development Team (based on their capacity)",
                         "Management"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Un Sprint commence:",
+                    question: "A Sprint starts:",
                     options: [
-                        "Après l'approbation du management",
-                        "Immédiatement après la fin du Sprint précédent",
-                        "Lundi matin uniquement",
-                        "Après que le Product Backlog soit complètement affiné"
+                        "After management approval",
+                        "Immediately after the end of the previous Sprint",
+                        "Monday morning only",
+                        "After the Product Backlog is completely refined"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Que signifie qu'un élément du Product Backlog est \"Ready\"?",
+                    question: "What does it mean for a Product Backlog item to be \"Ready\"?",
                     options: [
-                        "Il est codé et testé",
-                        "Il est suffisamment clair pour être inclus dans un Sprint",
-                        "Il est approuvé par les stakeholders",
-                        "Il a été estimé à exactement 8 story points"
+                        "It is coded and tested",
+                        "It is clear enough to be included in a Sprint",
+                        "It is approved by stakeholders",
+                        "It has been estimated at exactly 8 story points"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Si la Development Team ne peut pas terminer tout le travail prévu, que se passe-t-il?",
+                    question: "If the Development Team cannot complete all planned work, what happens?",
                     options: [
-                        "Le Sprint est prolongé",
-                        "L'équipe travaille en heures supplémentaires",
-                        "Le travail incomplet retourne au Product Backlog",
-                        "Le Sprint est considéré comme un échec"
+                        "The Sprint is extended",
+                        "The team works overtime",
+                        "The incomplete work returns to the Product Backlog",
+                        "The Sprint is considered a failure"
                     ],
                     correct: 2
                 }
@@ -470,65 +470,65 @@ const quizData = {
         },
         {
             id: 3,
-            title: "Collaboration et Communication (Questions 13-18)",
+            title: "Collaboration and Communication (Questions 13-18)",
             questions: [
                 {
-                    question: "Qui peut participer au Daily Scrum?",
+                    question: "Who can participate in the Daily Scrum?",
                     options: [
-                        "Uniquement la Development Team (les autres peuvent observer)",
-                        "Toute l'organisation",
-                        "L'équipe Scrum complète obligatoirement",
-                        "Les stakeholders invités"
+                        "Only the Development Team (others can observe)",
+                        "The entire organization",
+                        "The complete Scrum team is mandatory",
+                        "Invited stakeholders"
                     ],
                     correct: 0
                 },
                 {
-                    question: "Le Scrum Master peut-il dire à la Development Team comment faire le travail?",
+                    question: "Can the Scrum Master tell the Development Team how to do the work?",
                     options: [
-                        "Oui, c'est son rôle principal",
-                        "Non, l'équipe s'auto-organise",
-                        "Oui, mais seulement pour les juniors",
-                        "Oui, si le Product Owner le demande"
+                        "Yes, it's their main role",
+                        "No, the team self-organizes",
+                        "Yes, but only for juniors",
+                        "Yes, if the Product Owner requests it"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Quelle est la meilleure façon pour un Product Owner de communiquer avec la Development Team?",
+                    question: "What is the best way for a Product Owner to communicate with the Development Team?",
                     options: [
-                        "Uniquement par email formel",
-                        "À travers le Scrum Master exclusivement",
-                        "Communication directe, fréquente et collaborative",
-                        "Uniquement lors des événements Scrum"
+                        "Only through formal email",
+                        "Exclusively through the Scrum Master",
+                        "Direct, frequent and collaborative communication",
+                        "Only during Scrum events"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Que fait le Scrum Master si le Product Owner ne remplit pas bien son rôle?",
+                    question: "What does the Scrum Master do if the Product Owner doesn't fulfill their role well?",
                     options: [
-                        "Le remplace temporairement",
-                        "Le reporte au management",
-                        "Le coach et l'aide à comprendre son rôle",
-                        "Ignore le problème"
+                        "Temporarily replaces them",
+                        "Reports to management",
+                        "Coaches and helps them understand their role",
+                        "Ignores the problem"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Les stakeholders peuvent-ils changer les priorités pendant le Sprint?",
+                    question: "Can stakeholders change priorities during the Sprint?",
                     options: [
-                        "Oui, à tout moment",
-                        "Non, uniquement lors du Sprint Review/Planning suivant",
-                        "Oui, mais seulement avec l'accord du Scrum Master",
-                        "Oui, s'ils paient un supplément"
+                        "Yes, at any time",
+                        "No, only during the next Sprint Review/Planning",
+                        "Yes, but only with the Scrum Master's agreement",
+                        "Yes, if they pay extra"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Comment l'équipe Scrum devrait-elle gérer un membre sous-performant?",
+                    question: "How should the Scrum team handle an underperforming member?",
                     options: [
-                        "Le Scrum Master doit le sanctionner",
-                        "L'équipe s'auto-organise pour résoudre le problème (coaching, support)",
-                        "Le Product Owner décide de son sort",
-                        "Attendre l'évaluation annuelle"
+                        "The Scrum Master must sanction them",
+                        "The team self-organizes to solve the problem (coaching, support)",
+                        "The Product Owner decides their fate",
+                        "Wait for the annual evaluation"
                     ],
                     correct: 1
                 }
@@ -536,65 +536,65 @@ const quizData = {
         },
         {
             id: 4,
-            title: "Estimation et Vélocité (Questions 19-24)",
+            title: "Estimation and Velocity (Questions 19-24)",
             questions: [
                 {
-                    question: "Quelle unité est utilisée pour estimer en Scrum?",
+                    question: "What unit is used for estimation in Scrum?",
                     options: [
-                        "Obligatoirement les heures",
-                        "Story points, heures idéales, ou autre unité relative",
-                        "Uniquement les jours-homme",
-                        "Euros ou dollars"
+                        "Mandatory hours",
+                        "Story points, ideal hours, or other relative unit",
+                        "Only person-days",
+                        "Euros or dollars"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Qu'est-ce que la vélocité mesure?",
+                    question: "What does velocity measure?",
                     options: [
-                        "La rapidité des développeurs à coder",
-                        "Le travail complété selon la DoD par Sprint",
-                        "Le nombre de commits Git",
-                        "Les heures travaillées"
+                        "The speed of developers coding",
+                        "Work completed according to DoD per Sprint",
+                        "The number of Git commits",
+                        "Hours worked"
                     ],
                     correct: 1
                 },
                 {
-                    question: "La vélocité devrait être utilisée pour:",
+                    question: "Velocity should be used for:",
                     options: [
-                        "Comparer les équipes entre elles",
-                        "Évaluer individuellement les membres de l'équipe",
-                        "Planifier et prévoir la capacité de la même équipe",
-                        "Calculer les bonus de performance"
+                        "Comparing teams with each other",
+                        "Individually evaluating team members",
+                        "Planning and forecasting the same team's capacity",
+                        "Calculating performance bonuses"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Qui estime les éléments du Product Backlog?",
+                    question: "Who estimates Product Backlog items?",
                     options: [
-                        "Product Owner seul",
+                        "Product Owner alone",
                         "Scrum Master",
-                        "Development Team (ceux qui feront le travail)",
-                        "Un expert externe"
+                        "Development Team (those who will do the work)",
+                        "An external expert"
                     ],
                     correct: 2
                 },
                 {
-                    question: "Qu'est-ce que le Planning Poker?",
+                    question: "What is Planning Poker?",
                     options: [
-                        "Un jeu pour divertir l'équipe",
-                        "Une technique d'estimation collaborative utilisant des cartes",
-                        "Une méthode de priorisation",
-                        "Un outil de gestion de projet"
+                        "A game to entertain the team",
+                        "A collaborative estimation technique using cards",
+                        "A prioritization method",
+                        "A project management tool"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Si la vélocité varie significativement d'un Sprint à l'autre, que devrait faire l'équipe?",
+                    question: "If velocity varies significantly from Sprint to Sprint, what should the team do?",
                     options: [
-                        "Ignorer ces variations",
-                        "Sanctionner l'équipe",
-                        "Inspecter et identifier les causes lors de la Retrospective",
-                        "Changer toute l'équipe"
+                        "Ignore these variations",
+                        "Sanction the team",
+                        "Inspect and identify causes during the Retrospective",
+                        "Change the entire team"
                     ],
                     correct: 2
                 }
@@ -602,65 +602,65 @@ const quizData = {
         },
         {
             id: 5,
-            title: "Mise à l'Échelle et Situations Complexes (Questions 25-30)",
+            title: "Scaling and Complex Situations (Questions 25-30)",
             questions: [
                 {
-                    question: "Plusieurs équipes Scrum travaillant sur le même produit devraient:",
+                    question: "Multiple Scrum teams working on the same product should:",
                     options: [
-                        "Avoir chacune leur propre Definition of Done",
-                        "Partager une Definition of Done commune",
-                        "Ne pas coordonner leurs efforts",
-                        "Avoir chacune leur Product Owner"
+                        "Have their own Definition of Done",
+                        "Share a common Definition of Done",
+                        "Not coordinate their efforts",
+                        "Have their own Product Owner"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Qu'est-ce qu'un \"Scrum of Scrums\"?",
+                    question: "What is a \"Scrum of Scrums\"?",
                     options: [
-                        "Un événement Scrum officiel",
-                        "Une technique de coordination entre plusieurs équipes Scrum",
-                        "Une réunion mensuelle du management",
-                        "Un framework différent de Scrum"
+                        "An official Scrum event",
+                        "A coordination technique between multiple Scrum teams",
+                        "A monthly management meeting",
+                        "A different framework from Scrum"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Si un membre de l'équipe est malade pendant le Sprint:",
+                    question: "If a team member is sick during the Sprint:",
                     options: [
-                        "Le Sprint doit être annulé",
-                        "L'équipe s'adapte et fait de son mieux avec la capacité restante",
-                        "On reporte le Sprint d'une semaine",
-                        "On embauche immédiatement un remplaçant"
+                        "The Sprint must be cancelled",
+                        "The team adapts and does their best with the remaining capacity",
+                        "The Sprint is postponed for a week",
+                        "A replacement is hired immediately"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Une dette technique devrait être:",
+                    question: "Technical debt should be:",
                     options: [
-                        "Ignorée pour livrer plus vite",
-                        "Gérée et incluse dans le Product Backlog",
-                        "Résolue uniquement après la release",
-                        "Cachée au Product Owner"
+                        "Ignored to deliver faster",
+                        "Managed and included in the Product Backlog",
+                        "Resolved only after release",
+                        "Hidden from the Product Owner"
                     ],
                     correct: 1
                 },
                 {
-                    question: "Que signifie \"Potentially Shippable\" (potentiellement livrable)?",
+                    question: "What does \"Potentially Shippable\" mean?",
                     options: [
-                        "Le code est écrit mais non testé",
-                        "L'incrément respecte la DoD et POURRAIT être livré (décision du PO)",
-                        "L'incrément DOIT être déployé en production",
-                        "Le produit est à 50% terminé"
+                        "Code is written but not tested",
+                        "The increment meets the DoD and COULD be delivered (PO decision)",
+                        "The increment MUST be deployed to production",
+                        "The product is 50% complete"
                     ],
                     correct: 1
                 },
                 {
-                    question: "En cas de conflit entre le Product Owner et la Development Team, le Scrum Master devrait:",
+                    question: "In case of conflict between the Product Owner and the Development Team, the Scrum Master should:",
                     options: [
-                        "Prendre parti pour le Product Owner",
-                        "Prendre parti pour la Development Team",
-                        "Faciliter la discussion pour trouver une solution collaborative",
-                        "Escalader au management immédiatement"
+                        "Take the Product Owner's side",
+                        "Take the Development Team's side",
+                        "Facilitate discussion to find a collaborative solution",
+                        "Escalate to management immediately"
                     ],
                     correct: 2
                 }
@@ -668,11 +668,11 @@ const quizData = {
         }
     ],
     
-    // Test 3: 40 Questions Situations Pratiques - Applied Scrum for Agile Project Management
+    // Test 3: 40 Practical Situations Questions - Applied Scrum for Agile Project Management
     set3: [
         {
             id: 1,
-            title: "Gestion des Conflits et Situations Difficiles (Questions 1-10)",
+            title: "Conflict Management and Difficult Situations (Questions 1-10)",
             questions: [
                 {
                     question: "Dans un contexte Agile, quel est le principal risque des sprints de 3 mois ?",
@@ -778,7 +778,7 @@ const quizData = {
         },
         {
             id: 2,
-            title: "Adaptation et Amélioration Continue (Questions 11-20)",
+            title: "Adaptation and Continuous Improvement (Questions 11-20)",
             questions: [
                 {
                     question: "Quel élément n'est PAS inclus dans le Sprint Backlog ?",
@@ -884,7 +884,7 @@ const quizData = {
         },
         {
             id: 3,
-            title: "Scaling Agile et Équipes Multiples (Questions 21-30)",
+            title: "Scaling Agile and Multiple Teams (Questions 21-30)",
             questions: [
                 {
                     question: "Quelle affirmation sur le Timeboxing est FAUSSE ?",
@@ -990,7 +990,7 @@ const quizData = {
         },
         {
             id: 4,
-            title: "Métriques Avancées et Performance (Questions 31-40)",
+            title: "Advanced Metrics and Performance (Questions 31-40)",
             questions: [
                 {
                     question: "Quel rôle représente les stakeholders auprès de l'équipe ?",
@@ -1096,11 +1096,11 @@ const quizData = {
         }
     ],
     
-    // Test 4: 40 Questions Modules Complets - Applied Scrum for Agile Project Management
+    // Test 4: 40 Complete Modules Questions - Applied Scrum for Agile Project Management
     set4: [
         {
             id: 1,
-            title: "Module Product Owner (Questions 1-10)",
+            title: "Product Owner Module (Questions 1-10)",
             questions: [
                 {
                     question: "Quelle est la principale limitation du modèle Waterfall ?",
@@ -1206,7 +1206,7 @@ const quizData = {
         },
         {
             id: 2,
-            title: "Module Scrum Master (Questions 11-20)",
+            title: "Scrum Master Module (Questions 11-20)",
             questions: [
                 {
                     question: "Quelle est la principale limitation du modèle Waterfall ?",
@@ -1312,7 +1312,7 @@ const quizData = {
         },
         {
             id: 3,
-            title: "Module Development Team (Questions 21-30)",
+            title: "Development Team Module (Questions 21-30)",
             questions: [
                 {
                     question: "Quelle est la principale limitation du modèle Waterfall ?",
@@ -1418,7 +1418,7 @@ const quizData = {
         },
         {
             id: 4,
-            title: "Module Transformation Agile (Questions 31-40)",
+            title: "Agile Transformation Module (Questions 31-40)",
             questions: [
                 {
                     question: "Quelle est la principale limitation du modèle Waterfall ?",
@@ -1517,6 +1517,868 @@ const quizData = {
                         "58%",
                         "78%",
                         "94%"
+                    ],
+                    correct: 1
+                }
+            ]
+        }
+    ],
+    
+    // Test 5: 40 Advanced Scrum Agile Questions
+    set5: [
+        {
+            id: 1,
+            title: "Agile Principles and Philosophy (Questions 1-10)",
+            questions: [
+                {
+                    question: "Quel est le principe opposé au \"micromanagement\" dans Scrum ?",
+                    options: [
+                        "Délégation totale",
+                        "Auto-organisation des équipes",
+                        "Supervision étroite",
+                        "Contrôle hiérarchique"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Le \"servant leadership\" implique que le leader :",
+                    options: [
+                        "Commande et contrôle",
+                        "Sert et facilite l'équipe",
+                        "Délègue toutes les responsabilités",
+                        "Prend toutes les décisions"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Pourquoi Scrum est-il efficace avec les petites équipes ?",
+                    options: [
+                        "Coûts réduits uniquement",
+                        "Meilleure communication et collaboration",
+                        "Moins de documentation",
+                        "Cycles plus longs"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "L'approche Agile privilégie :",
+                    options: [
+                        "Les processus rigides",
+                        "La documentation exhaustive",
+                        "L'adaptation au changement",
+                        "La planification détaillée initiale"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Quelle est la différence principale entre Agile et les méthodes traditionnelles ?",
+                    options: [
+                        "Le coût",
+                        "La flexibilité vs la prédictibilité",
+                        "La taille de l'équipe uniquement",
+                        "Le langage de programmation"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Dans Scrum, qui décide comment le travail sera effectué ?",
+                    options: [
+                        "Le Scrum Master",
+                        "Le Product Owner",
+                        "L'équipe de développement",
+                        "Les stakeholders"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Le concept de \"facilitation\" dans Scrum signifie :",
+                    options: [
+                        "Rendre le travail plus facile en éliminant les défis",
+                        "Aider l'équipe à surmonter les obstacles et à progresser",
+                        "Faire le travail à la place de l'équipe",
+                        "Simplifier toutes les tâches"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel est l'objectif principal de l'agilité organisationnelle ?",
+                    options: [
+                        "Réduire les coûts à court terme",
+                        "Maintenir la compétitivité dans un marché changeant",
+                        "Éliminer tous les processus",
+                        "Augmenter la bureaucratie"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Le Scrum Master doit maîtriser :",
+                    options: [
+                        "Tous les aspects techniques du produit",
+                        "Des moyens nouveaux et différents de diriger des équipes",
+                        "La comptabilité de projet",
+                        "Le marketing produit"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "La responsabilité principale du Product Owner est de :",
+                    options: [
+                        "Faciliter les cérémonies Scrum",
+                        "Coder les fonctionnalités",
+                        "Maximiser la valeur du produit",
+                        "Gérer les ressources humaines"
+                    ],
+                    correct: 2
+                }
+            ]
+        },
+        {
+            id: 2,
+            title: "Statistics and Trends (Questions 11-20)",
+            questions: [
+                {
+                    question: "Quelle combinaison de méthodologies représente 75% des projets Agile ?",
+                    options: [
+                        "Scrum, Waterfall, PRINCE2, PMI",
+                        "Scrum, Scrumban, Scrum/XP, Kanban",
+                        "SAFe, LeSS, DAD, Nexus",
+                        "XP, Crystal, DSDM, FDD"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Le rapport PMI \"Pulse of the Profession\" provient d'une organisation historiquement :",
+                    options: [
+                        "Focalisée sur Agile",
+                        "Enracinée dans les méthodes traditionnelles",
+                        "Exclusivement technologique",
+                        "Anti-Agile"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quel pourcentage de projets était purement Agile selon le PMI (2018) ?",
+                    options: [
+                        "13%",
+                        "23%",
+                        "33%",
+                        "43%"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "La somme des projets Hybrides et Agiles représente :",
+                    options: [
+                        "36% des projets",
+                        "46% des projets",
+                        "53% des projets",
+                        "63% des projets"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Le rapport \"State of Agile\" de Verizon One est quelle édition mentionnée ?",
+                    options: [
+                        "8ème édition",
+                        "10ème édition",
+                        "12ème édition",
+                        "15ème édition"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Le rapport Verizon One est légèrement biaisé vers quels secteurs ?",
+                    options: [
+                        "Agriculture et manufacture",
+                        "Technologie et finance",
+                        "Santé et éducation",
+                        "Tourisme et hôtellerie"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Scrum n'est pas juste une option parmi d'autres, c'est :",
+                    options: [
+                        "Le choix le moins populaire",
+                        "Le choix le plus populaire de loin",
+                        "Égal aux autres frameworks",
+                        "En déclin"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "L'adoption d'Agile concerne quel type d'entreprises ?",
+                    options: [
+                        "Uniquement les startups tech",
+                        "Uniquement les PME",
+                        "Entreprises de toutes tailles, y compris les grandes corporations",
+                        "Uniquement les entreprises en difficulté"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Le changement vers Agile est décrit comme :",
+                    options: [
+                        "Tactique et temporaire",
+                        "Stratégique et durable",
+                        "Expérimental et incertain",
+                        "Obligatoire et réglementé"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Les enquêtes sur Agile sont représentatives de :",
+                    options: [
+                        "Uniquement les développeurs",
+                        "Uniquement les managers",
+                        "Entreprises de toutes tailles",
+                        "Uniquement les consultants"
+                    ],
+                    correct: 2
+                }
+            ]
+        },
+        {
+            id: 3,
+            title: "Scaling Frameworks (Questions 21-30)",
+            questions: [
+                {
+                    question: "Quand les entreprises coordonnent plusieurs équipes Agile, elles :",
+                    options: [
+                        "Remplacent Scrum par un autre framework",
+                        "Construisent des couches de coordination au-dessus de Scrum",
+                        "Abandonnent Agile",
+                        "Fusionnent toutes les équipes en une seule"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Le fonctionnement d'une équipe Scrum unique reste :",
+                    options: [
+                        "Secondaire dans la mise à l'échelle",
+                        "Le moteur principal de la livraison de valeur",
+                        "Complètement transformé",
+                        "Obsolète"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Combien de frameworks majeurs de mise à l'échelle sont mentionnés ?",
+                    options: [
+                        "2",
+                        "3",
+                        "4",
+                        "5"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "SAFe est l'acronyme de :",
+                    options: [
+                        "Safe Agile Framework for Enterprises",
+                        "Scaled Agile Framework",
+                        "Simple Agile Framework Extension",
+                        "Strategic Agile Foundation Enterprise"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "LeSS signifie :",
+                    options: [
+                        "Less Effort Scrum System",
+                        "Large Enterprise Scrum Strategy",
+                        "Large Scale Scrum",
+                        "Lean Efficient Scrum Structure"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Le rôle de Scrum dans les frameworks de mise à l'échelle est décrit comme :",
+                    options: [
+                        "Optionnel",
+                        "Fondamental/essentiel",
+                        "Complémentaire",
+                        "Obsolète"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "\"Scrum of Scrums\" permet de :",
+                    options: [
+                        "Former plusieurs Scrum Masters simultanément",
+                        "Coordonner le travail de plusieurs équipes Scrum",
+                        "Certifier des organisations entières",
+                        "Automatiser les processus Scrum"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "DAD (Disciplined Agile Delivery) est construit sur :",
+                    options: [
+                        "Waterfall uniquement",
+                        "Scrum comme base",
+                        "PRINCE2",
+                        "Six Sigma"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Tous les frameworks de mise à l'échelle utilisent Scrum au niveau :",
+                    options: [
+                        "Organisationnel uniquement",
+                        "Stratégique uniquement",
+                        "De l'équipe",
+                        "Du portefeuille uniquement"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "La simplicité et l'efficacité de Scrum en font :",
+                    options: [
+                        "Un framework limité aux petits projets",
+                        "Le point de départ idéal pour la mise à l'échelle",
+                        "Un framework incompatible avec la mise à l'échelle",
+                        "Une option parmi d'autres"
+                    ],
+                    correct: 1
+                }
+            ]
+        },
+        {
+            id: 4,
+            title: "Application and Understanding (Questions 31-40)",
+            questions: [
+                {
+                    question: "Comprendre Scrum est décrit comme :",
+                    options: [
+                        "Utile mais pas nécessaire",
+                        "Fondamental pour comprendre la gestion de projet moderne",
+                        "Pertinent uniquement pour les développeurs",
+                        "Une compétence optionnelle"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Le passage à Agile dans les grandes organisations établies indique que :",
+                    options: [
+                        "Agile est uniquement pour les startups",
+                        "Agile est mature et éprouvé",
+                        "Les méthodes traditionnelles sont mortes",
+                        "Toutes les entreprises doivent être Agile"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Un Project Manager dans un contexte Agile doit :",
+                    options: [
+                        "Maintenir son rôle traditionnel de contrôle",
+                        "Apprendre à travailler comme facilitateur",
+                        "Abandonner complètement la gestion",
+                        "Devenir développeur"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Le terme \"master facilitator\" se réfère à :",
+                    options: [
+                        "Le Product Owner",
+                        "Le Scrum Master",
+                        "L'équipe de développement",
+                        "Les stakeholders"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "L'influence de Scrum est dominante même dans :",
+                    options: [
+                        "Les projets non-Agile",
+                        "Les hybrides Scrum/Kanban et Scrum/XP",
+                        "Les projets traditionnels uniquement",
+                        "Les projets Waterfall"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "La transition vers Agile est motivée par :",
+                    options: [
+                        "La mode et les tendances",
+                        "Les exigences réglementaires",
+                        "La nécessité compétitive",
+                        "La réduction de personnel"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Le concept d'équipe auto-organisée signifie que l'équipe :",
+                    options: [
+                        "N'a pas de structure",
+                        "Décide de la façon d'accomplir son travail",
+                        "Travaille sans objectifs",
+                        "N'a pas besoin de Scrum Master"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Le Scrum Master est responsable de :",
+                    options: [
+                        "Définir les fonctionnalités du produit",
+                        "Garder l'équipe sur la bonne voie et faciliter",
+                        "Approuver le budget",
+                        "Embaucher les membres de l'équipe"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Un Business Analyst peut agir comme facilitateur, ce qui montre que :",
+                    options: [
+                        "Les rôles Scrum sont rigides",
+                        "Il existe des variations dans l'implémentation de Scrum",
+                        "Les Business Analysts remplacent les Scrum Masters",
+                        "Scrum n'a pas de structure"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Le document conclut que \"l'ère d'Agile est officiellement arrivée\", ce qui signifie :",
+                    options: [
+                        "Agile est une tendance passagère",
+                        "Agile est maintenant mainstream et établi",
+                        "Agile remplacera tout",
+                        "Agile est en déclin"
+                    ],
+                    correct: 1
+                }
+            ]
+        }
+    ],
+    
+    // Test 6: 40 Complete Mastery Scrum Agile Questions
+    set6: [
+        {
+            id: 1,
+            title: "Agile Evolution and Context (Questions 1-8)",
+            questions: [
+                {
+                    question: "Quelle affirmation décrit le mieux le statut actuel d'Agile ?",
+                    options: [
+                        "Agile reste une approche de niche pour startups",
+                        "Agile est une alternative intéressante aux méthodes traditionnelles",
+                        "Agile est devenu une force mainstream avec environ 50% des projets",
+                        "Agile est en phase de déclin"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Quelle est la signification de \"53% des projets ont quitté le modèle purement traditionnel\" ?",
+                    options: [
+                        "53% sont devenus 100% Agile",
+                        "53% utilisent soit Agile pur, soit un modèle Hybride",
+                        "53% ont échoué",
+                        "53% utilisent Waterfall modifié"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Pourquoi le fait que le PMI rapporte des données Agile est-il significatif ?",
+                    options: [
+                        "Le PMI est pro-Agile depuis toujours",
+                        "Le PMI était historiquement enraciné dans les méthodes traditionnelles",
+                        "Le PMI s'oppose à Agile",
+                        "Le PMI n'a pas d'opinion sur Agile"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quelle proportion des répondants PMI provient d'organisations avec plus de $500M de revenus annuels ?",
+                    options: [
+                        "Moins d'un tiers",
+                        "Environ un tiers",
+                        "Plus de la moitié",
+                        "Presque tous"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Cette statistique sur les grandes organisations prouve que :",
+                    options: [
+                        "Agile est réservé aux grandes entreprises",
+                        "Les grandes entreprises établies adoptent également Agile",
+                        "Seules les petites entreprises utilisent Agile",
+                        "La taille de l'entreprise n'a pas d'importance"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Le rapport \"State of Agile\" de Verizon One en est à quelle édition ?",
+                    options: [
+                        "5ème édition",
+                        "8ème édition",
+                        "12ème édition",
+                        "20ème édition"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "La répétition des éditions du rapport Verizon One démontre :",
+                    options: [
+                        "Que c'est une tendance nouvelle",
+                        "La maturité et la durabilité d'Agile dans l'industrie",
+                        "Que les données sont obsolètes",
+                        "Un manque d'innovation"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Le cours affirme que \"l'ère d'Agile a officiellement ____\" :",
+                    options: [
+                        "Commencé",
+                        "Été annoncée",
+                        "Arrivé",
+                        "Échoué"
+                    ],
+                    correct: 2
+                }
+            ]
+        },
+        {
+            id: 2,
+            title: "Scrum Domination (Questions 9-16)",
+            questions: [
+                {
+                    question: "Scrum représente quel pourcentage exact des projets Agile selon Verizon One ?",
+                    options: [
+                        "46%",
+                        "51%",
+                        "56%",
+                        "61%"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Les méthodologies Scrum, Scrumban, Scrum/XP et Kanban représentent ensemble :",
+                    options: [
+                        "65% des projets",
+                        "70% des projets",
+                        "75% des projets",
+                        "80% des projets"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Cette statistique de 75% démontre que :",
+                    options: [
+                        "Kanban est plus populaire que Scrum",
+                        "L'influence de Scrum est dominante même dans les hybrides",
+                        "Les équipes évitent Scrum",
+                        "Scrum est en déclin"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Scrum n'est pas \"juste une option parmi plusieurs\", il est :",
+                    options: [
+                        "Le choix minoritaire",
+                        "Égal aux autres",
+                        "Le choix le plus populaire de loin (by far)",
+                        "En compétition serrée"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Pourquoi Scrum est-il si populaire au niveau de l'équipe ?",
+                    options: [
+                        "C'est le moins cher",
+                        "Son efficacité avec les petites équipes",
+                        "C'est obligatoire",
+                        "C'est le plus ancien"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Scrumban est :",
+                    options: [
+                        "Un remplacement de Scrum",
+                        "Un framework complètement différent",
+                        "Un hybride de Scrum et Kanban",
+                        "Une certification"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Scrum/XP combine Scrum avec :",
+                    options: [
+                        "Extreme Programming",
+                        "Extra Projects",
+                        "Executive Planning",
+                        "External Partnerships"
+                    ],
+                    correct: 0
+                },
+                {
+                    question: "Le fait que Scrum soit souvent combiné avec d'autres méthodes montre :",
+                    options: [
+                        "Que Scrum est incomplet",
+                        "La flexibilité et l'adaptabilité de Scrum",
+                        "Que Scrum doit être abandonné",
+                        "Que Scrum est dépassé"
+                    ],
+                    correct: 1
+                }
+            ]
+        },
+        {
+            id: 3,
+            title: "Scrum as Building Block (Questions 17-24)",
+            questions: [
+                {
+                    question: "Scrum sert de \"building block\" (bloc de construction) pour :",
+                    options: [
+                        "Les petits projets uniquement",
+                        "Tous les frameworks majeurs de mise à l'échelle",
+                        "Les projets traditionnels",
+                        "Rien en particulier"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Quand les organisations mettent à l'échelle Agile, elles :",
+                    options: [
+                        "Remplacent Scrum par autre chose",
+                        "Abandonnent Scrum",
+                        "Construisent des couches de coordination sur Scrum",
+                        "Éliminent les équipes Scrum"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Dans les frameworks de mise à l'échelle, le fonctionnement d'une équipe Scrum reste :",
+                    options: [
+                        "Complètement transformé",
+                        "Le moteur principal (core engine) de livraison de valeur",
+                        "Secondaire",
+                        "Obsolète"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Combien de frameworks majeurs de mise à l'échelle sont explicitement nommés dans le cours ?",
+                    options: [
+                        "2",
+                        "3",
+                        "4",
+                        "5"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "SAFe signifie :",
+                    options: [
+                        "Safe Agile Framework",
+                        "Scaled Agile Framework",
+                        "Strategic Agile Foundation",
+                        "Software Agile Framework"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "DAD signifie :",
+                    options: [
+                        "Daily Agile Delivery",
+                        "Distributed Agile Development",
+                        "Disciplined Agile Delivery",
+                        "Dynamic Agile Design"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "LeSS signifie :",
+                    options: [
+                        "Lean Enterprise Scrum System",
+                        "Large Scale Scrum",
+                        "Less Effort Scrum Structure",
+                        "Leading Edge Scrum Strategy"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "\"Scrum of Scrums\" est utilisé pour :",
+                    options: [
+                        "Certifier plusieurs Scrum Masters",
+                        "Coordonner plusieurs équipes Scrum",
+                        "Former des équipes",
+                        "Évaluer la performance"
+                    ],
+                    correct: 1
+                }
+            ]
+        },
+        {
+            id: 4,
+            title: "Roles and Leadership (Questions 25-32)",
+            questions: [
+                {
+                    question: "Combien de rôles principaux y a-t-il dans Scrum ?",
+                    options: [
+                        "2",
+                        "3",
+                        "4",
+                        "5"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Le rôle d'un leader dans un projet Agile devrait être celui d'un :",
+                    options: [
+                        "Superviseur",
+                        "Micromanager",
+                        "Facilitateur",
+                        "Dictateur"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Le Scrum Master est décrit comme un :",
+                    options: [
+                        "Chef de projet traditionnel",
+                        "\"Master facilitator\"",
+                        "Manager hiérarchique",
+                        "Contrôleur de qualité"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Le Scrum Master doit être \"steeped in\" (imprégné de) :",
+                    options: [
+                        "La gestion traditionnelle",
+                        "Des moyens très nouveaux et différents de diriger des équipes",
+                        "Les technologies de développement",
+                        "La gestion financière"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Le style de leadership central à Scrum est :",
+                    options: [
+                        "Autoritaire",
+                        "Transactionnel",
+                        "Servant leadership (leadership serviteur)",
+                        "Laissez-faire"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Le Scrum Master est responsable de :",
+                    options: [
+                        "Définir toutes les exigences produit",
+                        "Faciliter et garder l'équipe sur la bonne voie",
+                        "Coder les fonctionnalités",
+                        "Approuver le budget"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Le Product Owner est responsable de :",
+                    options: [
+                        "Faciliter les réunions",
+                        "Maximiser la valeur du produit",
+                        "Gérer les ressources humaines",
+                        "Superviser l'équipe"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Dans des variations de Scrum, qui peut \"agir comme facilitateur\" ?",
+                    options: [
+                        "Le CFO",
+                        "Un Business Analyst",
+                        "Le CEO",
+                        "Le département RH"
+                    ],
+                    correct: 1
+                }
+            ]
+        },
+        {
+            id: 5,
+            title: "Principles and Understanding (Questions 33-40)",
+            questions: [
+                {
+                    question: "Les Project Managers dans un contexte Agile \"tentent de travailler comme\" :",
+                    options: [
+                        "Superviseurs traditionnels",
+                        "Facilitateurs",
+                        "Contrôleurs",
+                        "Auditeurs"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Le concept d'équipes \"auto-organisées\" (self-organizing) est :",
+                    options: [
+                        "Contraire aux principes Scrum",
+                        "Central à Scrum et Agile",
+                        "Optionnel",
+                        "Dépassé"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Selon le PMI, quel pourcentage d'organisations considère \"l'agilité\" comme essentielle pour rester compétitif ?",
+                    options: [
+                        "51%",
+                        "61%",
+                        "71%",
+                        "81%"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Cette statistique (71%) indique que le passage à Agile est :",
+                    options: [
+                        "Une tendance passagère",
+                        "Un mouvement stratégique",
+                        "Optionnel",
+                        "Uniquement technologique"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "La compréhension de Scrum est décrite comme :",
+                    options: [
+                        "Utile pour certains rôles",
+                        "Optionnelle",
+                        "Fondamentale pour comprendre la gestion de projet moderne",
+                        "Réservée aux développeurs"
+                    ],
+                    correct: 2
+                },
+                {
+                    question: "Le rapport Verizon One est légèrement biaisé vers quels secteurs ?",
+                    options: [
+                        "Santé et éducation",
+                        "Technologie et finance",
+                        "Manufacture et agriculture",
+                        "Commerce de détail"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "Malgré ce biais, les données restent :",
+                    options: [
+                        "Inutilisables",
+                        "Représentatives et significatives",
+                        "Complètement faussées",
+                        "Sans valeur"
+                    ],
+                    correct: 1
+                },
+                {
+                    question: "La combinaison des données PMI et Verizon One fournit :",
+                    options: [
+                        "Des informations contradictoires",
+                        "Une image claire de la domination de Scrum dans Agile",
+                        "Des preuves que Scrum est en déclin",
+                        "Aucune conclusion utile"
                     ],
                     correct: 1
                 }
