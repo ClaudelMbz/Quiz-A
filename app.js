@@ -60,7 +60,8 @@ function loadQuiz() {
     const setNames = {
         1: 'Test 1 - Fondamentaux',
         2: 'Test 2 - English Practice',
-        3: 'Test 3 - Matching Game'
+        3: 'Test 3 - Matching Game',
+        4: 'Test 4 - Comprehensive English Quiz'
     };
     document.getElementById('quiz-set-info').textContent = setNames[currentQuizSet];
     
@@ -313,7 +314,7 @@ function showResults() {
     
     // Score global
     document.getElementById('overall-percentage').textContent = `${overallScore.percentage}%`;
-    document.getElementById('overall-score-text').textContent = getScoreMessage(overallScore.percentage);
+    document.getElementById('overall-score-text').textContent = getScoreMessage(overallScore.percentage, overallScore.total);
     
     // Détail par quiz
     const breakdownContainer = document.getElementById('quiz-breakdown');
@@ -484,7 +485,16 @@ function getScoreClass(percentage) {
     return 'poor';
 }
 
-function getScoreMessage(percentage) {
+function getScoreMessage(percentage, totalQuestions) {
+    if (currentQuizSet === 4) {
+        const correctAnswers = Math.round((percentage / 100) * totalQuestions);
+        if (correctAnswers >= 25) return '🏆 Excellent understanding of LCA';
+        if (correctAnswers >= 20) return '🎯 Good understanding';
+        if (correctAnswers >= 15) return '📈 Satisfactory understanding';
+        if (correctAnswers >= 10) return '🔄 Requires review';
+        return '📚 Complete review recommended';
+    }
+    // Default scoring for other quizzes
     if (percentage >= 90) return '🏆 Expert - Vous maîtrisez parfaitement !';
     if (percentage >= 77) return '🎯 Avancé - Très bon niveau !';
     if (percentage >= 60) return '📈 Intermédiaire - Continuez à progresser !';
