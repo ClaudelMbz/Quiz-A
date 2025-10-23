@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agile Project Management Quiz</title>
+    <title>LCA for Buildings Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,56 +11,30 @@
         <!-- Page d'accueil -->
         <div id="home-page" class="page">
             <div class="hero">
-                <h1>🎯 Agile Project Management Quiz</h1>
-                <p>Test your knowledge in Agile and Scrum project management</p>
+                <h1>🏗️ LCA for Buildings Quiz</h1>
+                <p>Test your knowledge in Life Cycle Assessment for buildings (Français & English).</p>
             </div>
             
             <div class="quiz-selection">
                 <div class="quiz-set">
-                    <h2>📚 Test 1 - Essential Questions</h2>
-                    <p>30 fundamental questions about Scrum and Agile</p>
+                    <h2>📚 Test 1 - Fondamentaux</h2>
+                    <p>10 questions fondamentales sur l'ACV pour les bâtiments.</p>
                     <button class="btn btn-primary" onclick="startQuizSet(1)">
                         Start Test 1
                     </button>
                 </div>
-                
                 <div class="quiz-set">
-                    <h2>🔥 Test 2 - Advanced Questions</h2>
-                    <p>30 in-depth questions for Scrum experts</p>
+                    <h2>🇬🇧 Test 2 - English Practice</h2>
+                    <p>10 fundamental questions about LCA for Buildings.</p>
                     <button class="btn btn-primary" onclick="startQuizSet(2)">
                         Start Test 2
                     </button>
                 </div>
-
                 <div class="quiz-set">
-                    <h2>🎯 Test 3 - Practical Situations</h2>
-                    <p>40 questions on real Agile challenges</p>
+                    <h2>↔️ Test 3 - Matching Game</h2>
+                    <p>Connect LCA stages with their corresponding elements.</p>
                     <button class="btn btn-primary" onclick="startQuizSet(3)">
                         Start Test 3
-                    </button>
-                </div>
-
-                <div class="quiz-set">
-                    <h2>🏆 Test 4 - Complete Modules</h2>
-                    <p>40 questions by thematic modules</p>
-                    <button class="btn btn-primary" onclick="startQuizSet(4)">
-                        Start Test 4
-                    </button>
-                </div>
-
-                <div class="quiz-set">
-                    <h2>🚀 Test 5 - Advanced Scrum Agile</h2>
-                    <p>40 questions on advanced principles and frameworks</p>
-                    <button class="btn btn-primary" onclick="startQuizSet(5)">
-                        Start Test 5
-                    </button>
-                </div>
-
-                <div class="quiz-set">
-                    <h2>⚡ Test 6 - Scrum Expertise</h2>
-                    <p>40 questions for Scrum experts</p>
-                    <button class="btn btn-primary" onclick="startQuizSet(6)">
-                        Start Test 6
                     </button>
                 </div>
             </div>
@@ -91,6 +65,7 @@
                 <div class="answers" id="answers-container">
                     <!-- Options de réponse générées dynamiquement -->
                 </div>
+                <div class="explanation" id="explanation-text" style="display: none;"></div>
             </div>
 
             <div class="quiz-controls">

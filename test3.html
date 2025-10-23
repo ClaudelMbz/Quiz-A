@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 3 - Matching Question</title>
+    <link rel="stylesheet" href="test3.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1>II. Matching question</h1>
+            <p>Combine the following elements and construction phases in the life cycle analysis. (0.5pt x 15) = 7.5 pts</p>
+        </div>
+
+        <div class="diagram-container">
+            <canvas id="connection-canvas"></canvas>
+            <div class="column" id="stages-column">
+                <div class="item stage-item" data-id="product">Product stage</div>
+                <div class="item stage-item" data-id="construction">Construction process stage</div>
+                <div class="item stage-item" data-id="use">Use stages</div>
+                <div class="item stage-item" data-id="end-of-life">End-of-life stage</div>
+                <div class="item stage-item" data-id="benefits">Benefits and loads beyond</div>
+            </div>
+            <div class="column" id="elements-column">
+                <div class="item element-item" data-id="maintenance">Maintenance, Replacement, Repair</div>
+                <div class="item element-item" data-id="raw-material">Raw material supply, Transport to the production site</div>
+                <div class="item element-item" data-id="construction-products">Construction products</div>
+                <div class="item element-item" data-id="finished-building">Finished building</div>
+                <div class="item element-item" data-id="deconstruction">Deconstruction / demolition</div>
+                <div class="item element-item" data-id="transport">Transport</div>
+                <div class="item element-item" data-id="waste-processing">Waste processing</div>
+                <div class="item element-item" data-id="disposal">Disposal</div>
+                <div class="item element-item" data-id="refurbishment">Refurbishment</div>
+                <div class="item element-item" data-id="operational-energy">Operational energy use</div>
+                <div class="item element-item" data-id="operational-water">Operational water use</div>
+                <div class="item element-item" data-id="reuse-recovery">Reuse, Recovery, and recycling potential</div>
+            </div>
+        </div>
+
+        <div class="status-bar" id="status-bar">
+            Select a stage on the left, then click matching elements on the right
+        </div>
+
+        <div class="controls">
+            <button id="check-btn" class="btn btn-check">Check Answers</button>
+            <button id="clear-btn" class="btn btn-clear">Clear All</button>
+            <button id="reset-btn" class="btn btn-reset">Reset</button>
+            <button id="show-answers-btn" class="btn btn-show">Show Right Answers</button>
+        </div>
+         <a href="index.html" class="btn btn-home">Back to Home</a>
+    </div>
+
+    <!-- Modal for showing the answer image -->
+    <div id="answer-modal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="answer-image" src="response.png">
+    </div>
+
+    <script src="test3.js"></script>
+</body>
+</html>

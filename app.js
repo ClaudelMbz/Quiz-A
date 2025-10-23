@@ -31,6 +31,10 @@ function showPage(pageId) {
 
 // Démarrer un set de quiz
 function startQuizSet(setNumber) {
+    if (setNumber === 3) {
+        window.location.href = 'test3.html';
+        return;
+    }
     currentQuizSet = setNumber;
     currentQuizIndex = 0;
     currentQuestionIndex = 0;
@@ -54,18 +58,15 @@ function loadQuiz() {
     // Mettre à jour les informations du header
     document.getElementById('current-quiz').textContent = `Section ${quiz.id}: ${quiz.title}`;
     const setNames = {
-        1: 'Test 1 - Essential Questions',
-        2: 'Test 2 - Advanced Questions',
-        3: 'Test 3 - Practical Situations',
-        4: 'Test 4 - Complete Modules',
-        5: 'Test 5 - Advanced Scrum Agile',
-        6: 'Test 6 - Scrum Expertise'
+        1: 'Test 1 - Fondamentaux',
+        2: 'Test 2 - English Practice',
+        3: 'Test 3 - Matching Game'
     };
     document.getElementById('quiz-set-info').textContent = setNames[currentQuizSet];
     
     // Initialiser les réponses pour ce quiz
     if (!userAnswers[currentQuizIndex]) {
-        userAnswers[currentQuizIndex] = new Array(quiz.questions.length).fill(null);
+        userAnswers[currentQuizIndex] = Array.from({ length: quiz.questions.length }, () => []);
     }
     
     loadQuestion();
@@ -85,7 +86,11 @@ function loadQuestion() {
         `Question ${currentQuestionIndex + 1} / ${totalQuestions}`;
     
     // Afficher la question
-    document.getElementById('question-text').textContent = question.question;
+    let questionText = question.question;
+    if (question.correct.length > 1) {
+        questionText += " <small>(plusieurs choix possibles)</small>";
+    }
+    document.getElementById('question-text').innerHTML = questionText;
     
     // Créer les options de réponse
     const answersContainer = document.getElementById('answers-container');
@@ -98,8 +103,8 @@ function loadQuestion() {
         answerDiv.style.pointerEvents = 'auto'; // S'assurer que les clics sont activés
         
         // Marquer comme sélectionné si déjà choisi
-        const currentAnswer = userAnswers[currentQuizIndex][currentQuestionIndex];
-        if (currentAnswer === index) {
+        const currentAnswers = userAnswers[currentQuizIndex][currentQuestionIndex] || [];
+        if (currentAnswers.includes(index)) {
             answerDiv.classList.add('selected');
         }
         
@@ -117,49 +122,32 @@ function loadQuestion() {
 
 // Sélectionner une réponse avec feedback instantané
 function selectAnswer(answerIndex) {
-    // Éviter les clics multiples
-    const options = document.querySelectorAll('.answer-option');
-    if (options[0].classList.contains('correct-instant') || options[0].classList.contains('incorrect-instant')) {
-        return;
-    }
-    
-    userAnswers[currentQuizIndex][currentQuestionIndex] = answerIndex;
-    
-    // Obtenir la bonne réponse
-    const quizData = getCurrentQuizData();
-    const quiz = quizData[currentQuizIndex];
-    const correctAnswer = quiz.questions[currentQuestionIndex].correct;
-    
-    // Appliquer le feedback visuel
-    options.forEach((option, index) => {
-        option.style.pointerEvents = 'none'; // Désactiver les clics
-        
-        if (index === answerIndex) {
-            // Réponse sélectionnée
-            if (index === correctAnswer) {
-                option.classList.add('correct-instant');
-            } else {
-                option.classList.add('incorrect-instant');
-            }
-        } else if (index === correctAnswer && answerIndex !== correctAnswer) {
-            // Montrer la bonne réponse si l'utilisateur s'est trompé
-            setTimeout(() => {
-                option.classList.add('show-correct');
-            }, 300);
+    if (isShowingFeedback) return;
+
+    const currentAnswers = userAnswers[currentQuizIndex][currentQuestionIndex] || [];
+    const questionData = getCurrentQuizData()[currentQuizIndex].questions[currentQuestionIndex];
+    const isMultiChoice = questionData.correct.length > 1;
+
+    if (isMultiChoice) {
+        const indexInAnswers = currentAnswers.indexOf(answerIndex);
+        if (indexInAnswers > -1) {
+            currentAnswers.splice(indexInAnswers, 1); // Deselect
+        } else {
+            currentAnswers.push(answerIndex); // Select
         }
+        userAnswers[currentQuizIndex][currentQuestionIndex] = currentAnswers;
+    } else {
+        // Single choice behavior
+        userAnswers[currentQuizIndex][currentQuestionIndex] = [answerIndex];
+    }
+
+    // Mettre à jour l'affichage
+    const options = document.querySelectorAll('.answer-option');
+    options.forEach((option, index) => {
+        const isSelected = (userAnswers[currentQuizIndex][currentQuestionIndex] || []).includes(index);
+        option.classList.toggle('selected', isSelected);
     });
-    
-    // Réactiver les contrôles après un délai
-    feedbackTimeout = setTimeout(() => {
-        options.forEach(option => {
-            option.style.pointerEvents = 'auto';
-            option.classList.remove('correct-instant', 'incorrect-instant', 'show-correct');
-            option.classList.toggle('selected', option === options[answerIndex]);
-        });
-        updateNavigationButtons();
-    }, 2000);
-    
-    // Activer immédiatement le bouton suivant
+
     updateNavigationButtons();
 }
 
@@ -172,7 +160,8 @@ function updateNavigationButtons() {
     prevBtn.disabled = currentQuestionIndex === 0;
     
     // Bouton suivant
-    const currentAnswer = userAnswers[currentQuizIndex][currentQuestionIndex];
+    const currentAnswers = userAnswers[currentQuizIndex][currentQuestionIndex];
+    const hasAnswer = currentAnswers && currentAnswers.length > 0;
     const quizData = getCurrentQuizData();
     const quiz = quizData[currentQuizIndex];
     
@@ -180,50 +169,79 @@ function updateNavigationButtons() {
         // Dernière question du quiz
         nextBtn.textContent = currentQuizIndex === quizData.length - 1 ? 
             'Terminer' : 'Quiz suivant →';
-        nextBtn.disabled = currentAnswer === null;
+        nextBtn.disabled = !hasAnswer;
     } else {
         // Question normale
         nextBtn.textContent = 'Suivant →';
-        nextBtn.disabled = currentAnswer === null;
+        nextBtn.disabled = !hasAnswer;
     }
 }
 
 // Question précédente
 function previousQuestion() {
-    if (feedbackTimeout) {
-        clearTimeout(feedbackTimeout);
-    }
     if (currentQuestionIndex > 0) {
         currentQuestionIndex--;
         loadQuestion();
     }
 }
 
+let isShowingFeedback = false;
+
+// ... (other functions remain the same) ...
+
 // Question suivante
 function nextQuestion() {
-    if (feedbackTimeout) {
-        clearTimeout(feedbackTimeout);
-    }
+    if (isShowingFeedback) return;
+
+    isShowingFeedback = true;
     
     const quizData = getCurrentQuizData();
     const quiz = quizData[currentQuizIndex];
-    
-    if (currentQuestionIndex < quiz.questions.length - 1) {
-        // Question suivante dans le même quiz
-        currentQuestionIndex++;
-        loadQuestion();
-    } else {
-        // Fin du quiz actuel
-        if (currentQuizIndex < quizData.length - 1) {
-            // Quiz suivant
-            currentQuizIndex++;
-            currentQuestionIndex = 0;
-            loadQuiz();
-        } else {
-            // Fin de tous les quiz
-            finishQuizSet();
+    const question = quiz.questions[currentQuestionIndex];
+    const userAnswersForQuestion = userAnswers[currentQuizIndex][currentQuestionIndex] || [];
+    const correctAnswers = question.correct;
+
+    const options = document.querySelectorAll('.answer-option');
+    options.forEach((option, index) => {
+        option.style.pointerEvents = 'none'; // Disable clicks during feedback
+
+        const isCorrect = correctAnswers.includes(index);
+        const isSelected = userAnswersForQuestion.includes(index);
+
+        if (isCorrect) {
+            option.classList.add('correct-instant');
+        } else if (isSelected && !isCorrect) {
+            option.classList.add('incorrect-instant');
         }
+    });
+
+    // Show explanation
+    const explanationBox = document.getElementById('explanation-text');
+    if (question.explanation) {
+        explanationBox.innerHTML = `<strong>Explication :</strong> ${question.explanation}`;
+        explanationBox.style.display = 'block';
     }
+
+    // Disable navigation buttons during feedback
+    document.getElementById('prev-btn').disabled = true;
+    document.getElementById('next-btn').disabled = true;
+
+    setTimeout(() => {
+        explanationBox.style.display = 'none'; // Hide explanation for next question
+        if (currentQuestionIndex < quiz.questions.length - 1) {
+            currentQuestionIndex++;
+            loadQuestion();
+        } else {
+            if (currentQuizIndex < quizData.length - 1) {
+                currentQuizIndex++;
+                currentQuestionIndex = 0;
+                loadQuiz();
+            } else {
+                finishQuizSet();
+            }
+        }
+        isShowingFeedback = false;
+    }, 3000); // Wait 3 seconds before moving to the next question
 }
 
 // Terminer le set de quiz
@@ -236,7 +254,6 @@ function finishQuizSet() {
 // Calculer les résultats
 function calculateResults() {
     const quizData = getCurrentQuizData();
-    const setKey = `set${currentQuizSet}`;
     let totalCorrect = 0;
     let totalQuestions = 0;
     
@@ -247,9 +264,10 @@ function calculateResults() {
         const results = [];
         
         quiz.questions.forEach((question, questionIndex) => {
-            const userAnswer = userAnswers[quizIndex][questionIndex];
-            const correctAnswer = question.correct;
-            const isCorrect = userAnswer === correctAnswer;
+            const userAnswersForQuestion = (userAnswers[quizIndex][questionIndex] || []).sort();
+            const correctAnswers = [...question.correct].sort();
+            
+            const isCorrect = JSON.stringify(userAnswersForQuestion) === JSON.stringify(correctAnswers);
             
             if (isCorrect) correct++;
             totalCorrect += isCorrect ? 1 : 0;
@@ -258,8 +276,8 @@ function calculateResults() {
             results.push({
                 question: question.question,
                 options: question.options,
-                userAnswer: userAnswer,
-                correctAnswer: correctAnswer,
+                userAnswer: userAnswers[quizIndex][questionIndex] || [],
+                correctAnswer: question.correct,
                 isCorrect: isCorrect
             });
         });
@@ -340,11 +358,16 @@ function showDetailedResults() {
             q.options.forEach((option, optIndex) => {
                 let answerClass = 'neutral';
                 let prefix = '';
-                
-                if (optIndex === q.correctAnswer) {
+
+                const isCorrectAnswer = q.correctAnswer.includes(optIndex);
+                const isUserAnswer = q.userAnswer.includes(optIndex);
+
+                if (isCorrectAnswer) {
+                    // Si la réponse fait partie des bonnes réponses, on la met en vert.
                     answerClass = 'correct-answer';
                     prefix = '✓ ';
-                } else if (optIndex === q.userAnswer && !q.isCorrect) {
+                } else if (isUserAnswer) {
+                    // Si elle ne fait pas partie des bonnes réponses mais que l'utilisateur l'a choisie, on la met en rouge.
                     answerClass = 'user-incorrect';
                     prefix = '✗ ';
                 }
@@ -361,6 +384,7 @@ function showDetailedResults() {
                 <h4>Question ${index + 1} ${q.isCorrect ? '✅' : '❌'}</h4>
                 <p><strong>${q.question}</strong></p>
                 <div class="review-answers">${answersHtml}</div>
+                ${q.explanation ? `<p class="explanation-detail"><strong>Explication :</strong> ${q.explanation}</p>` : ''}
             `;
             
             quizDiv.appendChild(questionDiv);
