@@ -577,6 +577,253 @@ const quizData = {
             ]
         }
     ],
-    set5: [],
+    set5: [{
+        id: 1,
+        title: "Construction Materials - Hydration and Properties (Q1–Q22)",
+        questions: [
+            {
+                question: "1. What is the primary function of CH (Portlandite) in cement paste?",
+                options: [
+                    "A) Protecting reinforced concrete against corrosion",
+                    "B) Filling the gaps between grains",
+                    "C) Slowing the rapid setting of cement",
+                    "D) Maintaining a basic pH (pH > 12)"
+                ],
+                correct: [3],
+                explanation: "Portlandite maintains a high pH (~12-13), protecting steel reinforcement from corrosion."
+            },
+            {
+                question: "2. What is the primary product of the hydration reaction of tricalcium silicate (C₃S)?",
+                options: [
+                    "A) Calcium Hydroxide (CH) and Calcium Silicate Hydrate (C–S–H)",
+                    "B) Ettringite",
+                    "C) Gypsum",
+                    "D) Calcium Carbonate"
+                ],
+                correct: [0],
+                explanation: "C₃S + H₂O → C–S–H + CH; these provide early strength to cement."
+            },
+            {
+                question: "3. Which compound in cement is responsible for long-term strength gain?",
+                options: [
+                    "A) C₃A (Tricalcium aluminate)",
+                    "B) C₃S (Tricalcium silicate)",
+                    "C) C₂S (Dicalcium silicate)",
+                    "D) C₄AF (Tetracalcium aluminoferrite)"
+                ],
+                correct: [2],
+                explanation: "C₂S hydrates more slowly, contributing to strength at later ages."
+            },
+            {
+                question: "4. Which mechanical property differentiates steel from concrete by describing the material's ability to undergo significant plastic deformation before fracture?",
+                options: [
+                    "A) Ductility",
+                    "B) Hardness",
+                    "C) Compressive Strength",
+                    "D) Stiffness (Modulus of Elasticity)"
+                ],
+                correct: [0],
+                explanation: "Steel is ductile; concrete is brittle and fails with little deformation."
+            },
+            {
+                question: "5. What is the typical range of compressive strength for structural concrete?",
+                options: [
+                    "A) 10–20 MPa",
+                    "B) 20–40 MPa",
+                    "C) 40–80 MPa",
+                    "D) 100–150 MPa"
+                ],
+                correct: [1],
+                explanation: "Ordinary structural concrete usually has a compressive strength between 20–40 MPa."
+            },
+            {
+                question: "6. Which property of aggregates affects the workability of concrete the most?",
+                options: [
+                    "A) Color",
+                    "B) Shape and surface texture",
+                    "C) Mineral composition",
+                    "D) Density"
+                ],
+                correct: [1],
+                explanation: "Rounded aggregates improve workability, while angular aggregates reduce it."
+            },
+            {
+                question: "7. What is the role of water in concrete mix?",
+                options: [
+                    "A) Acts only as a filler",
+                    "B) Initiates the chemical hydration reaction with cement",
+                    "C) Increases strength proportionally",
+                    "D) Increases density"
+                ],
+                correct: [1],
+                explanation: "Water enables cement hydration, forming C–S–H and CH."
+            },
+            {
+                question: "8. What is the water-to-cement ratio (w/c) that gives optimal strength and workability for normal concrete?",
+                options: [
+                    "A) 0.2–0.3",
+                    "B) 0.4–0.6",
+                    "C) 0.7–0.9",
+                    "D) 1.0–1.2"
+                ],
+                correct: [1],
+                explanation: "A w/c ratio between 0.4 and 0.6 is optimal for strength and workability."
+            },
+            {
+                question: "9. What happens if the water-to-cement ratio is too high?",
+                options: [
+                    "A) Increases strength",
+                    "B) Decreases porosity",
+                    "C) Increases porosity and reduces strength",
+                    "D) Improves durability"
+                ],
+                correct: [2],
+                explanation: "Excess water leaves voids after evaporation, weakening the concrete."
+            },
+            {
+                question: "10. Which test is used to measure the workability of fresh concrete?",
+                options: [
+                    "A) Compressive test",
+                    "B) Slump test",
+                    "C) Vicat test",
+                    "D) Flow table test"
+                ],
+                correct: [1],
+                explanation: "The slump test measures consistency and workability of fresh concrete."
+            },
+            {
+                question: "11. What causes segregation in concrete?",
+                options: [
+                    "A) Proper mixing",
+                    "B) Excessive vibration or water content",
+                    "C) Low temperature",
+                    "D) Use of fine aggregates"
+                ],
+                correct: [1],
+                explanation: "Segregation occurs when coarse aggregates separate due to excess water or over-vibration."
+            },
+            {
+                question: "12. What is the function of air-entraining agents in concrete?",
+                options: [
+                    "A) Reduce air bubbles",
+                    "B) Improve freeze-thaw resistance",
+                    "C) Increase density",
+                    "D) Reduce cement hydration"
+                ],
+                correct: [1],
+                explanation: "Air-entrained concrete has better durability in freezing conditions."
+            },
+            {
+                question: "13. Which mineral admixture improves workability and reduces heat of hydration?",
+                options: [
+                    "A) Silica fume",
+                    "B) Fly ash",
+                    "C) Limestone dust",
+                    "D) Gypsum"
+                ],
+                correct: [1],
+                explanation: "Fly ash improves workability and reduces heat of hydration in concrete."
+            },
+            {
+                question: "14. What is the effect of curing on concrete?",
+                options: [
+                    "A) Reduces strength",
+                    "B) Improves hydration and strength development",
+                    "C) Increases porosity",
+                    "D) Has no effect"
+                ],
+                correct: [1],
+                explanation: "Proper curing maintains moisture, allowing full hydration and strength gain."
+            },
+            {
+                question: "15. Which compound forms ettringite during hydration?",
+                options: [
+                    "A) C₃S",
+                    "B) C₄AF",
+                    "C) C₃A + gypsum",
+                    "D) C₂S"
+                ],
+                correct: [2],
+                explanation: "C₃A reacts with gypsum to form ettringite in the early hydration phase."
+            },
+            {
+                question: "16. What is the main reason for delayed ettringite formation (DEF)?",
+                options: [
+                    "A) Insufficient curing",
+                    "B) High curing temperature",
+                    "C) Low cement content",
+                    "D) Use of coarse aggregates"
+                ],
+                correct: [1],
+                explanation: "High curing temperatures can destroy initial ettringite, which reforms later and causes expansion (DEF)."
+            },
+            {
+                question: "17. What is the main cause of Alkali-Aggregate Reaction (AAR)?",
+                options: [
+                    "A) Presence of calcium carbonate",
+                    "B) Reactive silica in aggregates with alkalis in cement",
+                    "C) Sulfate attack",
+                    "D) Freezing-thawing cycles"
+                ],
+                correct: [1],
+                explanation: "Reactive silica reacts with alkalis forming an expansive gel causing cracks."
+            },
+            {
+                question: "18. Which test is used to determine the compressive strength of hardened concrete?",
+                options: [
+                    "A) Slump test",
+                    "B) Compressive test on cube or cylinder",
+                    "C) Vicat test",
+                    "D) Flow table test"
+                ],
+                correct: [1],
+                explanation: "Compressive strength is measured by crushing cubes or cylinders under load."
+            },
+            {
+                question: "19. What property of steel allows it to bond well with concrete?",
+                options: [
+                    "A) High density",
+                    "B) Thermal expansion similar to concrete",
+                    "C) High stiffness",
+                    "D) Smooth surface texture"
+                ],
+                correct: [1],
+                explanation: "Steel and concrete have similar coefficients of thermal expansion, preventing stress during temperature changes."
+            },
+            {
+                question: "20. What is the main advantage of reinforced concrete?",
+                options: [
+                    "A) Combines compressive strength of concrete and tensile strength of steel",
+                    "B) Reduces construction cost",
+                    "C) Improves aesthetic appearance",
+                    "D) Makes concrete waterproof"
+                ],
+                correct: [0],
+                explanation: "Reinforced concrete combines the compressive strength of concrete and tensile strength of steel."
+            },
+            {
+                question: "21. Which material provides the highest modulus of elasticity among the following?",
+                options: [
+                    "A) Wood",
+                    "B) Concrete",
+                    "C) Steel",
+                    "D) Aluminium"
+                ],
+                correct: [2],
+                explanation: "Steel has a modulus of elasticity of ~210 GPa, higher than concrete (~30 GPa) or wood (~10 GPa)."
+            },
+            {
+                question: "22. What is creep in concrete?",
+                options: [
+                    "A) Increase in strength with time",
+                    "B) Time-dependent deformation under constant load",
+                    "C) Shrinkage during drying",
+                    "D) Sudden failure under high stress"
+                ],
+                correct: [1],
+                explanation: "Creep is the gradual deformation of concrete under sustained load over time."
+            }
+        ]
+    }],
     set6: []
 };

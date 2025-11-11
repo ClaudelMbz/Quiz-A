@@ -31,10 +31,6 @@ function showPage(pageId) {
 
 // Démarrer un set de quiz
 function startQuizSet(setNumber) {
-    if (setNumber === 3) {
-        window.location.href = 'test3.html';
-        return;
-    }
     currentQuizSet = setNumber;
     currentQuizIndex = 0;
     currentQuestionIndex = 0;
