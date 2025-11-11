@@ -1,339 +1,351 @@
 const quizData = {
-    // Test 1: Construction Materials Quiz
+    // Test 1: Construction Materials Final Quiz - 30 Questions
     set1: [
         {
             id: 1,
-            title: "Construction Materials Quiz - 30 Essential Questions",
+            title: "Wood, Steel & Concrete (Questions 1-10)",
             questions: [
                 {
-                    question: "1. Who has the final decision-making authority in a building project?",
+                    question: "What is the typical cellulose content range in wood?",
                     options: [
-                        "A) The Architect",
-                        "B) The Client (contracting authority)",
-                        "C) The Entrepreneur",
-                        "D) The Control office"
-                    ],
-                    correct: [1],
-                    explanation: "The Client (contracting authority)"
-                },
-                {
-                    question: "2. What does BIM stand for?",
-                    options: [
-                        "A) Building Integration Management",
-                        "B) Building Information Modelling",
-                        "C) Basic Infrastructure Model",
-                        "D) Built-in Material"
-                    ],
-                    correct: [1],
-                    explanation: "Building Information Modelling"
-                },
-                {
-                    question: "3. Which professional is responsible for analyzing floor plans, soil resistance, and calculating the necessary structure?",
-                    options: [
-                        "A) The Architect",
-                        "B) The Business Analyst",
-                        "C) The Civil Engineer",
-                        "D) The Landscaper"
+                        "10-20%",
+                        "25-35%",
+                        "40-60%",
+                        "70-80%"
                     ],
                     correct: [2],
-                    explanation: "The Civil Engineer"
+                    explanation: "40-60%"
                 },
                 {
-                    question: "4. Which design phase involves estimating total costs and allocating financial resources?",
+                    question: "Which type of wood is generally denser and less flammable?",
                     options: [
-                        "A) Architectural Design",
-                        "B) Planning and Budgeting",
-                        "C) Legal Project",
-                        "D) Land Survey"
+                        "Softwood",
+                        "Hardwood",
+                        "Composite",
+                        "Laminated"
                     ],
                     correct: [1],
-                    explanation: "Planning and Budgeting"
+                    explanation: "Hardwood"
                 },
                 {
-                    question: "5. What are the three main types of foundations mentioned?",
+                    question: "Which engineered wood product is made from layers of wood glued at right angles?",
                     options: [
-                        "A) Concrete, steel, wood",
-                        "B) Radier, footing, pile cap blocks",
-                        "C) Slab, beam, column",
-                        "D) Strip, circular, square"
-                    ],
-                    correct: [1],
-                    explanation: "Radier, footing, pile cap blocks"
-                },
-                {
-                    question: "6. What is the purpose of the Legal Project phase?",
-                    options: [
-                        "A) To design the building",
-                        "B) To demonstrate to the municipality that norms and requirements are being met",
-                        "C) To calculate structural loads",
-                        "D) To choose materials"
-                    ],
-                    correct: [1],
-                    explanation: "To demonstrate to the municipality that norms and requirements are being met"
-                },
-                {
-                    question: "7. According to their origin, which material is classified as \"Natural - Vegetal\"?",
-                    options: [
-                        "A) Steel",
-                        "B) Wood",
-                        "C) Cement",
-                        "D) Glass"
-                    ],
-                    correct: [1],
-                    explanation: "Wood"
-                },
-                {
-                    question: "8. What type of chemical bond characterizes metals and alloys?",
-                    options: [
-                        "A) Ionic bond",
-                        "B) Covalent bond",
-                        "C) Metallic bond",
-                        "D) Hydrogen bond"
+                        "Glulam",
+                        "Plywood",
+                        "CLT",
+                        "OSB"
                     ],
                     correct: [2],
-                    explanation: "Metallic bond"
+                    explanation: "CLT (Cross Laminated Timber)"
                 },
                 {
-                    question: "9. What is the typical tensile strength range for structural steel?",
+                    question: "What is the behavior of wood under tension?",
                     options: [
-                        "A) 70-100 MPa",
-                        "B) 210-350 MPa",
-                        "C) 350-510 MPa",
-                        "D) 550-700 MPa"
-                    ],
-                    correct: [2],
-                    explanation: "350-510 MPa"
-                },
-                {
-                    question: "10. What is Young's modulus (E) for steel?",
-                    options: [
-                        "A) 70 GPa",
-                        "B) 110 GPa",
-                        "C) 210 GPa",
-                        "D) 406 GPa"
-                    ],
-                    correct: [2],
-                    explanation: "210 GPa"
-                },
-                {
-                    question: "11. What is the typical bulk density of reinforced concrete?",
-                    options: [
-                        "A) 1500 kg/m³",
-                        "B) 2000 kg/m³",
-                        "C) 2500 kg/m³",
-                        "D) 3000 kg/m³"
-                    ],
-                    correct: [2],
-                    explanation: "2500 kg/m³"
-                },
-                {
-                    question: "12. Which material has the highest thermal conductivity?",
-                    options: [
-                        "A) Wood (0.13 W.m⁻¹.K⁻¹)",
-                        "B) Concrete (1.7 W.m⁻¹.K⁻¹)",
-                        "C) Steel (45 W.m⁻¹.K⁻¹)",
-                        "D) Aluminium (384 W.m⁻¹.K⁻¹)"
-                    ],
-                    correct: [3],
-                    explanation: "Aluminium (384 W.m⁻¹.K⁻¹)"
-                },
-                {
-                    question: "13. What are the three main types of inorganic binders in civil construction?",
-                    options: [
-                        "A) Resin, bitumen, tar",
-                        "B) Lime, cement, gypsum",
-                        "C) Sand, gravel, clay",
-                        "D) Steel, wood, plastic"
+                        "Ductile",
+                        "Brittle",
+                        "Elastic",
+                        "Plastic"
                     ],
                     correct: [1],
-                    explanation: "Lime, cement, gypsum"
+                    explanation: "Brittle"
                 },
                 {
-                    question: "14. Who filed the patent for Portland cement in 1824?",
+                    question: "What is the Eurocode for timber structure design?",
                     options: [
-                        "A) Dupont and Demarle",
-                        "B) Joseph Aspdin",
-                        "C) Thomas Edison",
-                        "D) James Watt"
+                        "EN 1993",
+                        "EN 1995",
+                        "EN 1997",
+                        "EN 1999"
                     ],
                     correct: [1],
+                    explanation: "EN 1995"
+                },
+                {
+                    question: "What is an advantage of steel construction?",
+                    options: [
+                        "Low initial cost",
+                        "Speed of assembly",
+                        "Low maintenance",
+                        "No foundation required"
+                    ],
+                    correct: [1],
+                    explanation: "Speed of assembly"
+                },
+                {
+                    question: "Which Eurocode applies to steel structures?",
+                    options: [
+                        "EN 1992",
+                        "EN 1993",
+                        "EN 1995",
+                        "EN 1999"
+                    ],
+                    correct: [1],
+                    explanation: "EN 1993"
+                },
+                {
+                    question: "Which type of profile is commonly used for beams?",
+                    options: [
+                        "U profile",
+                        "T profile",
+                        "H profile",
+                        "Square tube"
+                    ],
+                    correct: [2],
+                    explanation: "H profile"
+                },
+                {
+                    question: "What is the main component of concrete by volume?",
+                    options: [
+                        "Cement",
+                        "Water",
+                        "Aggregates",
+                        "Admixtures"
+                    ],
+                    correct: [2],
+                    explanation: "Aggregates"
+                },
+                {
+                    question: "Which test measures the consistency of fresh concrete?",
+                    options: [
+                        "Compression test",
+                        "Slump test",
+                        "Tensile test",
+                        "Bending test"
+                    ],
+                    correct: [1],
+                    explanation: "Slump test"
+                }
+            ]
+        },
+        {
+            id: 2,
+            title: "Earth Structures & Environmental Impacts (Questions 11-20)",
+            questions: [
+                {
+                    question: "Which civilization used earth as a building material around 10,000 BC?",
+                    options: [
+                        "Egyptian",
+                        "Mesopotamian",
+                        "Roman",
+                        "Greek"
+                    ],
+                    correct: [1],
+                    explanation: "Mesopotamian"
+                },
+                {
+                    question: "Which earth construction technique uses a bamboo or wood frame covered with earth?",
+                    options: [
+                        "Rammed earth",
+                        "Cob",
+                        "Mud (wattle and daub)",
+                        "Adobe"
+                    ],
+                    correct: [2],
+                    explanation: "Mud (wattle and daub / torchis)"
+                },
+                {
+                    question: "Which type of earth structure is made by manually or mechanically compacting earth?",
+                    options: [
+                        "Adobe",
+                        "Cob",
+                        "Rammed earth (Pisé)",
+                        "Compressed earth block"
+                    ],
+                    correct: [2],
+                    explanation: "Rammed earth (Pisé)"
+                },
+                {
+                    question: "What is a main advantage of earth construction?",
+                    options: [
+                        "High compressive strength",
+                        "Low thermal inertia",
+                        "Hygrothermal regulation",
+                        "Resistance to heavy rain"
+                    ],
+                    correct: [2],
+                    explanation: "Hygrothermal regulation"
+                },
+                {
+                    question: "What percentage of air pollution is attributable to the construction sector?",
+                    options: [
+                        "23%",
+                        "40%",
+                        "50%",
+                        "60%"
+                    ],
+                    correct: [0],
+                    explanation: "23%"
+                },
+                {
+                    question: "How many tons of sand are consumed annually worldwide?",
+                    options: [
+                        "4-5 billion tons",
+                        "40-50 billion tons",
+                        "400-500 billion tons",
+                        "4-5 million tons"
+                    ],
+                    correct: [1],
+                    explanation: "40-50 billion tons"
+                },
+                {
+                    question: "Which material has the highest carbon footprint per kg?",
+                    options: [
+                        "Concrete",
+                        "Steel",
+                        "Aluminium",
+                        "Wood"
+                    ],
+                    correct: [2],
+                    explanation: "Aluminium"
+                },
+                {
+                    question: "Which sustainable building label is the most used worldwide?",
+                    options: [
+                        "HQE",
+                        "BREEAM",
+                        "LEED",
+                        "Passivhaus"
+                    ],
+                    correct: [2],
+                    explanation: "LEED"
+                },
+                {
+                    question: "Which architectural principle aims to use local climate for thermal comfort?",
+                    options: [
+                        "Bioclimatic architecture",
+                        "High-tech architecture",
+                        "Vernacular architecture",
+                        "Sustainable architecture"
+                    ],
+                    correct: [0],
+                    explanation: "Bioclimatic architecture"
+                },
+                {
+                    question: "What is an objective of the Passivhaus standard?",
+                    options: [
+                        "Airtightness < 0.6 vol/h",
+                        "Consumption < 200 kWh/m²/year",
+                        "Use of noble materials",
+                        "Thin insulation"
+                    ],
+                    correct: [0],
+                    explanation: "Airtightness < 0.6 vol/h"
+                }
+            ]
+        },
+        {
+            id: 3,
+            title: "Cement (Questions 21-30)",
+            questions: [
+                {
+                    question: "Who patented Portland cement in 1824?",
+                    options: [
+                        "Louis Vicat",
+                        "John Smeaton",
+                        "Joseph Aspdin",
+                        "Dupont and Demarle"
+                    ],
+                    correct: [2],
                     explanation: "Joseph Aspdin"
                 },
                 {
-                    question: "15. What are the approximate percentages of limestone and clay in cement raw materials?",
+                    question: "What is the firing temperature of clinker?",
                     options: [
-                        "A) 50% limestone, 50% clay",
-                        "B) 60% limestone, 40% clay",
-                        "C) 80% limestone, 20% clay",
-                        "D) 90% limestone, 10% clay"
+                        "800°C",
+                        "1100°C",
+                        "1450°C",
+                        "1600°C"
                     ],
                     correct: [2],
-                    explanation: "80% limestone, 20% clay"
-                },
-                {
-                    question: "16. At what temperature does calcination occur in the rotary kiln to produce clinker?",
-                    options: [
-                        "A) 800°C",
-                        "B) 1000°C",
-                        "C) 1200°C",
-                        "D) 1450°C"
-                    ],
-                    correct: [3],
                     explanation: "1450°C"
                 },
                 {
-                    question: "17. What is the main component of clinker by mass percentage?",
+                    question: "What is the main component of clinker?",
                     options: [
-                        "A) C₂S (Dicalcium silicate) - 10-20%",
-                        "B) C₃A (Tricalcium aluminate) - 8-12%",
-                        "C) C₃S (Tricalcium silicate/Alite) - 60-65%",
-                        "D) C₄AF (Tetracalcium aluminoferrite) - 8-10%"
+                        "C₂S",
+                        "C₃A",
+                        "C₃S",
+                        "C₄AF"
                     ],
                     correct: [2],
-                    explanation: "C₃S (Tricalcium silicate/Alite) - 60-65%"
+                    explanation: "C₃S (Tricalcium silicate)"
                 },
                 {
-                    question: "18. What is the role of gypsum in cement?",
+                    question: "What is the role of gypsum in cement?",
                     options: [
-                        "A) Increases strength",
-                        "B) Slows the rapid setting due to fast hydration of C₃A",
-                        "C) Reduces cost",
-                        "D) Improves color"
+                        "Accelerate setting",
+                        "Increase strength",
+                        "Delay setting",
+                        "Color the cement"
                     ],
-                    correct: [1],
-                    explanation: "Slows the rapid setting due to fast hydration of C₃A"
+                    correct: [2],
+                    explanation: "Delay setting"
                 },
                 {
-                    question: "19. What is the minimum clinker content for Portland Cement Type I (CEM I)?",
+                    question: "Which type of cement contains the most clinker?",
                     options: [
-                        "A) ≥ 80%",
-                        "B) ≥ 85%",
-                        "C) ≥ 90%",
-                        "D) ≥ 95%"
+                        "CEM II",
+                        "CEM III",
+                        "CEM IV",
+                        "CEM I"
                     ],
                     correct: [3],
-                    explanation: "≥ 95%"
+                    explanation: "CEM I"
                 },
                 {
-                    question: "20. Which cement type has the highest slag content range (81-95%)?",
+                    question: "Which mineral is formed during the hydration of C₃S and C₂S?",
                     options: [
-                        "A) Type II/A",
-                        "B) Type III/A",
-                        "C) Type III/B",
-                        "D) Type III/C"
+                        "Ettringite",
+                        "Portlandite",
+                        "CSH",
+                        "Monosulfoaluminate"
+                    ],
+                    correct: [2],
+                    explanation: "CSH (Calcium Silicate Hydrate)"
+                },
+                {
+                    question: "Which type of cement is recommended for aggressive sulfate environments?",
+                    options: [
+                        "CEM I",
+                        "CEM II",
+                        "CEM III",
+                        "CEM with ES designation"
                     ],
                     correct: [3],
-                    explanation: "Type III/C (Blast furnace cement)"
+                    explanation: "CEM with ES designation"
                 },
                 {
-                    question: "21. What does CSH stand for in cement hydration?",
+                    question: "Which property is measured with the Vicat apparatus?",
                     options: [
-                        "A) Calcium Sulfate Hydrate",
-                        "B) Calcium Silicate Hydrated",
-                        "C) Cement Substrate Hydroxide",
-                        "D) Carbonate Silicon Hydrate"
+                        "Compressive strength",
+                        "Normal consistency",
+                        "Modulus of elasticity",
+                        "Blaine fineness"
                     ],
                     correct: [1],
-                    explanation: "Calcium Silicate Hydrated"
+                    explanation: "Normal consistency"
                 },
                 {
-                    question: "22. What is responsible for the mechanical resistance of hardened cement paste?",
+                    question: "What is the advantage of composite cements with mineral additions?",
                     options: [
-                        "A) Portlandite (CH)",
-                        "B) Gypsum",
-                        "C) CSH (Calcium Silicate Hydrated)",
-                        "D) Ettringite"
+                        "Faster setting",
+                        "Higher cost",
+                        "Reduction of heat of hydration",
+                        "Higher initial strength"
                     ],
                     correct: [2],
-                    explanation: "CSH (Calcium Silicate Hydrated)"
+                    explanation: "Reduction of heat of hydration"
                 },
                 {
-                    question: "23. What pH level does Portlandite (CH) maintain in concrete to protect against corrosion?",
+                    question: "Which pathological phenomenon is related to delayed ettringite formation?",
                     options: [
-                        "A) pH > 7",
-                        "B) pH > 9",
-                        "C) pH > 12",
-                        "D) pH > 14"
+                        "Alkali-silica reaction",
+                        "Carbonation",
+                        "Reinforcement corrosion",
+                        "Expansion and cracking"
                     ],
-                    correct: [2],
-                    explanation: "pH > 12"
-                },
-                {
-                    question: "24. What is the typical range for specific surface (Blaine fineness) of cement?",
-                    options: [
-                        "A) 500-1000 cm²/g",
-                        "B) 1000-2000 cm²/g",
-                        "C) 2800-5000 cm²/g",
-                        "D) 5000-8000 cm²/g"
-                    ],
-                    correct: [2],
-                    explanation: "2800-5000 cm²/g"
-                },
-                {
-                    question: "25. What defines coarse aggregate?",
-                    options: [
-                        "A) Particles smaller than 2.0 mm",
-                        "B) Particles between 2.0-4.0 mm",
-                        "C) Particles larger than 4.75 mm",
-                        "D) Particles larger than 10 mm"
-                    ],
-                    correct: [2],
-                    explanation: "Particles larger than 4.75 mm (retained on sieve #4)"
-                },
-                {
-                    question: "26. What are the three main classifications of concrete based on density?",
-                    options: [
-                        "A) Light, medium, heavy",
-                        "B) Lightweight (<1800), Common (1800-2500), Heavyweight (>2500 kg/m³)",
-                        "C) Weak, normal, strong",
-                        "D) Porous, dense, compact"
-                    ],
-                    correct: [1],
-                    explanation: "Lightweight (<1800), Common (1800-2500), Heavyweight (>2500 kg/m³)"
-                },
-                {
-                    question: "27. What percentage of commonly used concrete volume do aggregates represent?",
-                    options: [
-                        "A) ≈ 30%",
-                        "B) ≈ 50%",
-                        "C) ≈ 70%",
-                        "D) ≈ 90%"
-                    ],
-                    correct: [2],
-                    explanation: "≈ 70%"
-                },
-                {
-                    question: "28. What does the slump test measure?",
-                    options: [
-                        "A) Compressive strength",
-                        "B) Workability/consistency",
-                        "C) Density",
-                        "D) Air content"
-                    ],
-                    correct: [1],
-                    explanation: "Workability/consistency"
-                },
-                {
-                    question: "29. What are the three main pathological manifestations in concrete mentioned?",
-                    options: [
-                        "A) Cracking, spalling, rust",
-                        "B) Sulfate attack, DEF (Delayed Ettringite Formation), AAR (Alkali-Aggregate Reaction)",
-                        "C) Freezing, melting, evaporation",
-                        "D) Compression, tension, shear"
-                    ],
-                    correct: [1],
-                    explanation: "Sulfate attack, DEF (Delayed Ettringite Formation), AAR (Alkali-Aggregate Reaction)"
-                },
-                {
-                    question: "30. According to the US Green Building Council, what percentage of worldwide energy usage does the construction sector represent?",
-                    options: [
-                        "A) 20%",
-                        "B) 30%",
-                        "C) 40%",
-                        "D) 50%"
-                    ],
-                    correct: [2],
-                    explanation: "40%"
+                    correct: [3],
+                    explanation: "Expansion and cracking"
                 }
             ]
         }
@@ -827,3 +839,4 @@ const quizData = {
     }],
     set6: []
 };
+
